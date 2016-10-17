@@ -1,14 +1,30 @@
-\frametitle{Level Set Method}
+\frametitle{Coupled Thermo-elasticity Problems}
 \begin{itemize}
-        \item  The description of crack in extended finite element method is often described by the level-set method. A crack is described by two level-set methods as shown in figure below.
-                     \begin{itemize}
-        \item A normal level set, $\psi(x)$ which is the signed distance from the crack surface.
-        \item A tangent level set, $\phi(x)$ which is the signed distance to the plane including the crack front and perpendicular to the crack surface.
-        \end{itemize}
-    \item To know which element should be enriched by which function we see the following
-        \begin{itemize}
-            \item If $\phi < 0 $ and $\psi_{min}\psi_{max}\leq 0$, then the crack cuts through the element and the nodes of the element are to be enriched with h(x).
-            \item If in the element $\phi_{min}\phi{max}\leq 0$ and $\psi_{min}\psi{max}\leq 0 $, then the tip lies within that element and its nodes are to be enriched with $\gamma$.
-        \end{itemize}
-
+        \item Coupled thermoelasticity problems have become very important in recent years because of its use in various industries.
+        \item Some application areas include
+            \begin{itemize}
+                \item aerodynamic heating of high speed air crafts as shown in figure (a).
+            \item the nuclear reactors where very high-temperatures and temperature gradients are developed as shown in figure (b).
+            \item the ultra fast pulse lasers which is used for
+micro-machining.
+            \item non destructive detection.
+            \item natural characterisation etc
+            \end{itemize}
     \end{itemize}
+    \vspace{-.5cm}
+    \begin{figure}[H]
+      \hspace{.5cm}
+\begin{subfigure}{0.45\textwidth}
+  \vspace{.5cm}
+    \centering
+ \includegraphics[scale=.1]{hyper.jpg}
+ \caption{\tiny{Hyper-X vehicle at Mach 7.Source: www.dfrc.nasa.gov}}
+ \end{subfigure}
+ \begin{subfigure}{0.45\textwidth}
+    \centering
+ \includegraphics[scale=.05]{reator.png}
+ \caption{\tiny{High temperature reactor. Source: https://commons.wikimedia.org}}
+ \label{2}
+ \end{subfigure}
+\label{fig:caption}
+\end{figure}

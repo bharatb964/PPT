@@ -21,7 +21,6 @@
 \title{{{Thermoelastic fracture problems using Extended Finite Element Method}}}
 \institute{\small Under the guidance of\\Prof. Salil S. Kulkarni\\ \vspace{5pt}Department of Mechanical Engineering, IIT Bombay}
 \date{\vspace{-5pt}October 18, 2016}
-
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 %%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -140,24 +139,99 @@ $$G=-\frac{d\Pi}{da}\ ,\ \ \ \ \ \
    gradient.\emph{Engineering Fracture Mechanics}, 12(4), 469-478.
 \end{frame} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Objectives}
+\begin{frame}[t,fragile]{Extended Finite Element Method in Thermoelasticity}
     \begin{itemize}
-        \item Finite Element Formulation of thermo-elastic problems
-        \item Computer implementation of the FEM model in MATLAB
-        \item Solving the crack problems with thermal loading
-        \item Application of the Extended Finite Element Method 
+        \item We have to use very fine mesh at capture the behaviour of crack.
+\item In XFEM, we enrich the polynomial approximation to include the effects of singular discontinuous field.
+    \item Advantages:
+    \begin{itemize}
+        \item Mesh is prepared without considering the existence of discontinuity.
+        \item No need of remeshing.
+    \end{itemize}
+\end{itemize}
+\begin{figure}
+     \centering
+     \vspace{-10pt}
+     \includegraphics[scale=.3]{enrich.png}
+     \caption{\hspace{-2cm}\footnotesize XFEM enrichment strategy}
+  \end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{\ldots Extended Finite Element Method}
+    \vspace{-.3cm}
+     \footnotesize
+    \begin{itemize}
+        \item The nodes which belongs to the elements totally cut by the crack, are enriched by and Heaviside function.
+    $$h(x,y)=\begin{cases}1,&       for ~ ~ y\ge 0\\ -1,&       for~ ~ y\le 0\end{cases}$$
+\item The nodes of elements which contains cracktip are enriched by $\gamma$:
+     \footnotesize
+    \begin{align*}
+    u^h&=\sum_i N_i(x)u_i+\sum_{j\in J} N_j(x) h(x)a_j+\sum_{k\in K} N_k(x)\left( \sum_{l=1}^{4}\gamma_l(x)b_{kl} \right) \\
+    v^h&=\sum_i N_i(x)v_i+\sum_{j\in J} N_j(x) h(x)c_j+\sum_{k\in K} N_k(x)\left( \sum_{l=1}^{4}\gamma_l(x)d_{kl} \right) \\ 
+    where,\ \ \ \gamma&=\left[ \sqrt{r}\cos \left( \frac{\theta}{2} \right), \sqrt{r}\sin\left( \frac{\theta}{2} \right),\sqrt{r}\sin\left( \frac{\theta}{2} \right)\sin(\theta),\sqrt{r}\cos\left( \frac{\theta}{2} \right)\sin(\theta)\right] 
+\end{align*}
+\end{itemize}
+\tiny
+\hspace{10pt}
+\textbf{Source:}Belytschko, T., \& Black, T. (1999). Elastic crack growth in finite elements with minimal remeshing. \\
+\vspace{-7pt}
+\hspace{10pt}
+\emph{International journal for numerical methods in engineering}, 45(5), 601-620.
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{Level Set Method}
+    \vspace{-.3cm}
+    \footnotesize
+    \begin{itemize}
+        \item The position of crack can be defined by level set methods. There are two level-set functions:
+          \begin{itemize}
+        \item Normal level set, $\psi(x)=$ the signed distance from the crack surface.
+        \item Tangent level set, $\phi(x)=$ the signed distance to the plane including the crack front and perpendicular to the crack surface.
+        \end{itemize}
+    \item To decide which enrichment should be used. 
+        \begin{itemize}
+            \item If $\phi < 0 $ and $\psi_{min}\psi_{max}\leq 0$, nodes should be enriched with $h(x)$.
+            \item If $\phi_{min}\phi_{max}\leq 0$ and $\psi_{min}\psi_{max}\leq 0 $, nodes should be enriched with $\gamma$.
+        \end{itemize}
+    \end{itemize}
+  \begin{figure}
+                \centering
+                \vspace{-15pt}
+                \includegraphics[scale=.15]{levelset.jpg}
+                \caption{\tiny Level Set Method}
+                \label{4}
+            \end{figure}
+    \tiny 
+    \vspace{-20pt}
+  \hspace{10pt}
+    \textbf{Source:} Abdelaziz, Y., Bendahane, K., \& Baraka, A. (2011). Extended Finite Element Modeling: Basic Review and\\
+  \vspace{-1pt}
+  \hspace{10pt}
+    Programming. Engineering, 3(07), 713.
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{Work done}
+    \begin{itemize}
+        \item Finite Element Formulation of coupled thermo-elastic problems
+        \item MATLAB program is developed using the FEM formulation
+        \item Patch test for the different modules of program is performed
+        \item Various thermoelastic fracture problems are solved using the developed code 
+        \item Need for using XFEM is shown by solving same problems and getting more accurate results 
     \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Finite Element Formulation of Thermo-elasticity}
 \begin{itemize}
-    \item Since problems such as coupled structural-diffusion problems are governed by similar equations, we will be able to analyze all such coupled problems by only changing the field variable of the thermo-mechanical model.
-\item In semi-coupled analysis we neglect the effect of displacements on temperature field. 
-\item The thermo-elastic constitutive relation for plane stress is given by:
-    \small
+\item We will formulate the semi-coupled in which we neglect the effect of displacements on temperature field.
+\item In thermoelastic case the total strain is given as: 
+\begin{align}
+    \varepsilon_{ij}&=\varepsilon_{ij}^{(M)}+\varepsilon_{ij}^{(T)}
+    =\frac{1+\nu}{E}\sigma_{ij}-\frac{\nu}{E}\sigma_{kk}\delta_{ij}+\alpha(T-T_0)\delta_{ij}\nonumber
+\end{align}
+\item Which can be inverted to get following stress-strain relationship:
+    \footnotesize
 \begin{align*}
     \begin{Bmatrix}
         \sigma_{x}\\ \sigma_{y}\\ \tau_{xy} 
@@ -173,43 +247,6 @@ $$G=-\frac{d\Pi}{da}\ ,\ \ \ \ \ \
 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Constitutive relations in one dimensions}
-    \begin{itemize}
-        \item we can get the total strain as 
-\begin{align}
-    \varepsilon_{ij}&=\varepsilon_{ij}^{(M)}+\varepsilon_{ij}^{(T)}\nonumber \\
-    &=\frac{1+\nu}{E}\sigma_{ij}-\frac{\nu}{E}\sigma_{kk}\delta_{ij}+\alpha(T-T_0)\delta_{ij}
-\end{align}
-      \item  For isotropic case equation \ref{4} can be inverted to get the stresses 
-\begin{equation}
-    \sigma_{ij}=\lambda\varepsilon_{kk}\delta_{ij}+2\mu\varepsilon_{ij}-(3\lambda+2\mu)\alpha(T-T_0)\delta_{ij}
-\end{equation}
-where $\lambda$ and $\mu$ are Lame constants and are given as 
-\begin{align}\lambda=\frac{E\nu}{(1+\nu)(1-2\nu)}~ ~,~ ~ ~ ~ ~\mu=\frac{E}{2(1+\nu)}\end{align}
-    \end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Constitutive relations in two dimensions}
-    \begin{itemize}
-        \item Thus writing common constitutive relation for both plane strain and plane stress using equations   
-\begin{align}
-\begin{Bmatrix}
-    \sigma_x\\ \sigma_y\\ \tau_{xy}   
-\end{Bmatrix}=
-\begin{bmatrix}
-    c_{11}&c_{12}&0\\c_{12}&c_{22}&0\\0&0&c_{66}
-\end{bmatrix}
-\begin{Bmatrix}
-    \varepsilon_x-\alpha T\\ \varepsilon_y-\alpha T\\ \varepsilon_{xy}
-\end{Bmatrix} 
-\end{align}
-where for plane strain 
-$$c_{11}=c_{22}=\frac{E(1-\nu)}{(1+\nu)(1-2\nu)}~ ~ ,~ ~ c_{12}=\frac{E\nu}{(1+\nu)(1-2\nu)}~ ~,~  ~ c_{66}=\frac{E}{1+\nu}$$
-and for plane stress 
-$$c_{11}=c_{22}=\frac{E}{(1-\nu^2)}~ ~ ,~ ~ c_{12}=\frac{E\nu}{(1-\nu^2)}~ ~,~  ~ c_{66}=\frac{E}{1+\nu}$$
-    \end{itemize}
-\end{frame}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
    \begin{frame}[t,fragile]{Finite element model}
     \begin{itemize}
         \item The governing equations of the thermo-elasticity is given by:
@@ -222,31 +259,29 @@ $$c_{11}=c_{22}=\frac{E}{(1-\nu^2)}~ ~ ,~ ~ c_{12}=\frac{E\nu}{(1-\nu^2)}~ ~,~  
 \end{align*}
 \egroup
 where k is the thermal conductivity, T is temperature and q is the heat source.
-    \end{itemize}
+      \item We can develop a week form of above equations by approximating u,v and T over a typical finite element $\Omega^e$ as:
+          \footnotesize
+\begin{align*}
+    u(x,y)=\sum_{i=1}^nN_i (x,y)u_i\ \ , 
+    v(x,y)=\sum_{i=1}^nN_i (x,y)v_i\ \ ,
+    T(x,y)=\sum_{i=1}^nN_i (x,y)T_i
+\end{align*}
+\end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Constitutive relations in two dimensions}
-    \begin{itemize}
-        \item Approximating u,v and T over a typical finite element $\Omega^e$ by the expression \cite{reddy}.
-\begin{align}
-    u(x,y)=\sum_{i=1}^nN_i (x,y)u_i\label{u}\\
-    v(x,y)=\sum_{i=1}^nN_i (x,y)v_i\label{v}\\
-    T(x,y)=\sum_{i=1}^nN_i (x,y)T_i\label{t}
-\end{align}
-    \end{itemize}
+\begin{frame}[t,fragile]{Weak form of Thermoelastic problem}
+            \tiny
+        \begin{align*}
+     -\int_{\Omega}^{}\left[ c_{11}\frac{\partial N_i}{\partial x}\frac{\partial N_j}{\partial x}u_j+c_{12}\frac{\partial N_i}{\partial x}\frac{\partial N_j}{\partial y}v_j\right]dxdy+\int_{\Omega}^{}\left[c_{66}\frac{\partial N_i}{\partial y}\frac{\partial N_j}{\partial y}u_jdxdy+\frac{\partial N_i}{\partial y}\frac{\partial N_j}{\partial x}v_j\right]dxdy\nonumber\\ -\int_{\Omega}^{}\frac{\partial N_i}{\partial x}\beta N_jT_j dxdy +\int_{\Omega}^{}N_if_x
+     dxdy+\int_{\Gamma}^{}N_i\vec{t}dx=0\end{align*}
+ \begin{align*}
+     -\int_{\Omega}^{}\left[ c_{11}\frac{\partial N_i}{\partial y}\frac{\partial N_j}{\partial y}v_j+c_{12}\frac{\partial N_i}{\partial y}\frac{\partial N_j}{\partial x}u_j\right]dxdy+\int_{\Omega}^{}\left[c_{66}\frac{\partial N_i}{\partial x}\frac{\partial N_j}{\partial x}v_jdxdy+\frac{\partial N_i}{\partial x}\frac{\partial N_j}{\partial y}u_j\right]dxdy\nonumber\\ -\int_{\Omega}^{}\frac{\partial N_i}{\partial y}\beta N_jT_j dxdy+\int_{\Omega}^{}N_if_y dxdy+\int_{\Gamma}^{}N_i\vec{t}dy=0\\
+        k\int_{\Omega}\left( \frac{\partial N_i}{\partial x}\frac{\partial N_j}{\partial x}+\frac{\partial N_i}{\partial y}\frac{\partial N_j}{\partial y} \right)T_jdxdy-\int_{\Omega}^{}N_iN_jqdxdy=\int_{\Gamma}^{}N_i\bar{Q}ds& \end{align*}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{weak form}
-    \begin{itemize}
-            \tiny
-        \item \begin{align}
-     -\int_{\Omega}^{}\left[ c_{11}\frac{\partial N_i}{\partial x}\frac{\partial N_j}{\partial x}u_j+c_{12}\frac{\partial N_i}{\partial x}\frac{\partial N_j}{\partial y}v_j\right]dxdy+\int_{\Omega}^{}\left[c_{66}\frac{\partial N_i}{\partial y}\frac{\partial N_j}{\partial y}u_jdxdy+\frac{\partial N_i}{\partial y}\frac{\partial N_j}{\partial x}v_j\right]dxdy\nonumber\\ -\int_{\Omega}^{}\frac{\partial N_i}{\partial x}\beta N_jT_j dxdy +\int_{\Omega}^{}N_if_x
-     dxdy+\int_{\Gamma}^{}N_i\vec{t}dx=0\label{24}\end{align}
- \begin{align}
-     -\int_{\Omega}^{}\left[ c_{11}\frac{\partial N_i}{\partial y}\frac{\partial N_j}{\partial y}v_j+c_{12}\frac{\partial N_i}{\partial y}\frac{\partial N_j}{\partial x}u_j\right]dxdy+\int_{\Omega}^{}\left[c_{66}\frac{\partial N_i}{\partial x}\frac{\partial N_j}{\partial x}v_jdxdy+\frac{\partial N_i}{\partial x}\frac{\partial N_j}{\partial y}u_j\right]dxdy\nonumber\\ -\int_{\Omega}^{}\frac{\partial N_i}{\partial y}\beta N_jT_j dxdy+\int_{\Omega}^{}N_if_y dxdy+\int_{\Gamma}^{}N_i\vec{t}dy=0\label{25}\\
-        k\int_{\Omega}\left( \frac{\partial N_i}{\partial x}\frac{\partial N_j}{\partial x}+\frac{\partial N_i}{\partial y}\frac{\partial N_j}{\partial y} \right)T_jdxdy-\int_{\Omega}^{}N_iN_jqdxdy=\int_{\Gamma}^{}N_i\bar{Q}ds& \label{26} \end{align}
-Neglecting the body forces, above equations can be written in matrix form as follows\\ 
-    \begin{align}
+    Neglecting the body forces, above equations can be written in matrix form as follows\\ 
+    \begin{align*}
 \begin{bmatrix}
     K_{11} & K_{12} \\
     0 & K_{22}
@@ -257,11 +292,8 @@ Neglecting the body forces, above equations can be written in matrix form as fol
 \begin{Bmatrix}
     F\\ Q
 \end{Bmatrix}
-\end{align} 
-    \end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{weak form}
+\end{align*} 
+ 
     \tiny
     \begin{itemize}
         \item Where $U^e=[u~ ~ v]^T$ and $T^e$ are the unknown variables to be found and $K_{11}$, $K_{12}$ and $K_{22}$ are the stiffness matrices which are defined as below:\\  
@@ -326,7 +358,6 @@ The strains $\{\varepsilon\}$ and temperature gradients $\{\theta'\}$ can be wri
 \begin{align}
     \{F\}&=\int_\Gamma [N]^T{\bar{t}}ds\\
     \{Q\}&=\int_\Gamma [N^{\theta}]^T\bar{Q}ds
-    \label{}
 \end{align}
 \end{itemize}
 \end{frame}
@@ -364,7 +395,6 @@ micro-machining.
     \centering
  \includegraphics[scale=.1]{hyper.jpg}
  \caption{\tiny{Hyper-X vehicle at Mach 7.Source: www.dfrc.nasa.gov}}
- \label{1}
  \end{subfigure}
  \begin{subfigure}{0.45\textwidth}
     \centering
@@ -376,69 +406,6 @@ micro-machining.
 \end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Extended Finite Element Method}
-    \begin{itemize}
-\item Present work describes the application of the eXtended Finite Element Method (XFEM) in coupled thermoelastic problems.
-\item In classical finite element method, mesh should conform to the boundaries of discontinuity for accurate modeling of the problem. So remeshing has to be done every time the crack grows. 
-\item An alternate method is to enrich the polynomial approximation with functions which can model the discontinuities. 
-    \footnotesize
-    \begin{align*}
-    u^h&=\sum_i N_i(x)u_i+\sum_{j\in J} N_j(x) h(x)a_j+\sum_{k\in K} N_k(x)\left( \sum_{l=1}^{4}\gamma_l(x)b_{kl} \right) \\
-    v^h&=\sum_i N_i(x)v_i+\sum_{j\in J} N_j(x) h(x)c_j+\sum_{k\in K} N_k(x)\left( \sum_{l=1}^{4}\gamma_l(x)d_{kl} \right) 
-\end{align*}
-\end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{\ldots Extended Finite Element Method }
-    \begin{itemize}
-        \item 
-            \footnotesize \begin{align*}
-\gamma=\left[ \sqrt{r}\cos \left( \frac{\theta}{2} \right), \sqrt{r}\sin\left( \frac{\theta}{2} \right),\sqrt{r}\sin\left( \frac{\theta}{2} \right)\sin(\theta),\sqrt{r}\cos\left( \frac{\theta}{2} \right)\sin(\theta)\right] 
-\end{align*}
-\item As can be seen above the third singular function $\gamma_3$ is the only enrichment function which is discontinuous across the crack. Thus the discontinuity of the displacement field at $\theta=\pm \pi$ in the singular zone is only modeled by $\gamma_3$ on the elements containing the crack tip.
-\item The nodes which belongs to the elements totally cut by the crack, are enriched by and Heaviside function.
-    $$h(x,y)=\begin{cases}1,&       for ~ ~ y\ge 0\\ -1,&       for~ ~ y\le 0\end{cases}$$
-
-    \end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{\ldots Extended Finite Element Method}
-    \begin{itemize}
-        \item In this work we have studied a recent method of modeling crack growth without re-meshing. The main advantage of this method is that the mesh is prepared without considering the existence of discontinuity.
-        \item XFEM is based on the partition of unity method in which we enrich the classical finite element approximation to include the effects of singular discontinuous field around the crack.
-            \begin{figure}[h]
-                \centering
-                \includegraphics[scale=.2]{enrich.png}
-                \caption{XFEM enrichment strategy. Source: Abdelaziz, Y., Bendahane, K., \& Baraka, A. (2011). Extended Finite Element Modeling: Basic Review and Programming. Engineering, 3(07), 713.}
-                \label{3}
-            \end{figure}
-    \end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Level Set Method}
-    \begin{itemize}
-        \item  The description of crack in extended finite element method is often described by the level-set method. A crack is described by two level-set methods as shown in figure below.
-                     \begin{itemize}
-        \item A normal level set, $\psi(x)$ which is the signed distance from the crack surface.
-        \item A tangent level set, $\phi(x)$ which is the signed distance to the plane including the crack front and perpendicular to the crack surface.
-        \end{itemize}
-    \item To know which element should be enriched by which function we see the following
-        \begin{itemize}
-            \item If $\phi < 0 $ and $\psi_{min}\psi_{max}\leq 0$, then the crack cuts through the element and the nodes of the element are to be enriched with h(x).
-            \item If in the element $\phi_{min}\phi{max}\leq 0$ and $\psi_{min}\psi{max}\leq 0 $, then the tip lies within that element and its nodes are to be enriched with $\gamma$.
-        \end{itemize}
-
-    \end{itemize}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}
-      \begin{figure}
-                \centering
-                \includegraphics[scale=.2]{levelset.jpg}
-                \caption{Level Set Method}
-                \label{4}
-            \end{figure}
-\end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 
