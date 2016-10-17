@@ -1,0 +1,14 @@
+\frametitle{Level Set Method}
+\begin{itemize}
+        \item  The description of crack in extended finite element method is often described by the level-set method. A crack is described by two level-set methods as shown in figure below.
+                     \begin{itemize}
+        \item A normal level set, $\psi(x)$ which is the signed distance from the crack surface.
+        \item A tangent level set, $\phi(x)$ which is the signed distance to the plane including the crack front and perpendicular to the crack surface.
+        \end{itemize}
+    \item To know which element should be enriched by which function we see the following
+        \begin{itemize}
+            \item If $\phi < 0 $ and $\psi_{min}\psi_{max}\leq 0$, then the crack cuts through the element and the nodes of the element are to be enriched with h(x).
+            \item If in the element $\phi_{min}\phi{max}\leq 0$ and $\psi_{min}\psi{max}\leq 0 $, then the tip lies within that element and its nodes are to be enriched with $\gamma$.
+        \end{itemize}
+
+    \end{itemize}

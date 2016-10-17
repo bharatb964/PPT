@@ -1,0 +1,168 @@
+\documentclass{beamer}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\usepackage{subcaption}
+\usepackage{float}
+\usetheme[pageofpages=of,% String used between the current page and the
+                         % total page count.
+          bullet=circle,% Use circles instead of squares for bullets.
+          titleline=true,% Show a line below the frame title.
+          alternativetitlepage=true,% Use the fancy title page.
+          titlepagelogo=logo-polito,% Logo for the first page.
+          watermark=watermark-polito,% Watermark used in every page.
+          watermarkheight=100px,% Height of the watermark.
+          watermarkheightmult=4,% The watermark image is 4 times bigger
+                                % than watermarkheight.
+          ]{Theme}
+\usepackage{lmodern}
+\author{Bharat Bhushan}
+\title{{{Coupled Thermoelastic problems using Extended Finite Element Method}}}
+\institute{IIT BOMBAY}
+\date{October 18, 2016}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+%%%% TITLE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t,plain]
+\titlepage
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%% content %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[t,fragile]{Coupled Thermoelasticity Problems}
+    \begin{itemize}
+        \item Coupled thermoelasticity problems have become very important in recent years because of its use in various industries.
+        \item Some application areas include 
+            \begin{itemize}
+                \item aerodynamic heating of high speed air crafts as shown in figure (a). 
+            \item the nuclear reactors where very high-temperatures and temperature gradients are developed as shown in figure (b).
+            \item the ultra fast pulse lasers which is used for
+micro-machining.
+            \item non destructive detection.
+            \item natural characterisation etc 
+            \end{itemize}
+    \end{itemize}
+    \vspace{-.5cm}
+    \begin{figure}[H]
+      \hspace{.5cm}
+\begin{subfigure}{0.45\textwidth}
+  \vspace{.5cm}
+    \centering
+ \includegraphics[scale=.1]{hyper.jpg}
+ \caption{\tiny{Hyper-X vehicle at Mach 7.Source: www.dfrc.nasa.gov}}
+ \label{1}
+ \end{subfigure}
+ \begin{subfigure}{0.45\textwidth}
+    \centering
+ \includegraphics[scale=.05]{reator.png}
+ \caption{\tiny{High temperature reactor. Source: https://commons.wikimedia.org}}
+ \label{2}
+ \end{subfigure}
+\label{fig:caption}
+\end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{Extended Finite Element Method}
+    \begin{itemize}
+\item Present work describes the application of the eXtended Finite Element Method (XFEM) in coupled thermoelastic problems.
+\item In classical finite element method, mesh should conform to the boundaries of discontinuity for accurate modeling of the problem. So remeshing has to be done every time the crack grows. 
+\item An alternate method is to enrich the polynomial approximation with functions which can model the discontinuities. 
+    \footnotesize
+    \begin{align*}
+    u^h&=\sum_i N_i(x)u_i+\sum_{j\in J} N_j(x) h(x)a_j+\sum_{k\in K} N_k(x)\left( \sum_{l=1}^{4}\gamma_l(x)b_{kl} \right) \\
+    v^h&=\sum_i N_i(x)v_i+\sum_{j\in J} N_j(x) h(x)c_j+\sum_{k\in K} N_k(x)\left( \sum_{l=1}^{4}\gamma_l(x)d_{kl} \right) 
+\end{align*}
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{\ldots Extended Finite Element Method }
+    \begin{itemize}
+        \item 
+            \footnotesize \begin{align*}
+\gamma=\left[ \sqrt{r}\cos \left( \frac{\theta}{2} \right), \sqrt{r}\sin\left( \frac{\theta}{2} \right),\sqrt{r}\sin\left( \frac{\theta}{2} \right)\sin(\theta),\sqrt{r}\cos\left( \frac{\theta}{2} \right)\sin(\theta)\right] 
+\end{align*}
+\item As can be seen above the third singular function $\gamma_3$ is the only enrichment function which is discontinuous across the crack. Thus the discontinuity of the displacement field at $\theta=\pm \pi$ in the singular zone is only modeled by $\gamma_3$ on the elements containing the crack tip.
+\item The nodes which belongs to the elements totally cut by the crack, are enriched by and Heaviside function.
+    $$h(x,y)=\begin{cases}1,&       for ~ ~ y\ge 0\\ -1,&       for~ ~ y\le 0\end{cases}$$
+
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{\ldots Extended Finite Element Method}
+    \begin{itemize}
+        \item In this work we have studied a recent method of modeling crack growth without re-meshing. The main advantage of this method is that the mesh is prepared without considering the existence of discontinuity.
+        \item XFEM is based on the partition of unity method in which we enrich the classical finite element approximation to include the effects of singular discontinuous field around the crack.
+            \begin{figure}[h]
+                \centering
+                \includegraphics[scale=.2]{enrich.png}
+                \caption{XFEM enrichment strategy. Source: Abdelaziz, Y., Bendahane, K., \& Baraka, A. (2011). Extended Finite Element Modeling: Basic Review and Programming. Engineering, 3(07), 713.}
+                \label{3}
+            \end{figure}
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{Level Set Method}
+    \begin{itemize}
+        \item  The description of crack in extended finite element method is often described by the level-set method. A crack is described by two level-set methods as shown in figure below.
+                     \begin{itemize}
+        \item A normal level set, $\psi(x)$ which is the signed distance from the crack surface.
+        \item A tangent level set, $\phi(x)$ which is the signed distance to the plane including the crack front and perpendicular to the crack surface.
+        \end{itemize}
+    \item To know which element should be enriched by which function we see the following
+        \begin{itemize}
+            \item If $\phi < 0 $ and $\psi_{min}\psi_{max}\leq 0$, then the crack cuts through the element and the nodes of the element are to be enriched with h(x).
+            \item If in the element $\phi_{min}\phi{max}\leq 0$ and $\psi_{min}\psi{max}\leq 0 $, then the tip lies within that element and its nodes are to be enriched with $\gamma$.
+        \end{itemize}
+
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+      \begin{figure}
+                \centering
+                \includegraphics[scale=.2]{levelset.jpg}
+                \caption{Level Set Method}
+                \label{4}
+            \end{figure}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{Coupled Thermo-elastic formulation}
+    \begin{itemize}
+\item Due to heat transfer by conduction a temperature field is set up in the material which induces stresses in the body.
+\item These stresses becomes large in the vicinity of a discontinuity i.e. crack tip. If temperature variation is sufficiently large, it can lead to failure.
+\item In semi-coupled analysis we neglect the effect of displacements on temperature field. 
+\item The thermo-elastic constitutive relation for plane stress is given by:
+    \small
+\begin{align*}
+    \begin{Bmatrix}
+        \sigma_{x}\\ \sigma_{y}\\ \tau_{xy} 
+    \end{Bmatrix} =\frac{E}{(1-\nu^2)}
+    \begin{bmatrix}
+        1 & \nu & 0 \\ \nu & 1 & 0 \\ 0 & 0 & 1-\nu 
+    \end{bmatrix}
+    \begin{Bmatrix}
+        \varepsilon_{x}-\alpha\Delta T \\ \varepsilon_{y}-\alpha \Delta T \\ \varepsilon_{xy} 
+    \end{Bmatrix}
+\end{align*}
+\end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{Finite element model}
+    \begin{itemize}
+        \item The governing equations of the thermo-elasticity is given by:
+            \bgroup
+            \tiny
+            \begin{align*}
+    \frac{\partial}{\partial x}\left[c_{11}\frac{\partial u}{\partial x}+c_{12}\frac{\partial v}{\partial y}\right]+&\frac{\partial}{\partial y}\left[c_{66}\left(\frac{\partial u}{\partial y}+\frac{\partial v}{\partial x}\right)\right]-(c_{11}+c_{12})\alpha\frac{\partial T}{\partial x}-f_x   =0 \\
+    \frac{\partial}{\partial x}\left[c_{66}\left(\frac{\partial u}{\partial y}+\frac{\partial v}{\partial x}\right)\right]+&\frac{\partial}{\partial y}\left[c_{12}\frac{\partial u}{\partial x}+c_{22}\frac{\partial v}{\partial y}\right]-(c_{11}+c_{12})\alpha\frac{\partial T}{\partial y}-f_y=0\\
+    &\ \ \ \ \ \ \ k\left( \frac{\partial^2 T}{\partial x^2}+\frac{\partial^2 T}{\partial y^2} \right)=q
+\end{align*}
+\egroup
+where k is the thermal conductivity, T is temperature and q is the heat source.
+    \end{itemize}
+\end{frame}
+
+\end{document}
+
