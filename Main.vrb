@@ -1,30 +1,29 @@
-\frametitle{Coupled Thermo-elasticity Problems}
-\begin{itemize}
-        \item Coupled thermoelasticity problems have become very important in recent years because of its use in various industries.
-        \item Some application areas include
-            \begin{itemize}
-                \item aerodynamic heating of high speed air crafts as shown in figure (a).
-            \item the nuclear reactors where very high-temperatures and temperature gradients are developed as shown in figure (b).
-            \item the ultra fast pulse lasers which is used for
-micro-machining.
-            \item non destructive detection.
-            \item natural characterisation etc
-            \end{itemize}
-    \end{itemize}
-    \vspace{-.5cm}
-    \begin{figure}[H]
-      \hspace{.5cm}
-\begin{subfigure}{0.45\textwidth}
-  \vspace{.5cm}
+\frametitle{Plate with edge crack}
+\vspace{-.4cm}
+   \begin{figure}[H]
     \centering
- \includegraphics[scale=.1]{hyper.jpg}
- \caption{\tiny{Hyper-X vehicle at Mach 7.Source: www.dfrc.nasa.gov}}
- \end{subfigure}
- \begin{subfigure}{0.45\textwidth}
+        \includegraphics[scale=.15]{1.png}
+        \vspace{-10pt}
+        \caption{\tiny Plate with edge crack}
+    \end{figure}
+        \vspace{-16pt}
+    \begin{figure}
+    \begin{subfigure}{.3\textwidth}
+         \includegraphics[scale=.2]{onlystress}
+    \caption{\tiny $\sigma_y$ ahead of the crack tip}
+    \label{stress}
+\end{subfigure}
+\hspace{1pt}
+    \begin{subfigure}{.3\textwidth}
     \centering
- \includegraphics[scale=.05]{reator.png}
- \caption{\tiny{High temperature reactor. Source: https://commons.wikimedia.org}}
- \label{2}
- \end{subfigure}
-\label{fig:caption}
+    \includegraphics[scale=.2]{onlytempqy}
+    \caption{\tiny Heat flux ahead of crack tip}
+    \label{fig:heat}
+\end{subfigure}
+\hspace{1pt}
+    \begin{subfigure}{.3\textwidth}
+        \includegraphics[scale=.2]{only_bothstress}
+        \caption{\tiny $\sigma_y$ ahead of the crack tip}
+    \label{heat1}
+\end{subfigure}
 \end{figure}
