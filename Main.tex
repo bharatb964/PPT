@@ -166,38 +166,6 @@
 \emph{International journal for numerical methods in engineering}, 45(5), 601-620.
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Which Nodes to Enrich? - Level Set Method}
-    \vspace{-.3cm}
-    \footnotesize
-    \begin{itemize}
-      \onslide<2->  \item There are two level-set functions defined as follows:
-       \onslide<3->   \begin{itemize}
-        \item Normal level set, $\psi(x)=$ the signed distance from the crack surface.
-     \onslide<4->   \item Tangent level set, $\phi(x)=$ the signed distance to the plane including the crack front and perpendicular to the crack surface.
-        \end{itemize}
-  \onslide<5->  \item To decide which enrichment should be used. 
-        \begin{itemize}
-     \onslide<6->       \item If $\phi < 0 $ and $\psi_{min}\psi_{max}\leq 0$, nodes should be enriched with $h(x)$.
-       \onslide<7->     \item If $\phi_{min}\phi_{max}\leq 0$ and $\psi_{min}\psi_{max}\leq 0 $, nodes should be enriched with $\gamma$.
-        \end{itemize}
-    \end{itemize}
- \onslide<3-> \begin{figure}
-                \centering
-                \vspace{-15pt}
-                \includegraphics[scale=.15]{levelset.jpg}
-                \caption{\tiny Level Set Method}
-                \label{4}
-            \end{figure}
-    \tiny 
-    \vspace{-20pt}
-  \hspace{10pt}
-    \textbf{Source:} Abdelaziz, Y., Bendahane, K., \& Baraka, A. (2011). Extended Finite Element Modeling: Basic Review and\\
-  \vspace{-1pt}
-  \hspace{10pt}
-    Programming. Engineering, 3(07), 713.
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Work Done}
     \begin{itemize}
       \onslide<2->  \item Finite Element Formulation of coupled thermoelasticity 
