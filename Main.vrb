@@ -1,29 +1,13 @@
-\frametitle{Plate with edge crack}
-\vspace{-.4cm}
-   \begin{figure}[H]
-    \centering
-        \includegraphics[scale=.15]{1.png}
-        \vspace{-10pt}
-        \caption{\tiny Plate with edge crack}
-    \end{figure}
-        \vspace{-16pt}
-    \begin{figure}
-    \begin{subfigure}{.3\textwidth}
-         \includegraphics[scale=.2]{onlystress}
-    \caption{\tiny $\sigma_y$ ahead of the crack tip}
-    \label{stress}
-\end{subfigure}
-\hspace{1pt}
-    \begin{subfigure}{.3\textwidth}
-    \centering
-    \includegraphics[scale=.2]{onlytempqy}
-    \caption{\tiny Heat flux ahead of crack tip}
-    \label{fig:heat}
-\end{subfigure}
-\hspace{1pt}
-    \begin{subfigure}{.3\textwidth}
-        \includegraphics[scale=.2]{only_bothstress}
-        \caption{\tiny $\sigma_y$ ahead of the crack tip}
-    \label{heat1}
-\end{subfigure}
-\end{figure}
+\frametitle{\ldots References}
+\tiny
+\begin{thebibliography}{10}
+     \bibitem{stazi} Stazi, F. L., Budyn, E., Chessa, J., \& Belytschko, T. (2003). An extended finite element method with higher-order elements for curved cracks. \emph{Computational Mechanics}, 31(1-2), 38-48.
+     \bibitem{khoei} Khoei, A. R., \& Nikbakht, M. (2007). An enriched finite element algorithm for numerical computation of contact friction problems. \emph{International Journal of Mechanical Sciences}, 49(2), 183-199.
+     \bibitem{liang} Liang, J., Huang, R., Prevost, J. H., \& Suo, Z. (2003). Evolving crack patterns in thin films with the extended finite element method. \emph{International Journal of Solids and Structures}, 40(10), 2343-2354.
+     \bibitem{yangzian} Xu, Y., \& Yuan, H. (2009). On damage accumulations in the cyclic cohesive zone model for X-FEM analysis of mixed-mode fatigue crack growth.\emph{Computational Materials Science}, 46(3), 579-585.
+     \bibitem{atkinson} Atkinson, K. E. (1997). \emph{The numerical solution of integral equations of the second kind} (Vol. 4). Cambridge university press.
+    \bibitem{sad} Sad, M. H. (2004). Elasticity: Theory. \emph{Applications and Numerics}.
+    \bibitem{reddy} Reddy, J. N. (1989). An introduction to the finite element method.
+    \bibitem{belytsko2} Fries, T. P., \& Belytschko, T. (2010). The extended/generalized finite element method: an overview of the method and its applications. \emph{International Journal for Numerical Methods in Engineering}, 84(3), 253-304.
+    \bibitem{karihaloo} Liu, X. Y., Xiao, Q. Z., \& Karihaloo, B. L. (2004). X-FEM for direct evaluation of mixed mode SIFs in homogeneous and bi‐materials. \emph{International Journal for Numerical Methods in Engineering}, 59(8), 1103-1118.
+\end{thebibliography}

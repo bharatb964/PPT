@@ -49,7 +49,7 @@
   \vbox{}
   \vfill
   \begin{centering}
-    \begin{beamercolorbox}[wd=\paperwidth,sep=8pt,center,#1]{title page header}
+    \begin{beamercolorbox}[wd=\paperwidth,sep=28pt,center,#1]{title page header}
       \usebeamerfont{title}\inserttitle\par%
       \ifx\insertsubtitle\@empty%
       \else%
@@ -126,14 +126,14 @@
               % Logo.
               \begin{centering}
                   \vbox{}\vfill
-                  \includegraphics[height=.4\paperheight]{\beamer@fancy@titlepagelogo}
+                  \includegraphics[scale=.25]{\beamer@fancy@titlepagelogo}
                   \vfill
               \end{centering}
           \column{.5\textwidth}
        \fi
           % Authors, institute and date
-          \vskip1em\par
-          \begin{beamercolorbox}[sep=8pt,center,#1]{author}
+          \par
+          \begin{beamercolorbox}[sep=2pt,center,#1]{author}
             \usebeamerfont{author}\insertauthor
           \end{beamercolorbox}
           \begin{beamercolorbox}[sep=8pt,center,#1]{institute}

@@ -8,6 +8,7 @@
 \captionsetup[figure]{labelformat=empty}
 \usepackage{multirow}
 \usepackage{array}
+\usepackage{longtable}
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
@@ -50,11 +51,13 @@
     \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Introduction: Thermo-elastic Fracture Problems}
+\begin{frame}[t,fragile]{Introduction: Thermo-elastic Fracture Mechanics}
     \vspace{-.3cm}
+    \footnotesize
     \begin{itemize}
-        \item Due to heat transfer, temperature field is set up in the material which induces thermal stresses in the body.
-\item These stresses becomes large in the vicinity of a discontinuity i.e. crack tip. If temperature variation is sufficiently large, it can lead to failure.
+        \item Thermo-elastic Fracture mechanics is a field of mechanics where we study the propagation of crack in materials in presence of temperature field.
+        \item Due to heat transfer, temperature field is set up in the material which induces thermal stresses in the body. 
+\item These stresses becomes very large around a discontinuity i.e crack tip. If temperature variation is sufficiently large, it can lead to failure.
         \item Applications: Nuclear power plants, cylinder-nozzle
  intersection in pressure vessels, aerodynamic heating of high-speed aircraft, ultra fast pulse lasers etc.
    \end{itemize}
@@ -117,7 +120,7 @@
  
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Finite Element Methods for Solving Thermoelastic Fracture Problems}
+\begin{frame}[t,fragile]{Solution of Thermoelastic Fracture Problems}
     \vspace{-.4cm}
     \begin{itemize}
         \item Methods for calculating stress intensity factors in FEM can be divided in two categories,
@@ -146,25 +149,29 @@ $$G=-\frac{d\Pi}{da}\ ,\ \ \ \ \ \
 \end{frame} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Extended Finite Element Method in Thermoelasticity}
+    \vspace{-.5cm}
+    \small
     \begin{itemize}
-        \item We have to use very fine mesh at capture the behaviour of crack.
-\item In XFEM, we enrich the polynomial approximation to include the effects of singular discontinuous field.
+        \item In FEM we have to use very fine mesh to capture the behaviour of crack.
+\item In X-FEM, we enrich the polynomial approximation to include the effects of singular discontinuous field.
     \item Advantages:
     \begin{itemize}
-        \item Mesh is prepared without considering the existence of discontinuity.
-        \item No need of remeshing.
+        \item Mesh is prepared without considering the existence of discontinuity
+        \item No need of remeshing
+        \item Accurate solution
     \end{itemize}
 \end{itemize}
 \begin{figure}
      \centering
      \vspace{-10pt}
      \includegraphics[scale=.3]{enrich.png}
-     \caption{\hspace{-2cm}\footnotesize XFEM enrichment strategy}
+     \vspace{-.4cm}
+     \caption{\hspace{-2cm}\footnotesize X-FEM enrichment strategy}
   \end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Two types of enrichment functions in XFEM}
+\begin{frame}[t,fragile]{Two types of enrichment functions in X-FEM}
     \vspace{-.3cm}
      \footnotesize
     \begin{itemize}
@@ -224,19 +231,20 @@ $$G=-\frac{d\Pi}{da}\ ,\ \ \ \ \ \
         \item Development of a MATLAB program for semi-coupled thermoelastic problems.
         \item Patch tests to validate the developed FEM program.
         \item Solution of various thermoelastic fracture problems and comparison with the analytical solutions. 
-        \item Comparison between the solutions of FEM and XFEM programs. 
+        \item Comparison between the results of FEM and X-FEM programs. 
     \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Finite Element Formulation of Thermo-elasticity}
 \begin{itemize}
-\item We will formulate the semi-coupled in which we neglect the effect of displacements on temperature field.
+\item We have formulated the semi-coupled in which we neglected the effect of displacements on temperature field.
 \item In thermoelastic case the total strain is given as: 
 \begin{align*}
     \varepsilon_{ij}&=\varepsilon_{ij}^{(M)}+\varepsilon_{ij}^{(T)}
     =\frac{1+\nu}{E}\sigma_{ij}-\frac{\nu}{E}\sigma_{kk}\delta_{ij}+\alpha(T-T_0)\delta_{ij}\nonumber
 \end{align*}
-\item Which can be inverted to get following stress-strain relationship:
+
+\item It can be inverted to get following stress-strain relationship:
     \footnotesize
 \begin{align*}
     \begin{Bmatrix}
@@ -404,20 +412,16 @@ A flow-chart showing the steps of the programming is shown in the figure.
     \vspace{-.4cm}
     \footnotesize
  \begin{itemize}
-        \item A square plate is taken and meshed with 4 elements as shown in figure below. 
-        \item Minimum number of essential boundary conditions is fixed to eliminate the rigid body motions
-        \item Loads are applied such that there is constant state of stress in the body
-        \item Numerical integration is performed using $2\times 2$ Gauss quadrature rule.
+     \item Another patch test is performed on a plate with 5 element mesh and solved and results are tabulated as shown below 
+     \item The $2\times 2$ quadrature rule is used for numerical integration
     \end{itemize}
     \begin{figure}
-    \vspace{.5cm}
 \begin{subfigure}{0.45\textwidth}
     \centering
     \includegraphics[scale=.2]{image2}
     \caption{\scriptsize Mesh Configuration }
 \end{subfigure}
 \begin{subfigure}{0.45\textwidth}
-    \vspace{-.5cm}
      \centering
 \caption{\scriptsize Results of Patch Test 2}
  \scalebox{.5}{\begin{tabular}{|c|c|c|c|c|}
@@ -454,14 +458,12 @@ A flow-chart showing the steps of the programming is shown in the figure.
   \end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Patch Test for thermal code }
+\begin{frame}[t,fragile]{Patch Test 3 : Thermal code }
     \vspace{-.4cm}
-    \footnotesize
  \begin{itemize}
-        \item A square plate is taken and meshed with 4 elements as shown in figure below. 
-        \item Minimum number of essential boundary conditions is fixed to eliminate the rigid body motions
-        \item Loads are applied such that there is constant state of stress in the body
-        \item Numerical integration is performed using $2\times 2$ Gauss quadrature rule.
+     \item Another patch was performed to validate the thermal code.
+     \item Same problem as patch test was taken 
+     \item Temperature loads are applied to get the constant heat flux throughout the body
     \end{itemize}
     \begin{figure}
     \vspace{.5cm}
@@ -502,14 +504,20 @@ A flow-chart showing the steps of the programming is shown in the figure.
   \end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Patch Test for Thermo-elastic code: Poisson's equation}
+\begin{frame}[t,fragile]{Patch Test 4: Thermo-elastic code}
+    \vspace{-.5cm}
+    \footnotesize
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=.4]{elements_7^2_1.jpg}
-    \caption{mesh configuration of plate}
-    \label{thfig1}
+    \includegraphics[scale=.2]{elements_7^2_1.jpg}
 \end{figure}
-
+    \vspace{-.5cm}
+\begin{itemize}
+    \item A square plate of dimension $2\times 2$ is taken and meshed as shown
+    \item Temperature distribution of $T=x^2+y^2$ is applied on 4 boundaries of plate
+    \item a heat source $q=\frac{\partial^2 T}{\partial x^2}+\frac{\partial^2 T}{\partial y^2}=4$ is applied throughout the body 
+    \item Mesh is refined and to get the more accurate results 
+\end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{frame}[t,fragile]{Mesh Refinements}
@@ -549,34 +557,159 @@ A flow-chart showing the steps of the programming is shown in the figure.
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Plate with edge crack}
+    \transboxin
     \vspace{-.4cm}
+    %%%%%%%%%%%%%
    \begin{figure}[H]
     \centering
-        \includegraphics[scale=.15]{1.png}
+        \begin{subfigure}{.3\textwidth}
+            \includegraphics[scale=.15]{mai.png}
+            \caption{\scriptsize Plate with edge crack}
+    \end{subfigure}
+    \hspace{5pt}
+        \begin{subfigure}{.3\textwidth}
+            \includegraphics[scale=.22]{untitled1.png}
+            \caption{\scriptsize Before loading}
+    \end{subfigure}
+        \begin{subfigure}{.3\textwidth}
+            \includegraphics[scale=.22]{untitled2.png}
+            \caption{\scriptsize After loading}
+    \end{subfigure}
         \vspace{-10pt}
-        \caption{\tiny Plate with edge crack}
     \end{figure}
-        \vspace{-16pt}
+    \vspace{20pt}
+    \footnotesize
+    \begin{itemize}
+        \item A plate with edge crack is meshed in ANSYS and imported to MATLAB
+        \item Boundary conditions are applied and stresses ahead of cracktip is plotted
+        \item The results obtained by MATLAB code is compared with the ANSYS solution
+    \end{itemize}
+\end{frame}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{Stresses Ahead of Crack-tip: Comparison with ANSYS}
+    \transboxin
+    \vspace{-10pt}
+    \begin{figure}
+        \centering
+        \hspace{22pt}
+        \begin{subfigure}{.3\textwidth}
+       {     \includegraphics[scale=.20]{3.png}}
+    \end{subfigure}
+    \begin{subfigure}{.3\textwidth}
+      { \vspace{10pt}
+    \includegraphics[scale=.20]{4.png}}
+    \end{subfigure}
+    \begin{subfigure}{.3\textwidth}
+    {    \vspace{-10pt}
+ \includegraphics[scale=.20]{5.png}}
+        \vspace{-10pt}
+    \end{subfigure}
+    \end{figure}
+    %%%%%%%%%%%%%%%
+    \vspace{-10pt}
     \begin{figure}
     \begin{subfigure}{.3\textwidth}
-         \includegraphics[scale=.2]{onlystress}
-    \caption{\tiny $\sigma_y$ ahead of the crack tip}
+      \includegraphics[scale=.2]{onlystress}
+\caption{\tiny $\sigma_y$ ahead of the crack tip}
     \label{stress}
 \end{subfigure}
 \hspace{1pt}
     \begin{subfigure}{.3\textwidth}
     \centering
-    \includegraphics[scale=.2]{onlytempqy}
-    \caption{\tiny Heat flux ahead of crack tip}
+    \includegraphics[scale=.25]{onlytempqy}
+\caption{\tiny Heat flux ahead of crack tip}
     \label{fig:heat}
 \end{subfigure}
 \hspace{1pt}
     \begin{subfigure}{.3\textwidth}
         \includegraphics[scale=.2]{only_bothstress}
-        \caption{\tiny $\sigma_y$ ahead of the crack tip}
+   \caption{\tiny $\sigma_y$ ahead of the crack tip}
     \label{heat1}
 \end{subfigure}
 \end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\begin{frame}[t,fragile]{Comparison of FEM and X-FEM methods}
+    \vspace{-.7cm}
+    \hspace{15pt}
+    \begin{figure}[H]
+      \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[scale=.2]{crackclosure.png}
+    \caption{\tiny Crack closure technique}
+\end{subfigure}
+        \hspace{15pt}
+      \begin{subfigure}{0.45\textwidth}
+    \centering
+    \includegraphics[scale=.15]{k.png}
+    \caption{\tiny X-FEM enrichment of nodes}
+\end{subfigure}
+\end{figure}
+\vspace{-12pt}
+    \tiny
+\begin{align*}
+    \text{Crack closure integral:}\ \ \ \ \ \ \ G_I=\frac{W}{B\Delta a}=\frac{F_{y}^au_{y}^b}{2B \Delta a}\ \ \ Thus, \ \ \ \
+    K_I&=\sqrt{\frac{G_I}{E}}=5.24586910\times 10^9\ \ Pa\sqrt{m}\\ 
+    \text{Analytical:}\ \ \ \ \ \ \ K_I=C*\sigma\sqrt{\pi a}=4.726065 \times 10^9\ \ Pa\sqrt{m}\\
+\end{align*}
+\vspace{-28pt}
+\bgroup
+\def\arraystretch{2}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|C{3cm}|C{6cm}|}
+\hline
+Method used& $\% \ Error= \{K_{theoretical}-K_{numerical}/K_{theoretical}\}\times 100$\\
+\hline
+ Finite Element Method & 11.1\%\\
+\hline
+ Extended Finite Element Method& 4\%\\
+\hline
+\end{tabular}
+\label{table1}
+\end{table}
+\egroup
+\end{frame} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{Conclusions}
+    \vspace{-.2cm}
+    \footnotesize
+\begin{itemize}
+    \item A semi-coupled thermoelastic problem is formulated, FEM program is developed in MATLAB and validated by performing different patch tests.
+    \item It is shown that when solving fracture problems with traditional FEM program, solutions are not accurate around the crack tip
+    \item Same problem is solved in an XFEM program developed by parnaik to show that the solution improves drastically when using XFEM
+    \item The Extended Finite Element enrichments will be applied to both displacement and temperature fields of thermoelasticity program in stage 2 of the project  
+    \item Q8 elements will be applied in our program to solve curved boundary problems. 
+    \item As the hydrogen diffusion in cracked bodies are governed by the Poisson's equation similar to the thermoelastic problems, we will modify the X-FEM program to solve problems of hydrogen-diffusion 
+    \end{itemize}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{References}
+    \tiny
+\begin{thebibliography}{10}
+      \bibitem{prashant} Kumar, P., \& Prashant, K. (2009). Elements of fracture mechanics. Tata McGraw-Hill Education.
+      \bibitem{filery} Fillery, B. P., Hu, X., \& Fisher, G. (2006). Thermo-elastic fracture of edge cracked plate under surface ‘shock’loading. In \emph{Fracture of Nano and Engineering Materials and Structures} (pp. 385-386). Springer Netherlands.
+      \bibitem{tian} Tian, X., Shen, Y., Chen, C., \& He, T. (2006). A direct finite element method study of generalized thermoelastic problems. International Journal of Solids and Structures, 43(7), 2050-2063.
+      \bibitem{sih} Sih, G. C. (1962). On the singular character of thermal stresses near a crack tip. Journal of Applied Mechanics, 29(3), 587-589.
+      \bibitem{helen} Hellen, T. K., \& Cesari, F. (1979). On the solution of the centre cracked plate with a quadratic thermal gradient. \emph{Engineering Fracture Mechanics}, 12(4), 469-478.
+      \bibitem{belytsko} Belytschko, T., \& Black, T. (1999). Elastic crack growth in finite elements with minimal remeshing. \emph{International journal for numerical methods in engineering}, 45(5), 601-620.
+      \bibitem{koustubh} Koustubh Parnaik. (2013). Implementation of Extended Finite Element Method (X-FEM) for static fracture problems. \emph{Department of Mechanical Engineering, IIT Bombay}.
+     \bibitem{duflot} Duflot, M. (2008). The extended finite element method in thermoelastic fracture mechanics. \emph{International Journal for Numerical Methods in Engineering}, 74(5), 827-847.
+     \bibitem{budyn} Budyn, E., Zi, G., Moës, N., \& Belytschko, T. (2004). A method for multiple crack growth in brittle materials without remeshing. \emph{International journal for numerical methods in engineering}, 61(10), 1741-1770.
+\end{thebibliography}
+\end{frame}
+\begin{frame}[t,fragile]{\ldots References}
+    \tiny
+\begin{thebibliography}{10}
+     \bibitem{stazi} Stazi, F. L., Budyn, E., Chessa, J., \& Belytschko, T. (2003). An extended finite element method with higher-order elements for curved cracks. \emph{Computational Mechanics}, 31(1-2), 38-48.
+     \bibitem{khoei} Khoei, A. R., \& Nikbakht, M. (2007). An enriched finite element algorithm for numerical computation of contact friction problems. \emph{International Journal of Mechanical Sciences}, 49(2), 183-199.
+     \bibitem{liang} Liang, J., Huang, R., Prevost, J. H., \& Suo, Z. (2003). Evolving crack patterns in thin films with the extended finite element method. \emph{International Journal of Solids and Structures}, 40(10), 2343-2354.
+     \bibitem{yangzian} Xu, Y., \& Yuan, H. (2009). On damage accumulations in the cyclic cohesive zone model for X-FEM analysis of mixed-mode fatigue crack growth.\emph{Computational Materials Science}, 46(3), 579-585.
+     \bibitem{atkinson} Atkinson, K. E. (1997). \emph{The numerical solution of integral equations of the second kind} (Vol. 4). Cambridge university press.
+    \bibitem{sad} Sad, M. H. (2004). Elasticity: Theory. \emph{Applications and Numerics}. 
+    \bibitem{reddy} Reddy, J. N. (1989). An introduction to the finite element method.
+    \bibitem{belytsko2} Fries, T. P., \& Belytschko, T. (2010). The extended/generalized finite element method: an overview of the method and its applications. \emph{International Journal for Numerical Methods in Engineering}, 84(3), 253-304.
+    \bibitem{karihaloo} Liu, X. Y., Xiao, Q. Z., \& Karihaloo, B. L. (2004). X-FEM for direct evaluation of mixed mode SIFs in homogeneous and bi‐materials. \emph{International Journal for Numerical Methods in Engineering}, 59(8), 1103-1118.
+\end{thebibliography}
+\end{frame}
 \end{document}
