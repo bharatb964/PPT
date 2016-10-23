@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.6)  23 OCT 2016 12:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.6)  23 OCT 2016 15:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -899,8 +899,10 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@tables=\count197
 \c@LT@chunks=\count198
 \LT@p@ftn=\toks49
-)
-(./beamerthemeTheme.sty (./beamerinnerthemefancy.sty
+) (./pdfpcnotes.sty
+Package: pdfpcnotes 
+\pdfpcnotesfile=\write5
+) (./beamerthemeTheme.sty (./beamerinnerthemefancy.sty
 \beamer@fancy@lineup=\skip63
 \beamer@fancy@linemid=\skip64
 \beamer@fancy@linebottom=\skip65
@@ -951,26 +953,30 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 27.
+(hyperref)                removing `\\' on input line 28.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\new@ifnextchar' on input line 32.
 
 (./Main.aux)
 \openout1 = `Main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 32.
 
  (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1039,7 +1045,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box67
-Package hyperref Info: Link coloring OFF on input line 31.
+Package hyperref Info: Link coloring OFF on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1049,60 +1055,60 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count271
 )
-LaTeX Info: Redefining \ref on input line 31.
-LaTeX Info: Redefining \pageref on input line 31.
-LaTeX Info: Redefining \nameref on input line 31.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
 
 (./Main.out) (./Main.out)
-\@outlinefile=\write5
-\openout5 = `Main.out'.
+\@outlinefile=\write6
+\openout6 = `Main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 31.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 31.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 31.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 31.
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 32.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> OT1/lmr/m/n on input line 31.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 31.
+(Font)                  OT1/lmss/m/n --> OT1/lmr/m/n on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 31.
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 31.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 31.
+(Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 31.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 31.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 31.
+(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> OT1/lmss/m/it on input line 31.
+(Font)                  OT1/lmr/m/it --> OT1/lmss/m/it on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> OT1/lmss/m/it on input line 31.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 31.
+(Font)                  OT1/lmr/bx/it --> OT1/lmss/m/it on input line 32.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 31.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 31.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/m/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 31.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 31.
+(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/bx/n --> OT1/lmr/bx/n on input line 31.
+(Font)                  OT1/lmss/bx/n --> OT1/lmr/bx/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> OT1/lmss/bx/n on input line 31.
+(Font)                  OT1/lmss/bx/n --> OT1/lmss/bx/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 31.
+(Font)                  OT1/lmss/m/n --> OT1/lmss/bx/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 31.
+(Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> OT1/lmtt/bx/n on input line 31.
+(Font)                  OT1/lmtt/m/n --> OT1/lmtt/bx/n on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
 ic-dictionary/translator-basic-dictionary-English.dict
@@ -1128,7 +1134,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 31.
+LaTeX Info: Redefining \includegraphics on input line 32.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1138,57 +1144,59 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\openout5 = `Main.pdfpc'.
+
  (./Main.nav)
 <watermark-polito.png, id=13, 401.5pt x 401.5pt>
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 31.
+Package pdftex.def Info: watermark-polito.png used on input line 32.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
 
 <logo-polito.pdf, id=16, 401.5pt x 401.5pt>
 File: logo-polito.pdf Graphic file (type pdf)
  <use logo-polito.pdf>
-Package pdftex.def Info: logo-polito.pdf used on input line 37.
+Package pdftex.def Info: logo-polito.pdf used on input line 38.
 (pdftex.def)             Requested size: 100.37474pt x 100.37474pt.
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 37.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 38.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 37.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 38.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 37.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 38.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 37.
+(Font)              <10.95> on input line 38.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 37.
+(Font)              <8> on input line 38.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 37.
-LaTeX Font Info:    Try loading font information for U+msa on input line 37.
+(Font)              <6> on input line 38.
+LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 37.
+LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 37.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 37.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 37.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 38.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo-polito.pdf>]
@@ -1211,7 +1219,7 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
 File: watermark-polito.png Graphic file (type png)
 
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 52.
+Package pdftex.def Info: watermark-polito.png used on input line 53.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1225,7 +1233,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 52.
+Package pdftex.def Info: watermark-polito.png used on input line 53.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
  [2
 
@@ -1252,7 +1260,7 @@ Package pdftex.def Info: fail.jpg used on input line 22.
 File: watermark-polito.png Graphic file (type png)
 
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 87.
+Package pdftex.def Info: watermark-polito.png used on input line 88.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1266,15 +1274,108 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 87.
+Package pdftex.def Info: watermark-polito.png used on input line 88.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
  [3
 
- <./cyl.png (PNG copy)> <./fail.jpg>]
+ <./cyl.png (PNG copy)> <./fail.jpg>] (./Main.vrb
+File: cyl.png Graphic file (type png)
+
+<use cyl.png>
+Package pdftex.def Info: cyl.png used on input line 16.
+(pdftex.def)             Requested size: 43.21396pt x 33.95383pt.
+File: fail.jpg Graphic file (type jpg)
+ <use fail.jpg>
+Package pdftex.def Info: fail.jpg used on input line 22.
+(pdftex.def)             Requested size: 30.11426pt x 36.13712pt.
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 88.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 88.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [4
+
+] (./Main.vrb
+File: cyl.png Graphic file (type png)
+ <use cyl.png>
+Package pdftex.def Info: cyl.png used on input line 16.
+(pdftex.def)             Requested size: 43.21396pt x 33.95383pt.
+File: fail.jpg Graphic file (type jpg)
+ <use fail.jpg>
+Package pdftex.def Info: fail.jpg used on input line 22.
+(pdftex.def)             Requested size: 30.11426pt x 36.13712pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 88.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 88.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [5
+
+] (./Main.vrb
+File: cyl.png Graphic file (type png)
+ <use cyl.png>
+Package pdftex.def Info: cyl.png used on input line 16.
+(pdftex.def)             Requested size: 43.21396pt x 33.95383pt.
+File: fail.jpg Graphic file (type jpg)
+ <use fail.jpg>
+Package pdftex.def Info: fail.jpg used on input line 22.
+(pdftex.def)             Requested size: 30.11426pt x 36.13712pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 88.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 88.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [6
+
+]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<pie.png, id=63, 508.90125pt x 269.005pt>
+<pie.png, id=84, 508.90125pt x 269.005pt>
 File: pie.png Graphic file (type png)
  <use pie.png>
 Package pdftex.def Info: pie.png used on input line 28.
@@ -1283,7 +1384,7 @@ Package pdftex.def Info: pie.png used on input line 28.
 File: watermark-polito.png Graphic file (type png)
 
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 121.
+Package pdftex.def Info: watermark-polito.png used on input line 122.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1297,22 +1398,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 121.
+Package pdftex.def Info: watermark-polito.png used on input line 122.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [4
+ [7
 
- <./pie.png (PNG copy)>]
-\openout4 = `Main.vrb'.
+ <./pie.png (PNG copy)>] (./Main.vrb
+File: pie.png Graphic file (type png)
 
- (./Main.vrb
-Overfull \hbox (4.18497pt too wide) detected at line 11
-\OT1/lmss/m/sl/9 u \OT1/lmss/m/n/9 = [][] []
- []
-
+<use pie.png>
+Package pdftex.def Info: pie.png used on input line 28.
+(pdftex.def)             Requested size: 96.14908pt x 50.82414pt.
 )
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 149.
+Package pdftex.def Info: watermark-polito.png used on input line 122.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1326,26 +1425,134 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 149.
+Package pdftex.def Info: watermark-polito.png used on input line 122.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [5
+ [8
+
+] (./Main.vrb
+File: pie.png Graphic file (type png)
+ <use pie.png>
+Package pdftex.def Info: pie.png used on input line 28.
+(pdftex.def)             Requested size: 96.14908pt x 50.82414pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 122.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 122.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [9
+
+] (./Main.vrb
+File: pie.png Graphic file (type png)
+ <use pie.png>
+Package pdftex.def Info: pie.png used on input line 28.
+(pdftex.def)             Requested size: 96.14908pt x 50.82414pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 122.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 122.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [10
+
+] (./Main.vrb
+File: pie.png Graphic file (type png)
+ <use pie.png>
+Package pdftex.def Info: pie.png used on input line 28.
+(pdftex.def)             Requested size: 96.14908pt x 50.82414pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 122.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 122.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [11
+
+] (./Main.vrb
+File: pie.png Graphic file (type png)
+ <use pie.png>
+Package pdftex.def Info: pie.png used on input line 28.
+(pdftex.def)             Requested size: 96.14908pt x 50.82414pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 122.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 122.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [12
 
 ]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<enrich.png, id=88, 671.50874pt x 334.24875pt>
+<enrich.png, id=134, 671.50874pt x 334.24875pt>
 File: enrich.png Graphic file (type png)
  <use enrich.png>
 Package pdftex.def Info: enrich.png used on input line 17.
 (pdftex.def)             Requested size: 201.45418pt x 100.27539pt.
 )
-Overfull \vbox (10.09271pt too high) detected at line 171
+Overfull \vbox (10.09271pt too high) detected at line 144
  []
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 171.
+Package pdftex.def Info: watermark-polito.png used on input line 144.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1359,18 +1566,191 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 171.
+Package pdftex.def Info: watermark-polito.png used on input line 144.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [6
+ [13
 
- <./enrich.png>]
+ <./enrich.png>] (./Main.vrb
+File: enrich.png Graphic file (type png)
+ <use enrich.png>
+Package pdftex.def Info: enrich.png used on input line 17.
+(pdftex.def)             Requested size: 201.45418pt x 100.27539pt.
+)
+Overfull \vbox (10.09271pt too high) detected at line 144
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 144.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 144.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [14
+
+] (./Main.vrb
+File: enrich.png Graphic file (type png)
+ <use enrich.png>
+Package pdftex.def Info: enrich.png used on input line 17.
+(pdftex.def)             Requested size: 201.45418pt x 100.27539pt.
+)
+Overfull \vbox (10.09271pt too high) detected at line 144
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 144.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 144.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [15
+
+] (./Main.vrb
+File: enrich.png Graphic file (type png)
+ <use enrich.png>
+Package pdftex.def Info: enrich.png used on input line 17.
+(pdftex.def)             Requested size: 201.45418pt x 100.27539pt.
+)
+Overfull \vbox (10.09271pt too high) detected at line 144
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 144.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 144.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [16
+
+] (./Main.vrb
+File: enrich.png Graphic file (type png)
+ <use enrich.png>
+Package pdftex.def Info: enrich.png used on input line 17.
+(pdftex.def)             Requested size: 201.45418pt x 100.27539pt.
+)
+Overfull \vbox (10.09271pt too high) detected at line 144
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 144.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 144.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [17
+
+] (./Main.vrb
+File: enrich.png Graphic file (type png)
+ <use enrich.png>
+Package pdftex.def Info: enrich.png used on input line 17.
+(pdftex.def)             Requested size: 201.45418pt x 100.27539pt.
+)
+Overfull \vbox (10.09271pt too high) detected at line 144
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 144.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 144.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [18
+
+] (./Main.vrb
+File: enrich.png Graphic file (type png)
+ <use enrich.png>
+Package pdftex.def Info: enrich.png used on input line 17.
+(pdftex.def)             Requested size: 201.45418pt x 100.27539pt.
+)
+Overfull \vbox (10.09271pt too high) detected at line 144
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 144.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 144.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [19
+
+]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb)
 File: watermark-polito.png Graphic file (type png)
-
-<use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 194.
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 167.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1384,15 +1764,57 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 194.
+Package pdftex.def Info: watermark-polito.png used on input line 167.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [7
+ [20
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 167.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 167.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [21
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 167.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 167.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [22
 
 ]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<levelset.jpg, id=105, 568.27042pt x 407.75494pt>
+<levelset.jpg, id=210, 568.27042pt x 407.75494pt>
 File: levelset.jpg Graphic file (type jpg)
  <use levelset.jpg>
 Package pdftex.def Info: levelset.jpg used on input line 19.
@@ -1401,7 +1823,7 @@ Package pdftex.def Info: levelset.jpg used on input line 19.
 File: watermark-polito.png Graphic file (type png)
 
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 226.
+Package pdftex.def Info: watermark-polito.png used on input line 199.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1415,18 +1837,20 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 226.
+Package pdftex.def Info: watermark-polito.png used on input line 199.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [8
+ [23
 
- <./levelset.jpg>]
-\openout4 = `Main.vrb'.
+ <./levelset.jpg>] (./Main.vrb
+File: levelset.jpg Graphic file (type jpg)
 
- (./Main.vrb)
+<use levelset.jpg>
+Package pdftex.def Info: levelset.jpg used on input line 19.
+(pdftex.def)             Requested size: 85.23688pt x 61.1606pt.
+)
 File: watermark-polito.png Graphic file (type png)
-
-<use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 236.
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 199.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1440,9 +1864,144 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 236.
+Package pdftex.def Info: watermark-polito.png used on input line 199.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [9
+ [24
+
+] (./Main.vrb
+File: levelset.jpg Graphic file (type jpg)
+ <use levelset.jpg>
+Package pdftex.def Info: levelset.jpg used on input line 19.
+(pdftex.def)             Requested size: 85.23688pt x 61.1606pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 199.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 199.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [25
+
+] (./Main.vrb
+File: levelset.jpg Graphic file (type jpg)
+ <use levelset.jpg>
+Package pdftex.def Info: levelset.jpg used on input line 19.
+(pdftex.def)             Requested size: 85.23688pt x 61.1606pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 199.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 199.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [26
+
+] (./Main.vrb
+File: levelset.jpg Graphic file (type jpg)
+ <use levelset.jpg>
+Package pdftex.def Info: levelset.jpg used on input line 19.
+(pdftex.def)             Requested size: 85.23688pt x 61.1606pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 199.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 199.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [27
+
+] (./Main.vrb
+File: levelset.jpg Graphic file (type jpg)
+ <use levelset.jpg>
+Package pdftex.def Info: levelset.jpg used on input line 19.
+(pdftex.def)             Requested size: 85.23688pt x 61.1606pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 199.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 199.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [28
+
+] (./Main.vrb
+File: levelset.jpg Graphic file (type jpg)
+ <use levelset.jpg>
+Package pdftex.def Info: levelset.jpg used on input line 19.
+(pdftex.def)             Requested size: 85.23688pt x 61.1606pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 199.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 199.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [29
 
 ]
 \openout4 = `Main.vrb'.
@@ -1450,7 +2009,7 @@ Package pdftex.def Info: watermark-polito.png used on input line 236.
  (./Main.vrb)
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 262.
+Package pdftex.def Info: watermark-polito.png used on input line 209.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1464,9 +2023,114 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 262.
+Package pdftex.def Info: watermark-polito.png used on input line 209.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [10
+ [30
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 209.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 209.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [31
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 209.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 209.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [32
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 209.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 209.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [33
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 209.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 209.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [34
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 209.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 209.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [35
 
 ]
 \openout4 = `Main.vrb'.
@@ -1474,7 +2138,7 @@ Package pdftex.def Info: watermark-polito.png used on input line 262.
  (./Main.vrb)
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 283.
+Package pdftex.def Info: watermark-polito.png used on input line 235.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1488,9 +2152,138 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 283.
+Package pdftex.def Info: watermark-polito.png used on input line 235.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [11
+ [36
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 235.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 235.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [37
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 235.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 235.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [38
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 235.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 235.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [39
+
+]
+\openout4 = `Main.vrb'.
+
+ (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 256.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 256.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [40
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 256.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 256.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [41
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 256.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 256.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [42
 
 ]
 \openout4 = `Main.vrb'.
@@ -1508,7 +2301,7 @@ Overfull \hbox (4.1344pt too wide) in paragraph at lines 9--9
 )
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 296.
+Package pdftex.def Info: watermark-polito.png used on input line 269.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1522,9 +2315,102 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 296.
+Package pdftex.def Info: watermark-polito.png used on input line 269.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [12
+ [43
+
+] (./Main.vrb
+Overfull \hbox (4.1344pt too wide) in paragraph at lines 6--6
+[]  
+ []
+
+
+Overfull \hbox (4.1344pt too wide) in paragraph at lines 9--9
+[]  
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 269.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 269.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [44
+
+] (./Main.vrb
+Overfull \hbox (4.1344pt too wide) in paragraph at lines 6--6
+[]  
+ []
+
+
+Overfull \hbox (4.1344pt too wide) in paragraph at lines 9--9
+[]  
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 269.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 269.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [45
+
+] (./Main.vrb
+Overfull \hbox (4.1344pt too wide) in paragraph at lines 6--6
+[]  
+ []
+
+
+Overfull \hbox (4.1344pt too wide) in paragraph at lines 9--9
+[]  
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 269.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 269.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [46
 
 ]
 \openout4 = `Main.vrb'.
@@ -1537,7 +2423,7 @@ Overfull \hbox (0.28522pt too wide) in paragraph at lines 45--45
 )
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 346.
+Package pdftex.def Info: watermark-polito.png used on input line 319.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1551,15 +2437,93 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 346.
+Package pdftex.def Info: watermark-polito.png used on input line 319.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [13
+ [47
+
+] (./Main.vrb
+Overfull \hbox (0.28522pt too wide) in paragraph at lines 45--45
+[]  
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 319.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 319.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [48
+
+] (./Main.vrb
+Overfull \hbox (0.28522pt too wide) in paragraph at lines 45--45
+[]  
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 319.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 319.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [49
+
+] (./Main.vrb
+Overfull \hbox (0.28522pt too wide) in paragraph at lines 45--45
+[]  
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 319.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 319.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [50
 
 ]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<flow_chart.pdf, id=153, 597.23125pt x 845.1575pt>
+<flow_chart.pdf, id=419, 597.23125pt x 845.1575pt>
 File: flow_chart.pdf Graphic file (type pdf)
  <use flow_chart.pdf>
 Package pdftex.def Info: flow_chart.pdf used on input line 5.
@@ -1572,7 +2536,7 @@ Overfull \hbox (25.64009pt too wide) in paragraph at lines 5--6
 )
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 360.
+Package pdftex.def Info: watermark-polito.png used on input line 333.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1586,15 +2550,140 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 360.
+Package pdftex.def Info: watermark-polito.png used on input line 333.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [14
+ [51
 
- <./flow_chart.pdf>]
+ <./flow_chart.pdf>] (./Main.vrb
+File: flow_chart.pdf Graphic file (type pdf)
+
+<use flow_chart.pdf>
+Package pdftex.def Info: flow_chart.pdf used on input line 5.
+(pdftex.def)             Requested size: 153.8356pt x 217.6982pt.
+
+Overfull \hbox (25.64009pt too wide) in paragraph at lines 5--6
+ [] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 333.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 333.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [52
+
+] (./Main.vrb
+File: flow_chart.pdf Graphic file (type pdf)
+ <use flow_chart.pdf>
+Package pdftex.def Info: flow_chart.pdf used on input line 5.
+(pdftex.def)             Requested size: 153.8356pt x 217.6982pt.
+
+Overfull \hbox (25.64009pt too wide) in paragraph at lines 5--6
+ [] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 333.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 333.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [53
+
+] (./Main.vrb
+File: flow_chart.pdf Graphic file (type pdf)
+ <use flow_chart.pdf>
+Package pdftex.def Info: flow_chart.pdf used on input line 5.
+(pdftex.def)             Requested size: 153.8356pt x 217.6982pt.
+
+Overfull \hbox (25.64009pt too wide) in paragraph at lines 5--6
+ [] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 333.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 333.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [54
+
+] (./Main.vrb
+File: flow_chart.pdf Graphic file (type pdf)
+ <use flow_chart.pdf>
+Package pdftex.def Info: flow_chart.pdf used on input line 5.
+(pdftex.def)             Requested size: 153.8356pt x 217.6982pt.
+
+Overfull \hbox (25.64009pt too wide) in paragraph at lines 5--6
+ [] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 333.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 333.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [55
+
+]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<image1.jpg, id=167, 550.30594pt x 330.48468pt>
+<image1.jpg, id=462, 550.30594pt x 330.48468pt>
 File: image1.jpg Graphic file (type jpg)
  <use image1.jpg>
 Package pdftex.def Info: image1.jpg used on input line 14.
@@ -1607,7 +2696,7 @@ Overfull \hbox (11.55205pt too wide) in paragraph at lines 45--46
 )
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 409.
+Package pdftex.def Info: watermark-polito.png used on input line 382.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1621,15 +2710,171 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 409.
+Package pdftex.def Info: watermark-polito.png used on input line 382.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [15
+ [56
 
- <./image1.jpg (PNG copy)>]
+ <./image1.jpg (PNG copy)>] (./Main.vrb
+File: image1.jpg Graphic file (type jpg)
+
+<use image1.jpg>
+Package pdftex.def Info: image1.jpg used on input line 14.
+(pdftex.def)             Requested size: 137.57614pt x 82.62096pt.
+
+Overfull \hbox (11.55205pt too wide) in paragraph at lines 45--46
+ [][] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 382.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 382.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [57
+
+] (./Main.vrb
+File: image1.jpg Graphic file (type jpg)
+ <use image1.jpg>
+Package pdftex.def Info: image1.jpg used on input line 14.
+(pdftex.def)             Requested size: 137.57614pt x 82.62096pt.
+
+Overfull \hbox (11.55205pt too wide) in paragraph at lines 45--46
+ [][] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 382.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 382.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [58
+
+] (./Main.vrb
+File: image1.jpg Graphic file (type jpg)
+ <use image1.jpg>
+Package pdftex.def Info: image1.jpg used on input line 14.
+(pdftex.def)             Requested size: 137.57614pt x 82.62096pt.
+
+Overfull \hbox (11.55205pt too wide) in paragraph at lines 45--46
+ [][] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 382.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 382.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [59
+
+] (./Main.vrb
+File: image1.jpg Graphic file (type jpg)
+ <use image1.jpg>
+Package pdftex.def Info: image1.jpg used on input line 14.
+(pdftex.def)             Requested size: 137.57614pt x 82.62096pt.
+
+Overfull \hbox (11.55205pt too wide) in paragraph at lines 45--46
+ [][] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 382.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 382.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [60
+
+] (./Main.vrb
+File: image1.jpg Graphic file (type jpg)
+ <use image1.jpg>
+Package pdftex.def Info: image1.jpg used on input line 14.
+(pdftex.def)             Requested size: 137.57614pt x 82.62096pt.
+
+Overfull \hbox (11.55205pt too wide) in paragraph at lines 45--46
+ [][] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 382.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 382.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [61
+
+]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<image2.jpg, id=175, 624.83438pt x 357.58594pt>
+<image2.jpg, id=507, 624.83438pt x 357.58594pt>
 File: image2.jpg Graphic file (type jpg)
  <use image2.jpg>
 Package pdftex.def Info: image2.jpg used on input line 11.
@@ -1642,7 +2887,7 @@ Overfull \hbox (7.2096pt too wide) in paragraph at lines 46--47
 )
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 459.
+Package pdftex.def Info: watermark-polito.png used on input line 432.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1656,15 +2901,109 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 459.
+Package pdftex.def Info: watermark-polito.png used on input line 432.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [16
+ [62
 
- <./image2.jpg (PNG copy)>]
+ <./image2.jpg (PNG copy)>] (./Main.vrb
+File: image2.jpg Graphic file (type jpg)
+
+<use image2.jpg>
+Package pdftex.def Info: image2.jpg used on input line 11.
+(pdftex.def)             Requested size: 124.96466pt x 71.51591pt.
+
+Overfull \hbox (7.2096pt too wide) in paragraph at lines 46--47
+ [][] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 432.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 432.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [63
+
+] (./Main.vrb
+File: image2.jpg Graphic file (type jpg)
+ <use image2.jpg>
+Package pdftex.def Info: image2.jpg used on input line 11.
+(pdftex.def)             Requested size: 124.96466pt x 71.51591pt.
+
+Overfull \hbox (7.2096pt too wide) in paragraph at lines 46--47
+ [][] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 432.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 432.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [64
+
+] (./Main.vrb
+File: image2.jpg Graphic file (type jpg)
+ <use image2.jpg>
+Package pdftex.def Info: image2.jpg used on input line 11.
+(pdftex.def)             Requested size: 124.96466pt x 71.51591pt.
+
+Overfull \hbox (7.2096pt too wide) in paragraph at lines 46--47
+ [][] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 432.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 432.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [65
+
+]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<solution.jpg, id=184, 421.575pt x 316.18124pt>
+<solution.jpg, id=536, 421.575pt x 316.18124pt>
 File: solution.jpg Graphic file (type jpg)
  <use solution.jpg>
 Package pdftex.def Info: solution.jpg used on input line 13.
@@ -1677,7 +3016,7 @@ Overfull \hbox (22.99117pt too wide) in paragraph at lines 42--43
 )
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 505.
+Package pdftex.def Info: watermark-polito.png used on input line 478.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1691,15 +3030,140 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 505.
+Package pdftex.def Info: watermark-polito.png used on input line 478.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [17
+ [66
 
- <./solution.jpg (PNG copy)>]
+ <./solution.jpg (PNG copy)>] (./Main.vrb
+File: solution.jpg Graphic file (type jpg)
+
+<use solution.jpg>
+Package pdftex.def Info: solution.jpg used on input line 13.
+(pdftex.def)             Requested size: 84.31349pt x 63.23512pt.
+
+Overfull \hbox (22.99117pt too wide) in paragraph at lines 42--43
+ [][] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 478.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 478.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [67
+
+] (./Main.vrb
+File: solution.jpg Graphic file (type jpg)
+ <use solution.jpg>
+Package pdftex.def Info: solution.jpg used on input line 13.
+(pdftex.def)             Requested size: 84.31349pt x 63.23512pt.
+
+Overfull \hbox (22.99117pt too wide) in paragraph at lines 42--43
+ [][] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 478.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 478.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [68
+
+] (./Main.vrb
+File: solution.jpg Graphic file (type jpg)
+ <use solution.jpg>
+Package pdftex.def Info: solution.jpg used on input line 13.
+(pdftex.def)             Requested size: 84.31349pt x 63.23512pt.
+
+Overfull \hbox (22.99117pt too wide) in paragraph at lines 42--43
+ [][] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 478.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 478.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [69
+
+] (./Main.vrb
+File: solution.jpg Graphic file (type jpg)
+ <use solution.jpg>
+Package pdftex.def Info: solution.jpg used on input line 13.
+(pdftex.def)             Requested size: 84.31349pt x 63.23512pt.
+
+Overfull \hbox (22.99117pt too wide) in paragraph at lines 42--43
+ [][] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 478.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 478.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [70
+
+]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<elements_7^2_1.jpg, id=192, 756.8275pt x 501.875pt>
+<elements_7^2_1.jpg, id=573, 756.8275pt x 501.875pt>
 File: elements_7^2_1.jpg Graphic file (type jpg)
  <use elements_7^2_1.jpg>
 Package pdftex.def Info: elements_7^2_1.jpg used on input line 6.
@@ -1708,7 +3172,7 @@ Package pdftex.def Info: elements_7^2_1.jpg used on input line 6.
 File: watermark-polito.png Graphic file (type png)
 
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 521.
+Package pdftex.def Info: watermark-polito.png used on input line 494.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1722,46 +3186,127 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 521.
+Package pdftex.def Info: watermark-polito.png used on input line 494.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [18
+ [71
 
- <./elements_7^2_1.jpg>]
+ <./elements_7^2_1.jpg>] (./Main.vrb
+File: elements_7^2_1.jpg Graphic file (type jpg)
+
+<use elements_7^2_1.jpg>
+Package pdftex.def Info: elements_7^2_1.jpg used on input line 6.
+(pdftex.def)             Requested size: 151.36281pt x 100.37321pt.
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 494.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 494.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [72
+
+] (./Main.vrb
+File: elements_7^2_1.jpg Graphic file (type jpg)
+ <use elements_7^2_1.jpg>
+Package pdftex.def Info: elements_7^2_1.jpg used on input line 6.
+(pdftex.def)             Requested size: 151.36281pt x 100.37321pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 494.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 494.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [73
+
+] (./Main.vrb
+File: elements_7^2_1.jpg Graphic file (type jpg)
+ <use elements_7^2_1.jpg>
+Package pdftex.def Info: elements_7^2_1.jpg used on input line 6.
+(pdftex.def)             Requested size: 151.36281pt x 100.37321pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 494.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 494.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [74
+
+]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<arrow.png, id=200, 642.4pt x 401.5pt>
+<arrow.png, id=603, 642.4pt x 401.5pt>
 File: arrow.png Graphic file (type png)
  <use arrow.png>
 Package pdftex.def Info: arrow.png used on input line 9.
 (pdftex.def)             Requested size: 224.84337pt x 140.5271pt.
 
-<uy_7^2.jpg, id=201, 381.425pt x 346.29375pt>
+<uy_7^2.jpg, id=604, 381.425pt x 346.29375pt>
 File: uy_7^2.jpg Graphic file (type jpg)
  <use uy_7^2.jpg>
 Package pdftex.def Info: uy_7^2.jpg used on input line 11.
 (pdftex.def)             Requested size: 114.42838pt x 103.88892pt.
 
-<uy_12^2.jpg, id=202, 382.42876pt x 344.28625pt>
+<uy_12^2.jpg, id=605, 382.42876pt x 344.28625pt>
 File: uy_12^2.jpg Graphic file (type jpg)
  <use uy_12^2.jpg>
 Package pdftex.def Info: uy_12^2.jpg used on input line 13.
 (pdftex.def)             Requested size: 114.7295pt x 103.28667pt.
 
-<uy_20^2.jpg, id=203, 380.42125pt x 345.29pt>
+<uy_20^2.jpg, id=606, 380.42125pt x 345.29pt>
 File: uy_20^2.jpg Graphic file (type jpg)
  <use uy_20^2.jpg>
 Package pdftex.def Info: uy_20^2.jpg used on input line 15.
 (pdftex.def)             Requested size: 114.12724pt x 103.58778pt.
 
-Overfull \hbox (5.29259pt too wide) in paragraph at lines 33--34
+Overfull \hbox (5.29259pt too wide) in paragraph at lines 32--33
  [] 
  []
 
 )
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 557.
+Package pdftex.def Info: watermark-polito.png used on input line 529.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1775,40 +3320,128 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 557.
+Package pdftex.def Info: watermark-polito.png used on input line 529.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [19
+ [75
 
- <./arrow.png> <./uy_7^2.jpg> <./uy_12^2.jpg> <./uy_20^2.jpg>]
+ <./arrow.png> <./uy_7^2.jpg> <./uy_12^2.jpg> <./uy_20^2.jpg>] (./Main.vrb
+File: arrow.png Graphic file (type png)
+ <use arrow.png>
+Package pdftex.def Info: arrow.png used on input line 9.
+(pdftex.def)             Requested size: 224.84337pt x 140.5271pt.
+File: uy_7^2.jpg Graphic file (type jpg)
+ <use uy_7^2.jpg>
+Package pdftex.def Info: uy_7^2.jpg used on input line 11.
+(pdftex.def)             Requested size: 114.42838pt x 103.88892pt.
+File: uy_12^2.jpg Graphic file (type jpg)
+ <use uy_12^2.jpg>
+Package pdftex.def Info: uy_12^2.jpg used on input line 13.
+(pdftex.def)             Requested size: 114.7295pt x 103.28667pt.
+File: uy_20^2.jpg Graphic file (type jpg)
+
+<use uy_20^2.jpg>
+Package pdftex.def Info: uy_20^2.jpg used on input line 15.
+(pdftex.def)             Requested size: 114.12724pt x 103.58778pt.
+
+Overfull \hbox (5.29259pt too wide) in paragraph at lines 32--33
+ [] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 529.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 529.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [76
+
+] (./Main.vrb
+File: arrow.png Graphic file (type png)
+ <use arrow.png>
+Package pdftex.def Info: arrow.png used on input line 9.
+(pdftex.def)             Requested size: 224.84337pt x 140.5271pt.
+File: uy_7^2.jpg Graphic file (type jpg)
+ <use uy_7^2.jpg>
+Package pdftex.def Info: uy_7^2.jpg used on input line 11.
+(pdftex.def)             Requested size: 114.42838pt x 103.88892pt.
+File: uy_12^2.jpg Graphic file (type jpg)
+
+<use uy_12^2.jpg>
+Package pdftex.def Info: uy_12^2.jpg used on input line 13.
+(pdftex.def)             Requested size: 114.7295pt x 103.28667pt.
+File: uy_20^2.jpg Graphic file (type jpg)
+ <use uy_20^2.jpg>
+Package pdftex.def Info: uy_20^2.jpg used on input line 15.
+(pdftex.def)             Requested size: 114.12724pt x 103.58778pt.
+
+Overfull \hbox (5.29259pt too wide) in paragraph at lines 32--33
+ [] 
+ []
+
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 529.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 529.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [77
+
+]
 \openout4 = `Main.vrb'.
 
- (./Main.vrb <mai.png, id=213, 722.7pt x 536.0025pt>
+ (./Main.vrb
+<mai.png, id=630, 722.7pt x 536.0025pt>
 File: mai.png Graphic file (type png)
-
-<use mai.png>
-Package pdftex.def Info: mai.png used on input line 8.
+ <use mai.png>
+Package pdftex.def Info: mai.png used on input line 7.
 (pdftex.def)             Requested size: 108.40031pt x 80.3969pt.
 
-Overfull \hbox (12.25124pt too wide) in paragraph at lines 8--9
+Overfull \hbox (12.25124pt too wide) in paragraph at lines 7--8
 [][] 
  []
 
-<untitled1.png, id=214, 421.575pt x 316.18124pt>
+<untitled1.png, id=631, 421.575pt x 316.18124pt>
 File: untitled1.png Graphic file (type png)
  <use untitled1.png>
-Package pdftex.def Info: untitled1.png used on input line 13.
+Package pdftex.def Info: untitled1.png used on input line 12.
 (pdftex.def)             Requested size: 92.74678pt x 69.56007pt.
 
-<untitled2.png, id=215, 421.575pt x 316.18124pt>
+<untitled2.png, id=632, 421.575pt x 316.18124pt>
 File: untitled2.png Graphic file (type png)
  <use untitled2.png>
-Package pdftex.def Info: untitled2.png used on input line 17.
+Package pdftex.def Info: untitled2.png used on input line 16.
 (pdftex.def)             Requested size: 92.74678pt x 69.56007pt.
 )
 File: watermark-polito.png Graphic file (type png)
 
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 587.
+Package pdftex.def Info: watermark-polito.png used on input line 558.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1822,70 +3455,187 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 587.
+Package pdftex.def Info: watermark-polito.png used on input line 558.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [20
+ [78
 
  <./mai.png (PNG copy)> <./untitled1.png (PNG copy)> <./untitled2.png (PNG copy
-)>]
-\openout4 = `Main.vrb'.
+)>] (./Main.vrb
+File: mai.png Graphic file (type png)
+ <use mai.png>
+Package pdftex.def Info: mai.png used on input line 7.
+(pdftex.def)             Requested size: 108.40031pt x 80.3969pt.
 
- (./Main.vrb
-<3.png, id=223, 216.81pt x 497.86pt>
-File: 3.png Graphic file (type png)
- <use 3.png>
-Package pdftex.def Info: 3.png used on input line 8.
-(pdftex.def)             Requested size: 43.36122pt x 99.57024pt.
-
-<4.png, id=224, 212.795pt x 410.53375pt>
-File: 4.png Graphic file (type png)
- <use 4.png>
-Package pdftex.def Info: 4.png used on input line 12.
-(pdftex.def)             Requested size: 42.55824pt x 82.10529pt.
-
-<5.png, id=225, 215.80624pt x 492.84125pt>
-File: 5.png Graphic file (type png)
- <use 5.png>
-Package pdftex.def Info: 5.png used on input line 16.
-(pdftex.def)             Requested size: 43.16048pt x 98.5665pt.
-
-<onlystress.png, id=226, 501.875pt x 377.41pt>
-File: onlystress.png Graphic file (type png)
- <use onlystress.png>
-Package pdftex.def Info: onlystress.png used on input line 24.
-(pdftex.def)             Requested size: 100.37321pt x 75.48065pt.
-
-Overfull \hbox (4.22414pt too wide) in paragraph at lines 24--25
+Overfull \hbox (12.25124pt too wide) in paragraph at lines 7--8
 [][] 
  []
 
-<onlytempqy.png, id=227, 401.5pt x 302.12875pt>
+File: untitled1.png Graphic file (type png)
+<use untitled1.png>
+Package pdftex.def Info: untitled1.png used on input line 12.
+(pdftex.def)             Requested size: 92.74678pt x 69.56007pt.
+File: untitled2.png Graphic file (type png)
+ <use untitled2.png>
+Package pdftex.def Info: untitled2.png used on input line 16.
+(pdftex.def)             Requested size: 92.74678pt x 69.56007pt.
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 558.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 558.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [79
+
+] (./Main.vrb
+File: mai.png Graphic file (type png)
+ <use mai.png>
+Package pdftex.def Info: mai.png used on input line 7.
+(pdftex.def)             Requested size: 108.40031pt x 80.3969pt.
+
+Overfull \hbox (12.25124pt too wide) in paragraph at lines 7--8
+[][] 
+ []
+
+File: untitled1.png Graphic file (type png)
+<use untitled1.png>
+Package pdftex.def Info: untitled1.png used on input line 12.
+(pdftex.def)             Requested size: 92.74678pt x 69.56007pt.
+File: untitled2.png Graphic file (type png)
+ <use untitled2.png>
+Package pdftex.def Info: untitled2.png used on input line 16.
+(pdftex.def)             Requested size: 92.74678pt x 69.56007pt.
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 558.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 558.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [80
+
+] (./Main.vrb
+File: mai.png Graphic file (type png)
+ <use mai.png>
+Package pdftex.def Info: mai.png used on input line 7.
+(pdftex.def)             Requested size: 108.40031pt x 80.3969pt.
+
+Overfull \hbox (12.25124pt too wide) in paragraph at lines 7--8
+[][] 
+ []
+
+File: untitled1.png Graphic file (type png)
+<use untitled1.png>
+Package pdftex.def Info: untitled1.png used on input line 12.
+(pdftex.def)             Requested size: 92.74678pt x 69.56007pt.
+File: untitled2.png Graphic file (type png)
+ <use untitled2.png>
+Package pdftex.def Info: untitled2.png used on input line 16.
+(pdftex.def)             Requested size: 92.74678pt x 69.56007pt.
+)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 558.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 558.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [81
+
+]
+\openout4 = `Main.vrb'.
+
+ (./Main.vrb
+<3.png, id=662, 216.81pt x 497.86pt>
+File: 3.png Graphic file (type png)
+ <use 3.png>
+Package pdftex.def Info: 3.png used on input line 7.
+(pdftex.def)             Requested size: 43.36122pt x 99.57024pt.
+
+<4.png, id=663, 212.795pt x 410.53375pt>
+File: 4.png Graphic file (type png)
+ <use 4.png>
+Package pdftex.def Info: 4.png used on input line 11.
+(pdftex.def)             Requested size: 42.55824pt x 82.10529pt.
+
+<5.png, id=664, 215.80624pt x 492.84125pt>
+File: 5.png Graphic file (type png)
+ <use 5.png>
+Package pdftex.def Info: 5.png used on input line 15.
+(pdftex.def)             Requested size: 43.16048pt x 98.5665pt.
+
+<onlystress.png, id=665, 501.875pt x 377.41pt>
+File: onlystress.png Graphic file (type png)
+ <use onlystress.png>
+Package pdftex.def Info: onlystress.png used on input line 23.
+(pdftex.def)             Requested size: 100.37321pt x 75.48065pt.
+
+Overfull \hbox (4.22414pt too wide) in paragraph at lines 23--24
+[][] 
+ []
+
+<onlytempqy.png, id=666, 401.5pt x 302.12875pt>
 File: onlytempqy.png Graphic file (type png)
  <use onlytempqy.png>
-Package pdftex.def Info: onlytempqy.png used on input line 31.
+Package pdftex.def Info: onlytempqy.png used on input line 30.
 (pdftex.def)             Requested size: 100.37474pt x 75.532pt.
 
-Overfull \hbox (4.22566pt too wide) in paragraph at lines 31--32
+Overfull \hbox (4.22566pt too wide) in paragraph at lines 30--31
  [][] 
  []
 
-<only_bothstress.png, id=228, 501.875pt x 377.41pt>
+<only_bothstress.png, id=667, 501.875pt x 377.41pt>
 File: only_bothstress.png Graphic file (type png)
  <use only_bothstress.png>
-Package pdftex.def Info: only_bothstress.png used on input line 37.
+Package pdftex.def Info: only_bothstress.png used on input line 36.
 (pdftex.def)             Requested size: 100.37321pt x 75.48065pt.
 
-Overfull \hbox (4.22414pt too wide) in paragraph at lines 37--38
+Overfull \hbox (4.22414pt too wide) in paragraph at lines 36--37
 [][] 
  []
 
 )
-Overfull \vbox (5.7268pt too high) detected at line 630
+Overfull \vbox (5.7268pt too high) detected at line 600
  []
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 630.
+Package pdftex.def Info: watermark-polito.png used on input line 600.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1899,22 +3649,217 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 630.
+Package pdftex.def Info: watermark-polito.png used on input line 600.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [21
+ [82
 
  <./3.png> <./4.png> <./5.png> <./onlystress.png> <./onlytempqy.png (PNG copy)>
- <./only_bothstress.png>]
+ <./only_bothstress.png>] (./Main.vrb
+File: 3.png Graphic file (type png)
+
+<use 3.png>
+Package pdftex.def Info: 3.png used on input line 7.
+(pdftex.def)             Requested size: 43.36122pt x 99.57024pt.
+File: 4.png Graphic file (type png)
+ <use 4.png>
+Package pdftex.def Info: 4.png used on input line 11.
+(pdftex.def)             Requested size: 42.55824pt x 82.10529pt.
+File: 5.png Graphic file (type png)
+ <use 5.png>
+Package pdftex.def Info: 5.png used on input line 15.
+(pdftex.def)             Requested size: 43.16048pt x 98.5665pt.
+File: onlystress.png Graphic file (type png)
+ <use onlystress.png>
+Package pdftex.def Info: onlystress.png used on input line 23.
+(pdftex.def)             Requested size: 100.37321pt x 75.48065pt.
+
+Overfull \hbox (4.22414pt too wide) in paragraph at lines 23--24
+[][] 
+ []
+
+File: onlytempqy.png Graphic file (type png)
+<use onlytempqy.png>
+Package pdftex.def Info: onlytempqy.png used on input line 30.
+(pdftex.def)             Requested size: 100.37474pt x 75.532pt.
+
+Overfull \hbox (4.22566pt too wide) in paragraph at lines 30--31
+ [][] 
+ []
+
+File: only_bothstress.png Graphic file (type png)
+<use only_bothstress.png>
+Package pdftex.def Info: only_bothstress.png used on input line 36.
+(pdftex.def)             Requested size: 100.37321pt x 75.48065pt.
+
+Overfull \hbox (4.22414pt too wide) in paragraph at lines 36--37
+[][] 
+ []
+
+)
+Overfull \vbox (5.7268pt too high) detected at line 600
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 600.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 600.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [83
+
+] (./Main.vrb
+File: 3.png Graphic file (type png)
+ <use 3.png>
+Package pdftex.def Info: 3.png used on input line 7.
+(pdftex.def)             Requested size: 43.36122pt x 99.57024pt.
+File: 4.png Graphic file (type png)
+ <use 4.png>
+Package pdftex.def Info: 4.png used on input line 11.
+(pdftex.def)             Requested size: 42.55824pt x 82.10529pt.
+File: 5.png Graphic file (type png)
+
+<use 5.png>
+Package pdftex.def Info: 5.png used on input line 15.
+(pdftex.def)             Requested size: 43.16048pt x 98.5665pt.
+File: onlystress.png Graphic file (type png)
+ <use onlystress.png>
+Package pdftex.def Info: onlystress.png used on input line 23.
+(pdftex.def)             Requested size: 100.37321pt x 75.48065pt.
+
+Overfull \hbox (4.22414pt too wide) in paragraph at lines 23--24
+[][] 
+ []
+
+File: onlytempqy.png Graphic file (type png)
+<use onlytempqy.png>
+Package pdftex.def Info: onlytempqy.png used on input line 30.
+(pdftex.def)             Requested size: 100.37474pt x 75.532pt.
+
+Overfull \hbox (4.22566pt too wide) in paragraph at lines 30--31
+ [][] 
+ []
+
+File: only_bothstress.png Graphic file (type png)
+<use only_bothstress.png>
+Package pdftex.def Info: only_bothstress.png used on input line 36.
+(pdftex.def)             Requested size: 100.37321pt x 75.48065pt.
+
+Overfull \hbox (4.22414pt too wide) in paragraph at lines 36--37
+[][] 
+ []
+
+)
+Overfull \vbox (5.7268pt too high) detected at line 600
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 600.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 600.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [84
+
+] (./Main.vrb
+File: 3.png Graphic file (type png)
+ <use 3.png>
+Package pdftex.def Info: 3.png used on input line 7.
+(pdftex.def)             Requested size: 43.36122pt x 99.57024pt.
+File: 4.png Graphic file (type png)
+ <use 4.png>
+Package pdftex.def Info: 4.png used on input line 11.
+(pdftex.def)             Requested size: 42.55824pt x 82.10529pt.
+File: 5.png Graphic file (type png)
+
+<use 5.png>
+Package pdftex.def Info: 5.png used on input line 15.
+(pdftex.def)             Requested size: 43.16048pt x 98.5665pt.
+File: onlystress.png Graphic file (type png)
+ <use onlystress.png>
+Package pdftex.def Info: onlystress.png used on input line 23.
+(pdftex.def)             Requested size: 100.37321pt x 75.48065pt.
+
+Overfull \hbox (4.22414pt too wide) in paragraph at lines 23--24
+[][] 
+ []
+
+File: onlytempqy.png Graphic file (type png)
+<use onlytempqy.png>
+Package pdftex.def Info: onlytempqy.png used on input line 30.
+(pdftex.def)             Requested size: 100.37474pt x 75.532pt.
+
+Overfull \hbox (4.22566pt too wide) in paragraph at lines 30--31
+ [][] 
+ []
+
+File: only_bothstress.png Graphic file (type png)
+<use only_bothstress.png>
+Package pdftex.def Info: only_bothstress.png used on input line 36.
+(pdftex.def)             Requested size: 100.37321pt x 75.48065pt.
+
+Overfull \hbox (4.22414pt too wide) in paragraph at lines 36--37
+[][] 
+ []
+
+)
+Overfull \vbox (5.7268pt too high) detected at line 600
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 600.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 600.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [85
+
+]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<crackclosure.png, id=245, 397.485pt x 260.975pt>
+<crackclosure.png, id=706, 397.485pt x 260.975pt>
 File: crackclosure.png Graphic file (type png)
  <use crackclosure.png>
 Package pdftex.def Info: crackclosure.png used on input line 7.
 (pdftex.def)             Requested size: 79.49559pt x 52.19408pt.
 
-<k.png, id=246, 752.8125pt x 307.1475pt>
+<k.png, id=707, 752.8125pt x 307.1475pt>
 File: k.png Graphic file (type png)
  <use k.png>
 Package pdftex.def Info: k.png used on input line 13.
@@ -1923,7 +3868,7 @@ Package pdftex.def Info: k.png used on input line 13.
 File: watermark-polito.png Graphic file (type png)
 
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 672.
+Package pdftex.def Info: watermark-polito.png used on input line 642.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1937,17 +3882,24 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 672.
+Package pdftex.def Info: watermark-polito.png used on input line 642.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [22
+ [86
 
- <./crackclosure.png (PNG copy)> <./k.png (PNG copy)>]
-\openout4 = `Main.vrb'.
-
- (./Main.vrb)
+ <./crackclosure.png (PNG copy)> <./k.png (PNG copy)>] (./Main.vrb
+File: crackclosure.png Graphic file (type png)
+ <use crackclosure.png>
+Package pdftex.def Info: crackclosure.png used on input line 7.
+(pdftex.def)             Requested size: 79.49559pt x 52.19408pt.
+File: k.png Graphic file (type png)
+ <use k.png>
+Package pdftex.def Info: k.png used on input line 13.
+(pdftex.def)             Requested size: 112.91699pt x 46.07013pt.
+)
 File: watermark-polito.png Graphic file (type png)
- <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 685.
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 642.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1961,9 +3913,69 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 685.
+Package pdftex.def Info: watermark-polito.png used on input line 642.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [23
+ [87
+
+] (./Main.vrb
+File: crackclosure.png Graphic file (type png)
+ <use crackclosure.png>
+Package pdftex.def Info: crackclosure.png used on input line 7.
+(pdftex.def)             Requested size: 79.49559pt x 52.19408pt.
+File: k.png Graphic file (type png)
+ <use k.png>
+Package pdftex.def Info: k.png used on input line 13.
+(pdftex.def)             Requested size: 112.91699pt x 46.07013pt.
+)
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 642.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 642.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [88
+
+] (./Main.vrb
+File: crackclosure.png Graphic file (type png)
+ <use crackclosure.png>
+Package pdftex.def Info: crackclosure.png used on input line 7.
+(pdftex.def)             Requested size: 79.49559pt x 52.19408pt.
+File: k.png Graphic file (type png)
+ <use k.png>
+Package pdftex.def Info: k.png used on input line 13.
+(pdftex.def)             Requested size: 112.91699pt x 46.07013pt.
+)
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 642.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 642.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [89
 
 ]
 \openout4 = `Main.vrb'.
@@ -1971,7 +3983,7 @@ Package pdftex.def Info: watermark-polito.png used on input line 685.
  (./Main.vrb)
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 700.
+Package pdftex.def Info: watermark-polito.png used on input line 655.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1985,9 +3997,159 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 700.
+Package pdftex.def Info: watermark-polito.png used on input line 655.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [24
+ [90
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 655.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 655.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [91
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 655.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 655.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [92
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 655.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 655.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [93
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 655.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 655.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [94
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 655.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 655.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [95
+
+] (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 655.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 655.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [96
+
+]
+\openout4 = `Main.vrb'.
+
+ (./Main.vrb)
+File: watermark-polito.png Graphic file (type png)
+ <use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 670.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 670.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [97
 
  </usr/share/texlive/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>]
 \openout4 = `Main.vrb'.
@@ -1995,7 +4157,7 @@ Package pdftex.def Info: watermark-polito.png used on input line 700.
  (./Main.vrb)
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 714.
+Package pdftex.def Info: watermark-polito.png used on input line 684.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -2009,37 +4171,37 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 714.
+Package pdftex.def Info: watermark-polito.png used on input line 684.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [25
+ [98
 
 ]
-\tf@nav=\write6
-\openout6 = `Main.nav'.
+\tf@nav=\write7
+\openout7 = `Main.nav'.
 
-\tf@toc=\write7
-\openout7 = `Main.toc'.
+\tf@toc=\write8
+\openout8 = `Main.toc'.
 
-\tf@snm=\write8
-\openout8 = `Main.snm'.
+\tf@snm=\write9
+\openout9 = `Main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 715.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 715.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 685.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 685.
  (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 715.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 715.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 685.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 685.
 Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 715.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 685.
  ) 
 Here is how much of TeX's memory you used:
- 22037 strings out of 493029
- 428623 string characters out of 6136235
- 614088 words of memory out of 5000000
- 24879 multiletter control sequences out of 15000+600000
+ 22344 strings out of 493029
+ 431543 string characters out of 6136235
+ 615130 words of memory out of 5000000
+ 24890 multiletter control sequences out of 15000+600000
  58481 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,17n,76p,517b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,17n,76p,517b,795s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
 c/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texmf/fonts/type1/publi
@@ -2052,13 +4214,13 @@ pe1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr
 /share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmsso9.pfb></usr/share/texmf/fonts/type1/publi
-c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy5.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lm
-sy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
-Output written on Main.pdf (25 pages, 1555472 bytes).
+c/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+sy9.pfb>
+Output written on Main.pdf (98 pages, 1700761 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 82 named destinations out of 1000 (max. 500000)
- 328 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 942 PDF objects out of 1000 (max. 8388607)
+ 672 compressed objects within 7 object streams
+ 228 named destinations out of 1000 (max. 500000)
+ 766 words of extra memory for PDF output out of 10000 (max. 10000000)
 

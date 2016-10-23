@@ -1,0 +1,10 @@
+\RequirePackage{pgfpages}
+% Page layout which lays the second page over the first
+\define@key{pgfpagesuselayoutoption}{second notes bottom}[%
+{%
+\def\pgfpageoptionfirstcenter{\pgfpoint{.5\paperwidth}{.5\paperheight}}%
+\def\pgfpageoptionsecondcenter{\pgfpoint{.5\paperwidth}{.5\paperheight}}%
+\def\pgfpageoptiontwoheight{\paperheight}%
+\def\pgfpageoptiontwowidth{\paperwidth}%
+}
+]
