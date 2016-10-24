@@ -44,94 +44,78 @@
 \begin{frame}[t,fragile]{Outline}
     \begin{itemize}
         \item Introduction 
-        \item Motivation 
         \item Literature Survey 
-        \item Work done 
-        \item Problem definition 
-        \item Conclusion 
+        \item Objectives and work done 
+        \item Computer implementation 
+        \item Validation of FEM program 
+        \item Example problems
+        \item Conclusion
     \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Introduction: Thermo-elastic Fracture Mechanics}
     \vspace{-.3cm}
-    \footnotesize
+    \scriptsize
     \begin{itemize}
-\onslide<2->        \item Thermo-elastic Fracture mechanics is a field of mechanics where we study the propagation of crack in materials in presence of temperature field.
- \onslide<3->       \item Due to heat transfer, temperature field is set up in the material which induces thermal stresses in the body. 
-     \onslide<4-> \item These stresses becomes very large around a discontinuity i.e crack tip. If temperature variation is sufficiently large, it can lead to failure.
-   \onslide<5->     \item Applications: Nuclear power plants, cylinder-nozzle
- intersection in pressure vessels, aerodynamic heating of high-speed aircraft, ultra fast pulse lasers etc.
-   \end{itemize}
-   \vspace{-.5cm}
+\onslide<2->        \item Thermo-elastic Fracture mechanics: Study of propagation of crack in presence of temperature field.
+    \onslide<3->  \item Atkinson's solution of Laplace's equation: $u(x,y)= r^{\frac{\pi}{\phi}}\sin\alpha\theta$\\
+   \onslide<4-> \item For $\phi=2\pi$ :  $u \propto r^{\frac{1}{2}}$ and $u'\propto  r^{-\frac{1}{2}}$  
+     \onslide<3->  \begin{figure}
+    \centering
+    \vspace{-40pt}
+    \hspace{7.5cm}\includegraphics[width=.2\textwidth]{pie.png}
+\end{figure}
+
+   \onslide<5->     \item Application areas:
+       \vspace{-.1cm}
 \begin{figure}[H]
-    \hspace{.7cm}
       \begin{subfigure}{0.45\textwidth}
     \centering
- \includegraphics[scale=.1]{cyl.png}
- \caption{\tiny{The cylinder-nozzle intersection. (www.knowledge.autodesk.com)}}
+ \onslide<6->  \includegraphics[scale=.1]{m}
+ \vspace{-.2cm}
+ \caption{\tiny Ultra fast laser}
+ \end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+    \centering
+ \onslide<7->  \includegraphics[scale=.1]{l}
+ \vspace{-.2cm}
+ \caption{\tiny Cracks generated in material}
+ \end{subfigure}
+       \vspace{-.3cm}
+      \begin{subfigure}{0.45\textwidth}
+    \centering
+ \onslide<8->  \includegraphics[scale=.1]{cyl.png}
+ \vspace{-.2cm}
+ \caption{\tiny{The cylinder-nozzle intersection.}}
  \label{cyl}
  \end{subfigure}
 \begin{subfigure}{0.45\textwidth}
     \centering
- \includegraphics[scale=.1]{fail.jpg}
- \caption{\tiny{Cracked head of baffle bolt of Belgian Nuclear Reactor.(www.miningawareness.wordpress.com)}}
- \label{fail}
+ \onslide<9->  \includegraphics[scale=.1]{fail.jpg}
+ \vspace{-.2cm}
+ \caption{\tiny{Cracked baffle bolt of Belgian Nuclear Reactor}}
  \end{subfigure}
  \end{figure}
- \vspace{-.3cm}
+ \end{itemize}
+ \vspace{.1cm}
    \tiny
    \hspace{15pt}
-   \textbf{source}: Tian, X., Shen. (2006). A direct finite element method study of generalized thermoelastic problems. \\
+   \onslide<10->\textbf{source}: Tian, X., Shen. (2006). A direct finite element method study of generalized thermoelastic problems. \\
    \vspace{-7pt}
    \hspace{15pt}
    \emph{International Journal of Solids and Structures}, 43(7), 2050-2063.
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%o 
-\begin{frame}[t,fragile]{Thermal stress variation at the crack-tip}
-    \vspace{-.3cm}
-    \footnotesize
-\begin{itemize}
-\onslide<2->    \item Atkinson has solved the Dirichlet problem for Laplace's equation on a pie shaped region as $u(x,y)= r^{\frac{\pi}{\phi}}\sin\alpha\theta,\  r>0,\ 0<\theta<\phi$
-        \begin{itemize}
-                \footnotesize
-    \onslide<3->\item If $0<\phi<\pi$:
-        The first partial derivative of u with respect to x and y remains continuous as we approach towards the origin. 
-  \onslide<4->  \item If $\pi<\phi<2\pi$:
-        The first derivative u with respect to x and y are not continuous as (x,y) approaches the origin. 
-      \onslide<5-> \item When $\phi=2\pi$, the problem becomes a crack problem and displacement and derivative of displacement vary as $u \propto r^{\frac{1}{2}}$ and $u'\propto  r^{-\frac{1}{2}}$ respectively. 
-  \end{itemize}
- \onslide<6->  \item As thermo-elastic problems are also governed by Laplace's equation, temperature will vary as $r^{\frac{1}{2}}$ and heat fluxes will be unbounded at the crack tip. 
-\end{itemize}
-  \tiny
-  \vspace{10pt}
-  \hspace{10pt}
-   \textbf{source}: Atkinson, K. E. (1997).
-    \emph{The numerical solution of \\
-  \hspace{10pt}
-    integral equations of the second kind} (Vol. 4). \\
-  \hspace{10pt}
-    Cambridge university press.
-    \onslide<2-> \begin{wrapfigure}{r}{0.4\textwidth}
-    \centering
-    \vspace{-50pt}
-    \includegraphics[width=.3\textwidth]{pie.png}
-    \caption{\footnotesize Pie-shaped region.}
-    \label{pie}
-\end{wrapfigure}
- 
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Extended Finite Element Method in Thermoelasticity}
-    \vspace{-.5cm}
+    \vspace{-.3cm}
     \small
     \begin{itemize}
        \onslide<2-> \item In FEM we have to use very fine mesh to capture the behaviour of crack.\onslide<3->
 \item In X-FEM, we enrich the polynomial approximation to include the effects of singular discontinuous field.
-   \onslide<4-> \item Advantages:
+   \onslide<4-> \item Advantages over FEM:
     \begin{itemize}
-       \onslide<5-> \item Mesh is prepared without considering the existence of discontinuity
-        \onslide<6->\item No need of remeshing
-     \onslide<7->   \item Accurate solution
+       \onslide<5-> \item Accurate solutions without the very fine mesh at the discontinuity
+        \onslide<6->\item No need of remeshing 
     \end{itemize}
 \end{itemize}\onslide<3->
 \begin{figure}
@@ -144,7 +128,7 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Two types of enrichment functions in X-FEM}
+\begin{frame}[t,fragile]{Enrichment functions in X-FEM}
     \vspace{-.3cm}
      \footnotesize
     \begin{itemize}
@@ -166,13 +150,23 @@
 \emph{International journal for numerical methods in engineering}, 45(5), 601-620.
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Work Done}
+\begin{frame}[t,fragile]{Objectives and work Done}
     \begin{itemize}
-      \onslide<2->  \item Finite Element Formulation of coupled thermoelasticity 
-       \onslide<3-> \item Development of a MATLAB program for semi-coupled thermoelastic problems.
-   \onslide<4->     \item Patch tests to validate the developed FEM program.
-   \onslide<5->     \item Solution of various thermoelastic fracture problems and comparison with the analytical solutions. 
-   \onslide<6->     \item Comparison between the results of FEM and X-FEM programs. 
+       \onslide<2->  \item Objectives:
+            \begin{itemize}
+                    \footnotesize
+                \onslide<3-> \item To develop an Extended Finite Element Program for coupled thermoelastic fracture problems 
+              \onslide<4->   \item To utilize the developed X-FEM Program in other fields which is governed by Laplace's equation i.e hydrogen diffusion 
+                \end{itemize}
+           \onslide<5->  \item Work Done:
+    \begin{itemize}
+                    \footnotesize
+      \onslide<6->  \item Finite Element Formulation of coupled thermoelasticity 
+       \onslide<7-> \item Development of a MATLAB program for semi-coupled thermoelastic problems.
+   \onslide<8->     \item Patch tests to validate the developed FEM program.
+   \onslide<9->     \item Solution of various thermoelastic fracture problems and comparison with the analytical solutions. 
+   \onslide<10->     \item Comparison between the results of FEM and X-FEM programs. 
+    \end{itemize}
     \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -609,16 +603,16 @@ Method used& $\% \ Error= \{K_{theoretical}-K_{numerical}/K_{theoretical}\}\time
 \egroup
 \end{frame} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Conclusions}
+\begin{frame}[t,fragile]{Conclusions and Future Work}
     \vspace{-.2cm}
     \footnotesize
 \begin{itemize}
-  \onslide<2->     \item A semi-coupled thermoelastic problem is formulated, FEM program is developed in MATLAB and validated by performing different patch tests.
-    \onslide<3->   \item It is shown that when solving fracture problems with traditional FEM program, solutions are not accurate around the crack tip
-   \onslide<4->    \item Same problem is solved in an X-FEM program developed by parnaik to show that the solution improves drastically when using X-FEM
+    \onslide<2->     \item A \textbf{FEM program} is developed for Thermo-elastci Fracture problems based on \textbf{semi-coupled formulation} and \textbf{patch tests} were performed to validate the program.
+    \onslide<3->   \item It is shown that when solving fracture problems with traditional FEM program, solutions are \textbf{not accurate} around the crack tip
+    \onslide<4->    \item Same problem is solved in an X-FEM program developed by parnaik to show that the \textbf{solution improves} drastically when using X-FEM
     \onslide<5->   \item The Extended Finite Element enrichments will be applied to both displacement and temperature fields of thermoelasticity program in stage 2 of the project  
-   \onslide<6->    \item Q8 elements will be applied in our program to solve curved boundary problems. 
-   \onslide<7->    \item As the hydrogen diffusion in cracked bodies are governed by the Poisson's equation similar to the thermoelastic problems, we will modify the X-FEM program to solve problems of hydrogen-diffusion 
+    \onslide<6->    \item \textbf{Q8 elements} will be applied in our program to solve curved boundary problems. 
+    \onslide<7->    \item As the \textbf{hydrogen diffusion} problems governed by Laplace's equation same as thermoelastic problems, we will modify the X-FEM program to solve these problems. 
     \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
