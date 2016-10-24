@@ -44,6 +44,7 @@
 \begin{frame}[t,fragile]{Outline}
     \begin{itemize}
         \item Introduction 
+        \item Motivation
         \item Literature Survey 
         \item Objectives and work done 
         \item Computer implementation 
@@ -55,19 +56,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Introduction: Thermo-elastic Fracture Mechanics}
     \vspace{-.3cm}
-    \scriptsize
     \begin{itemize}
-         \item Thermo-elastic Fracture mechanics: Study of propagation of crack in presence of temperature field.
-       \item Atkinson's solution of Laplace's equation: $u(x,y)= r^{\frac{\pi}{\phi}}\sin\alpha\theta$\\
-     \item For $\phi=2\pi$ :  $u \propto r^{\frac{1}{2}}$ and $u'\propto  r^{-\frac{1}{2}}$  
-        \begin{figure}
-    \centering
-    \vspace{-40pt}
-    \hspace{7.5cm}\includegraphics[width=.2\textwidth]{pie.png}
-\end{figure}
-
-         \item Application areas:
-       \vspace{-.1cm}
+         \item Thermo-elastic Fracture mechanics is a field in which we Study the propagation of crack in presence of temperature field.
+                \item Some application areas are as follows:
 \begin{figure}[H]
       \begin{subfigure}{0.45\textwidth}
     \centering
@@ -106,7 +97,22 @@
    \emph{International Journal of Solids and Structures}, 43(7), 2050-2063.
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%o 
-\begin{frame}[t,fragile]{Extended Finite Element Method in Thermoelasticity}
+\begin{frame}[t,fragile]{Motivation}
+    \begin{itemize}
+\item Atkinson's solution of Laplace's equation: $u(x,y)= r^{\frac{\pi}{\phi}}\sin\alpha\theta$\\
+     \item For $\phi=2\pi$ :  $u \propto r^{\frac{1}{2}}$ and $u'\propto  r^{-\frac{1}{2}}$  
+     \item So the temperature varies similar to the displacement field around the crack tip
+     \item This is our motivation to pursue the thermal effects on fracture
+     \end{itemize}
+        \begin{figure}
+    \centering
+    \includegraphics[width=.5\textwidth]{pie.png}
+\end{figure}
+
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{Introduction to Extended Finite Element Method }
     \vspace{-.3cm}
     \small
     \begin{itemize}
@@ -150,36 +156,21 @@
 \emph{International journal for numerical methods in engineering}, 45(5), 601-620.
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Objectives and work Done}
+\begin{frame}[t,fragile]{Objectives: }
     \begin{itemize}
-          \item Objectives:
-            \begin{itemize}
-                    \footnotesize
-                  \item To develop an Extended Finite Element Program for coupled thermoelastic fracture problems 
-                  \item To utilize the developed X-FEM Program in other fields which is governed by Laplace's equation i.e hydrogen diffusion 
+        \item Finite element formulation of semi-coupled thermo-elasticity and implementation in MATLAB
+        \item Validation of FEM programs by performing patch tests.
+                  \item Development of Extended Finite Element Program for coupled thermoelastic fracture problems 
+                  \item Utilization of the developed X-FEM Program in other fields which is governed by Laplace's equation
                 \end{itemize}
-              \item Work Done:
-    \begin{itemize}
-                    \footnotesize
-         \item Finite Element Formulation of coupled thermoelasticity 
-         \item Development of a MATLAB program for semi-coupled thermoelastic problems.
-         \item Patch tests to validate the developed FEM program.
-         \item Solution of various thermoelastic fracture problems and comparison with the analytical solutions. 
-         \item Comparison between the results of FEM and X-FEM programs. 
-    \end{itemize}
-    \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Finite Element Formulation of Thermo-elasticity}
-\begin{itemize} 
-\item We have formulated the semi-coupled in which we neglected the effect of displacements on temperature field. 
-\item In thermoelastic case the total strain is given as: 
-\begin{align*}
-    \varepsilon_{ij}&=\varepsilon_{ij}^{(M)}+\varepsilon_{ij}^{(T)}
-    =\frac{1+\nu}{E}\sigma_{ij}-\frac{\nu}{E}\sigma_{kk}\delta_{ij}+\alpha(T-T_0)\delta_{ij}\nonumber
-\end{align*}
- 
-\item It can be inverted to get following stress-strain relationship:
+    \vspace{-.4cm}
+    \begin{itemize} 
+\item A semi-coupled thermo-elasticity problem is formulated. 
+\item In semi-coupled problems we neglected the effect of displacements on temperature field. 
+\item In presence of temperature field, the Hooke's law can be given by: 
     \footnotesize
 \begin{align*}
     \begin{Bmatrix}
@@ -192,32 +183,19 @@
         \varepsilon_{x}-\alpha\Delta T \\ \varepsilon_{y}-\alpha \Delta T \\ \varepsilon_{xy} 
     \end{Bmatrix}
 \end{align*}
-\end{itemize}
 
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-   \begin{frame}[t,fragile]{Governing Equations of Thermoelasticity}
-    \begin{itemize}
-         \item The governing equations of the thermo-elasticity is derived as: 
+    \item The governing equations of the thermo-elasticity is derived as follows: 
             \bgroup
-            \footnotesize
             \begin{align*}
     \frac{\partial}{\partial x}\left[c_{11}\frac{\partial u}{\partial x}+c_{12}\frac{\partial v}{\partial y}\right]+&\frac{\partial}{\partial y}\left[c_{66}\left(\frac{\partial u}{\partial y}+\frac{\partial v}{\partial x}\right)\right]-(c_{11}+c_{12})\alpha\frac{\partial T}{\partial x}-f_x   =0 \\
     \frac{\partial}{\partial x}\left[c_{66}\left(\frac{\partial u}{\partial y}+\frac{\partial v}{\partial x}\right)\right]+&\frac{\partial}{\partial y}\left[c_{12}\frac{\partial u}{\partial x}+c_{22}\frac{\partial v}{\partial y}\right]-(c_{11}+c_{12})\alpha\frac{\partial T}{\partial y}-f_y=0\\
     &\ \ \ \ \ \ \ k\left( \frac{\partial^2 T}{\partial x^2}+\frac{\partial^2 T}{\partial y^2} \right)=q
 \end{align*}
 \egroup
-       \item We can develop a week form of above equations by approximating u,v and T over a typical finite element $\Omega^e$ as:
-          \footnotesize
-\begin{align*}
-    u(x,y)=\sum_{i=1}^nN_i (x,y)u_i\ \ , 
-    v(x,y)=\sum_{i=1}^nN_i (x,y)v_i\ \ ,
-    T(x,y)=\sum_{i=1}^nN_i (x,y)T_i
-\end{align*}
-\end{itemize}
+       \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Weak Form Equations of Coupled Thermoelasticity}
+\begin{frame}[t,fragile]{Weak Form Equations of Coupled Thermo-elasticity}
     \vspace{-.4cm}
             \scriptsize
          \begin{align*}
@@ -260,96 +238,26 @@ Where,
     \{F\}=\int_\Gamma [N]^T{\bar{t}}ds\ \
     \{Q\}=\int_\Gamma [N^{\theta}]^T\bar{Q}ds
 \end{align*} 
-\vspace{-.5cm}
+\item \large{Computer implementation:}
+    \begin{itemize}
+\footnotesize
+        \item A MATLAB program is developed to solve the 2-dimensional thermoelasticity problems based on above Finite Element model 
+        \item 4-noded quadrilateral (Q4) elements were used for meshing 
+        \item  $2\times 2$ Gauss quadrature rule is used for numerical integration
+    \end{itemize}
 \end{itemize}
-    \scriptsize  
-\begin{align*}
-    [B]=\begin{bmatrix}
-        \frac{\partial N_1}{\partial x}&0&\frac{\partial N_2}{\partial x}&0&\dots&\frac{\partial N_n}{\partial x}&0\\
-        0&\frac{\partial N_1}{\partial y}&0&\frac{\partial N_2}{\partial y}&\dots&0&\frac{\partial N_n}{\partial y}\\
-\frac{\partial N_1}{\partial y}&\frac{\partial N_1}{\partial x}&
-\frac{\partial N_2}{\partial y}&\frac{\partial N_2}{\partial x}&\dots&
-\frac{\partial N_n}{\partial y}&\frac{\partial N_n}{\partial x}
-    \end{bmatrix},\   [B^{\theta}]=\begin{bmatrix}
-        \frac{\partial N_1}{\partial x}&\frac{\partial N_2}{\partial x}&\dots&\frac{\partial N_n}{\partial x}\\
-        \frac{\partial N_1}{\partial y}&\frac{\partial N_2}{\partial y}&\dots&\frac{\partial N_n}{\partial y}\\
-    \end{bmatrix}
-    \end{align*}
-$$ N=\begin{bmatrix}N_1 &0&N_2 &0&\dots&N_n &0\\0&N_1 &0&N_2 &\dots&0&N_n \end{bmatrix},\ N^{\theta}=[N_1 ~\dots~N_n ] 
-$$
-
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Computer implementation}
-    \begin{wrapfigure}{r}{0.4\textwidth}
-  \begin{center}
-      \vspace{-1.3cm}
-      \includegraphics[width=0.48\textwidth]{flow_chart.pdf}
-  \end{center}
-\caption{Flowchart showing the steps of the FEM program}
-\end{wrapfigure} 
-A MATLAB program is developed to solve the 2-dimensional thermoelasticity problems.\\ \vspace{5pt}  
-Quadrilateral (Q4) elements were used for meshing the body. \\  \vspace{5pt}  $2\times 2$ Gauss quadrature rule is used for numerical integration.\\  \vspace{5pt} 
-A flow-chart showing the steps of the programming is shown in the figure.
-
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Patch Test 1}
+\begin{frame}[t,fragile]{Patch Test 1: Validation of Elasticity code}
     \vspace{-.4cm}
     \footnotesize
  \begin{itemize}
-          \item A square plate is taken and meshed with 4 elements as shown in figure below. 
+       \item A square plate is taken and meshed with 5 elements as shown in figure below. 
            \item Minimum number of essential boundary conditions is fixed to eliminate the rigid body motions
            \item Loads are applied such that there is constant state of stress in the body
            \item Numerical integration is performed using $2\times 2$ Gauss quadrature rule.
-    \end{itemize}
-    \begin{figure}
-    \vspace{.5cm}
-\begin{subfigure}{0.45\textwidth}
-    \centering   
-    \includegraphics[scale=.25]{image1}
-    \caption{\scriptsize Mesh Configuration }
-\end{subfigure}
-\begin{subfigure}{0.45\textwidth}
-    \vspace{-.5cm}
-    \centering   
-\caption{\scriptsize Results of Patch Test 1} 
-\scalebox{.5}{ \begin{tabular}{|c|c|c|c|c|}
-\hline
-& Gauss Points& $\sigma_x/2F$ & $\sigma_y/2F$ & $\tau_{xy}/2F$\\
-\hline
-\multirow{4}{5em}{Element 1} & 1 & $-0.222\times 10^{-15}$ & 1 & $0.1665\times 10^{-15}$\\
-& 2 & $0.2498\times 10^{-15}$ & 1 & $0.1665\times 10^{-15}$\\
-& 3 & $0.3058\times 10^{-15}$ & 1 & $0.222\times 10^{-15}$\\
-& 4 & $0$ & 1 & $0$\\
-\hline
-\multirow{4}{5em}{Element 2} & 1 & $-0.222\times 10^{-15}$ & 1 & $0$\\
-& 2 & $-.41633\times 10^{-15}$ & 1 & $0.111\times 10^{-15}$\\
-& 3 & $0.02775\times 10^{-15}$ & 1 & $0.138\times 10^{-15}$\\
-& 4 & $-0.1110\times 10^{-15}$ & 1 & $0$\\
-\hline
-\multirow{4}{5em}{Element 3} & 1 & $0.222\times 10^{-15}$ & 1 & $0.1665\times 10^{-15}$\\
-& 2 & $0.0555\times 10^{-15}$ & 1 & $0.222\times 10^{-15}$\\
-& 3 & $-0.0555\times 10^{-15}$ & 1 & $0$\\
-& 4 & $0.22204\times 10^{-15}$ & 1 & $0$\\
-\hline
-\multirow{4}{5em}{Element 4} & 1 & $-0.222\times 10^{-15}$ & 1 & $0.1665\times 10^{-15}$\\
-& 2 & $0.222\times 10^{-15}$ & 1 & $0.1665\times 10^{-15}$\\
-& 3 & $0.3058\times 10^{-15}$ & 1 & $0.222\times 10^{-15}$\\
-& 4 & $0.222\times 10^{-15}$ & 1 & $0$\\
-\hline
-\end{tabular}}
-      \end{subfigure}
-  \end{figure}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Patch Test 2}
-    \vspace{-.4cm}
-    \footnotesize
- \begin{itemize}
-       \item Another patch test is performed on a plate with 5 element mesh and solved and results are tabulated as shown below 
-       \item The $2\times 2$ quadrature rule is used for numerical integration
-    \end{itemize}
+   \end{itemize}
+   \vspace{-.5cm}
     \begin{figure}
 \begin{subfigure}{0.45\textwidth}
     \centering
@@ -358,7 +266,7 @@ A flow-chart showing the steps of the programming is shown in the figure.
 \end{subfigure}
 \begin{subfigure}{0.45\textwidth}
      \centering  
-\caption{\scriptsize Results of Patch Test 2}
+\caption{\scriptsize Results of Patch Test }
  \scalebox{.5}{\begin{tabular}{|c|c|c|c|c|}
 \hline
 & Gauss Point& $\sigma_x/F$ & $\sigma_y/F$ & $\tau_{xy}/F$\\
@@ -393,176 +301,77 @@ A flow-chart showing the steps of the programming is shown in the figure.
   \end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Patch Test 3 : Thermal code }
-    \vspace{-.4cm}
- \begin{itemize}
-       \item Another patch was performed to validate the thermal code.
-       \item Same problem as patch test was taken 
-       \item Temperature loads are applied to get the constant heat flux throughout the body
-    \end{itemize}
-    \begin{figure}
-    \vspace{.5cm}
-    \hspace{-.5cm}
-\begin{subfigure}{0.3\textwidth}
-     \centering
-      \includegraphics[scale=.2]{solution.jpg}
-    \caption{\tiny Temperature distribution}
-\end{subfigure}
-\begin{subfigure}{0.6\textwidth}
-    \vspace{-1cm}
-    \centering
-      \caption{\scriptsize Results of Patch test 3}
- \scalebox{.55}{\begin{tabular}{|C{3cm}|C{3cm}|C{3cm}|C{3cm}|}
-        \hline
-        Nodes&Temperatures&$Q_y(W)$&$Q_x(W)$\\
-        \hline
-        1&273&200&$0.125\times 10^{-10}$\\
-        \hline
-        2&273&200&$0.155\times 10^{-10}$\\
-        \hline
-        3&273&200&$0.222\times 10^{-10}$\\
-        \hline
-        4&281&200&0\\
-        \hline
-        5&276&200&$0$\\
-        \hline
-        6&281&200&$0$\\
-        \hline
-        7&281&200&$0.111\times 10^{-10}$\\
-        \hline
-        8&279&200&$0.138\times 10^{-10}$\\
-        \hline
-        9&278&200&$0$\\
-        \hline
-    \end{tabular}}
-     \end{subfigure}
-  \end{figure}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Patch Test 4: Thermo-elastic code}
+\begin{frame}[t,fragile]{Patch Test 2: Validation of Thermo-elasticity code}
     \vspace{-.5cm}
-    \footnotesize  
+    \scriptsize  
 \begin{figure}[H]
     \centering
-    \includegraphics[scale=.2]{elements_7^2_1.jpg}
+    \includegraphics[scale=.20]{elements_7^2_1.jpg}
 \end{figure}
-    \vspace{-.5cm}
+   \vspace{-.5cm}
 \begin{itemize}
-      \item A square plate of dimension $2\times 2$ is taken and meshed as shown
-      \item Temperature distribution of $T=x^2+y^2$ is applied on 4 boundaries of plate
-      \item a heat source $q=\frac{\partial^2 T}{\partial x^2}+\frac{\partial^2 T}{\partial y^2}=4$ is applied throughout the body 
-    \item Mesh is refined and to get the more accurate results 
+      \item A temperature distribution of $T=x^2+y^2$ is applied on 4 boundaries of plate which satisfies the poisson's equation $\frac{\partial^2 T}{\partial x^2}+\frac{\partial^2 T}{\partial y^2}=4$. 
+      \item Heat source $q=4$ is applied throghout the body. 
+      \item Results are compared with the analytical solutions in the following table:
 \end{itemize}
+\vspace{-10pt}
+\bgroup
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|C{1cm}|C{4cm}|C{4cm}|}
+\hline 
+Nodes& \% \ Error in Temperature T&\% Error in displacement $u_y$\\
+\hline
+30 & -0.0523342237$\times 10^{-12}$&0.00034894013\\
+\hline
+33 & 0.1046684475$\times 10^{-12}$&0.00082764871\\
+\hline
+63 & 0.0916486147$\times 10^{-12}$&0.00015321553\\
+\hline
+\end{tabular}
+\end{table}
+\egroup
+
+ 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\begin{frame}[t,fragile]{Mesh Refinements}
-     \begin{figure}
-    \centering  
-\begin{tikzpicture}[      
-        every node/.style={scale=.6,anchor=south west,inner sep=0pt},
-        x=1mm, y=1mm,scale=.6
-      ] 
-       \node (fig2) at (-25,-35)
-      {\includegraphics[scale=0.35]{arrow}};  
-       \node (fig1) at (0,0)
-      {\includegraphics[scale=0.3]{uy_7^2}};
-      \node (fig2) at (10,-10)
-    {\includegraphics[scale=0.3]{uy_12^2}};
-       \node (fig2) at (20,-20)
-       {\includegraphics[scale=0.3]{uy_20^2}};  
-    \end{tikzpicture}
-\end{figure} 
- \vspace{-1cm}\begin{figure}
-   \centering 
-  \caption{\scriptsize Errors obtained after mesh refinements }
-    \vspace{-16pt}
- \scalebox{.6}{\begin{tabular}{|c|c|c|c|c|c|}
-        \hline
-       Number of Elements & Error in  $u_x$ & Error in  $u_y$ & Error in  $\sigma_x$ & Error in  $\sigma_y$ & Error in  $\tau_{xy}$\\
-        \hline
-       $7\times 7$ & $5.783469\times 10^{-10}$ & $5.783469\times 10^{-10}$ & $6.668255\times 10^{2}$ & $6.668255\times 10^{2}$ & $3.615391\times 10^{2}$\\
-        \hline
-         $12\times 12$ & $1.764697\times 10^{-11}$ & $1.764697\times 10^{-11}$ & $1.000597121$ & $1.000597121$ & $0.031722$\\
-        \hline
-        $20\times 20$ & $1.265804\times 10^{-12}$ & $1.265804\times 10^{-12}$ & $0.994299467$ & $0.994299467$ & $0.005781$\\
-        \hline
-    \end{tabular}}
-\end{figure}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Plate with edge crack}
-    \vspace{-.4cm}
-    %%%%%%%%%%%%%
-   \begin{figure}[H]
-    \centering
-        \begin{subfigure}{.3\textwidth}
-              \includegraphics[scale=.15]{mai.png}
-            \caption{\scriptsize Plate with edge crack}
+    \vspace{-20pt}
+\begin{figure}
+    \begin{subfigure}{.2\textwidth}
+         \includegraphics[scale=.20]{3.png}
+         \caption{\scriptsize Edge crack}
     \end{subfigure}
-    \hspace{5pt}
-        \begin{subfigure}{.3\textwidth}
+    \hspace{15pt}
+    \begin{subfigure}{.2\textwidth}
+    \vspace{15pt}
               \includegraphics[scale=.22]{untitled1.png}
-            \caption{\scriptsize Before loading}
+            \caption{\scriptsize Mesh configuration}
     \end{subfigure}
-        \begin{subfigure}{.3\textwidth}
-              \includegraphics[scale=.22]{untitled2.png}
-            \caption{\scriptsize After loading}
+    \hspace{1pt}
+    \begin{subfigure}{.5\textwidth}
+        \includegraphics[scale=.25]{onlystress}
+        \vspace{-5pt}
+         \caption{\scriptsize $\sigma_y$ ahead of crack tip}
     \end{subfigure}
-        \vspace{-10pt}
-    \end{figure}
-    \vspace{20pt}
-    \footnotesize
-    \begin{itemize}
-          \item A plate with edge crack is meshed in ANSYS and imported to MATLAB
-          \item Boundary conditions are applied and stresses ahead of cracktip is plotted
-          \item The results obtained by MATLAB code is compared with the ANSYS solution
-    \end{itemize}
-\end{frame}
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Stresses Ahead of Crack-tip: Comparison with ANSYS}
-    \vspace{-10pt}
-    \begin{figure}
-        \centering
-        \hspace{22pt}
-        \begin{subfigure}{.3\textwidth}
-         {     \includegraphics[scale=.20]{3.png}}
-    \end{subfigure}
-    \begin{subfigure}{.3\textwidth}
-      { \vspace{10pt}
-      \includegraphics[scale=.20]{4.png}}
-    \end{subfigure}
-    \begin{subfigure}{.3\textwidth}
-    {    \vspace{-10pt}
-   \includegraphics[scale=.20]{5.png}}
-        \vspace{-10pt}
-    \end{subfigure}
-    \end{figure}
-    %%%%%%%%%%%%%%%
-    \vspace{-10pt}
-    \begin{figure}
-    \begin{subfigure}{.3\textwidth}
-        \includegraphics[scale=.2]{onlystress}
-\caption{\tiny $\sigma_y$ ahead of the crack tip}
-    \label{stress}
-\end{subfigure}
-\hspace{1pt}
-    \begin{subfigure}{.3\textwidth}
-    \centering
-      \includegraphics[scale=.25]{onlytempqy}
-\caption{\tiny Heat flux ahead of crack tip}
-    \label{fig:heat}
-\end{subfigure}
-\hspace{1pt}
-    \begin{subfigure}{.3\textwidth}
-          \includegraphics[scale=.2]{only_bothstress}
-   \caption{\tiny $\sigma_y$ ahead of the crack tip}
-    \label{heat1}
-\end{subfigure}
 \end{figure}
+    \vspace{-10pt}
+\begin{itemize}
+        \scriptsize
+    \item An edge crack problem is solved applying stress $\sigma_y=100$ Mpa and taking E=200 Gpa and $\nu$=0.3.
+    \item Stress intensity factor is calculated using the crack closure integral technique. 
+    \item Same problem is solved in X-FEM program developed by parnaik and compared by our solution 
+\end{itemize}
+\tiny
+   \hspace{15pt}
+   \textbf{source}:  Koustubh Parnaik. (2013). Implementation of Extended Finite Element Method (X-FEM) for static\\
+   \hspace{15pt}fracture problems.
+\emph{Department of Mechanical Engineering, IIT Bombay}.
+
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \begin{frame}[t,fragile]{Comparison of FEM and X-FEM methods}
-    \vspace{-.7cm}
+    \vspace{-.9cm}
     \hspace{15pt}
         \begin{figure}[H]
     \begin{subfigure}{0.45\textwidth}
@@ -601,47 +410,34 @@ Method used& $\% \ Error= \{K_{theoretical}-K_{numerical}/K_{theoretical}\}\time
 \label{table1}
 \end{table}
 \egroup
+\tiny
+    \vspace{-.1cm}
+   \hspace{15pt}
+    \textbf{source}:Kumar, P., \& Prashant, K. (2009). Elements of fracture mechanics. Tata McGraw-Hill Education.
+      
 \end{frame} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Conclusions and Future Work}
     \vspace{-.2cm}
-    \footnotesize
 \begin{itemize}
-          \item A \textbf{FEM program} is developed for Thermo-elastci Fracture problems based on \textbf{semi-coupled formulation} and \textbf{patch tests} were performed to validate the program.
-        \item It is shown that when solving fracture problems with traditional FEM program, solutions are \textbf{not accurate} around the crack tip
-         \item Same problem is solved in an X-FEM program developed by parnaik to show that the \textbf{solution improves} drastically when using X-FEM
-        \item The Extended Finite Element enrichments will be applied to both displacement and temperature fields of thermoelasticity program in stage 2 of the project  
-         \item \textbf{Q8 elements} will be applied in our program to solve curved boundary problems. 
-         \item As the \textbf{hydrogen diffusion} problems governed by Laplace's equation same as thermoelastic problems, we will modify the X-FEM program to solve these problems. 
+            \item Conclusions:
+\begin{itemize}
+            \item Finite Element Formulation of semi-coupled thermoelasticity is performed. 
+        \item MATLAB program is developed based on the semi-coupled formulation.
+        \item Patch tests were performed to validate the FEM program.
+        \item Results of FEM and X-FEM programs were compared and it is shown that solution improves when X-FEM is used. 
+   \end{itemize} 
+        \item Future work:
+\begin{itemize}
+ \item Finite Element Formulation of Fully-coupled problems 
+          \item Application of the Extended Finite Element enrichments to both displacement and temperature fields  
+            \item Utilization of the X-FEM program in other fields which is governed by the Laplace's equation.
     \end{itemize}
+   \end{itemize} 
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{References}
-    \tiny
-\begin{thebibliography}{10}
-      \bibitem{prashant} Kumar, P., \& Prashant, K. (2009). Elements of fracture mechanics. Tata McGraw-Hill Education.
-      \bibitem{filery} Fillery, B. P., Hu, X., \& Fisher, G. (2006). Thermo-elastic fracture of edge cracked plate under surface ‘shock’loading. In \emph{Fracture of Nano and Engineering Materials and Structures} (pp. 385-386). Springer Netherlands.
-      \bibitem{tian} Tian, X., Shen, Y., Chen, C., \& He, T. (2006). A direct finite element method study of generalized thermoelastic problems. International Journal of Solids and Structures, 43(7), 2050-2063.
-      \bibitem{sih} Sih, G. C. (1962). On the singular character of thermal stresses near a crack tip. Journal of Applied Mechanics, 29(3), 587-589.
-      \bibitem{helen} Hellen, T. K., \& Cesari, F. (1979). On the solution of the centre cracked plate with a quadratic thermal gradient. \emph{Engineering Fracture Mechanics}, 12(4), 469-478.
-      \bibitem{belytsko} Belytschko, T., \& Black, T. (1999). Elastic crack growth in finite elements with minimal remeshing. \emph{International journal for numerical methods in engineering}, 45(5), 601-620.
-      \bibitem{koustubh} Koustubh Parnaik. (2013). Implementation of Extended Finite Element Method (X-FEM) for static fracture problems. \emph{Department of Mechanical Engineering, IIT Bombay}.
-     \bibitem{duflot} Duflot, M. (2008). The extended finite element method in thermoelastic fracture mechanics. \emph{International Journal for Numerical Methods in Engineering}, 74(5), 827-847.
-     \bibitem{budyn} Budyn, E., Zi, G., Moës, N., \& Belytschko, T. (2004). A method for multiple crack growth in brittle materials without remeshing. \emph{International journal for numerical methods in engineering}, 61(10), 1741-1770.
-\end{thebibliography}
-\end{frame}
-\begin{frame}[t,fragile]{\ldots References}
-    \tiny
-\begin{thebibliography}{10}
-     \bibitem{stazi} Stazi, F. L., Budyn, E., Chessa, J., \& Belytschko, T. (2003). An extended finite element method with higher-order elements for curved cracks. \emph{Computational Mechanics}, 31(1-2), 38-48.
-     \bibitem{khoei} Khoei, A. R., \& Nikbakht, M. (2007). An enriched finite element algorithm for numerical computation of contact friction problems. \emph{International Journal of Mechanical Sciences}, 49(2), 183-199.
-     \bibitem{liang} Liang, J., Huang, R., Prevost, J. H., \& Suo, Z. (2003). Evolving crack patterns in thin films with the extended finite element method. \emph{International Journal of Solids and Structures}, 40(10), 2343-2354.
-     \bibitem{yangzian} Xu, Y., \& Yuan, H. (2009). On damage accumulations in the cyclic cohesive zone model for X-FEM analysis of mixed-mode fatigue crack growth.\emph{Computational Materials Science}, 46(3), 579-585.
-     \bibitem{atkinson} Atkinson, K. E. (1997). \emph{The numerical solution of integral equations of the second kind} (Vol. 4). Cambridge university press.
-    \bibitem{sad} Sad, M. H. (2004). Elasticity: Theory. \emph{Applications and Numerics}. 
-    \bibitem{reddy} Reddy, J. N. (1989). An introduction to the finite element method.
-    \bibitem{belytsko2} Fries, T. P., \& Belytschko, T. (2010). The extended/generalized finite element method: an overview of the method and its applications. \emph{International Journal for Numerical Methods in Engineering}, 84(3), 253-304.
-    \bibitem{karihaloo} Liu, X. Y., Xiao, Q. Z., \& Karihaloo, B. L. (2004). X-FEM for direct evaluation of mixed mode SIFs in homogeneous and bi‐materials. \emph{International Journal for Numerical Methods in Engineering}, 59(8), 1103-1118.
-\end{thebibliography}
+\begin{frame}
+    \centering
+    \textbf{\huge{Thank You!}}
 \end{frame}
 \end{document}

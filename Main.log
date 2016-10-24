@@ -1,26 +1,24 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.8.30)  24 OCT 2016 14:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.6)  24 OCT 2016 22:50
 entering extended mode
  restricted \write18 enabled.
- Source specials enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **Main.tex
 (./Main.tex
-LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 4 languages loaded.
-(/usr/share/texmf/tex/latex/beamer/base/beamer.cls
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasercs.sty
-Package: beamerbasercs 2012/11/13 (rcs-revision cb16a617839f)
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasercs.sty
+Package: beamerbasercs 2015/03/08 (rcs-revision 368aa9ba9d38)
 )
-Document Class: beamer 2012/10/15 development version 3.24 A class for typesett
-ing presentations (rcs-revision 24853e6b98cf)
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasemodes.sty
-Package: beamerbasemodes 2012/04/15 (rcs-revision cc6557182d97)
+Document Class: beamer 2015/01/05 3.36 A class for typesetting presentations (r
+cs-revision 8a39122e1f63)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
+Package: beamerbasemodes 2013/09/03 (rcs-revision 768f2d98ca64)
 \beamer@tempbox=\box26
 \beamer@tempcount=\count79
 \c@beamerpauses=\count80
 
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasedecode.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasedecode.sty
 Package: beamerbasedecode 2010/05/01 (rcs-revision efa082c6111d)
 \beamer@slideinframe=\count81
 \beamer@minimum=\count82
@@ -75,11 +73,11 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 \beamer@sectionadjust=\count100
 \beamer@tocsectionnumber=\count101
 
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseoptions.sty
-Package: beamerbaseoptions 2010/04/27 (rcs-revision 982469101dd6)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseoptions.sty
+Package: beamerbaseoptions 2013/03/10 (rcs-revision 47431932db0d)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 ))
 \beamer@paperwidth=\skip42
@@ -109,22 +107,22 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -140,65 +138,72 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen127
 \Gin@req@width=\dimen128
 )
-(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks16
-)
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box34
+\pgfutil@tempdima=\dimen129
+\pgfutil@tempdimb=\dimen130
 
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box34
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
-Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks17
 \pgfkeys@temptoks=\toks18
 
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
 \pgfkeys@tmptoks=\toks19
 ))
-\pgf@x=\dimen129
-\pgf@y=\dimen130
-\pgf@xa=\dimen131
-\pgf@ya=\dimen132
-\pgf@xb=\dimen133
-\pgf@yb=\dimen134
-\pgf@xc=\dimen135
-\pgf@yc=\dimen136
+\pgf@x=\dimen131
+\pgf@y=\dimen132
+\pgf@xa=\dimen133
+\pgf@ya=\dimen134
+\pgf@xb=\dimen135
+\pgf@yb=\dimen136
+\pgf@xc=\dimen137
+\pgf@yc=\dimen138
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
 \c@pgf@counta=\count106
 \c@pgf@countb=\count107
 \c@pgf@countc=\count108
 \c@pgf@countd=\count109
-
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
+\t@pgf@toka=\toks20
+\t@pgf@tokb=\toks21
+\t@pgf@tokc=\toks22
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
-Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+Driver file for pgf: pgfsys-pdftex.def
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count110
 \pgfsyssoftpath@bigbuffer@items=\count111
 )
-(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-))
-(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -215,112 +220,137 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
-(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen137
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen139
 \pgfmath@count=\count112
 \pgfmath@box=\box35
-\pgfmath@toks=\toks20
-\pgfmath@stack@operand=\toks21
-\pgfmath@stack@operation=\toks22
+\pgfmath@toks=\toks23
+\pgfmath@stack@operand=\toks24
+\pgfmath@stack@operation=\toks25
 )
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
-(/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count113
 ))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
-\pgf@picminx=\dimen138
-\pgf@picmaxx=\dimen139
-\pgf@picminy=\dimen140
-\pgf@picmaxy=\dimen141
-\pgf@pathminx=\dimen142
-\pgf@pathmaxx=\dimen143
-\pgf@pathminy=\dimen144
-\pgf@pathmaxy=\dimen145
-\pgf@xx=\dimen146
-\pgf@xy=\dimen147
-\pgf@yx=\dimen148
-\pgf@yy=\dimen149
-\pgf@zx=\dimen150
-\pgf@zy=\dimen151
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen140
+\pgf@picmaxx=\dimen141
+\pgf@picminy=\dimen142
+\pgf@picmaxy=\dimen143
+\pgf@pathminx=\dimen144
+\pgf@pathmaxx=\dimen145
+\pgf@pathminy=\dimen146
+\pgf@pathmaxy=\dimen147
+\pgf@xx=\dimen148
+\pgf@xy=\dimen149
+\pgf@yx=\dimen150
+\pgf@yy=\dimen151
+\pgf@zx=\dimen152
+\pgf@zy=\dimen153
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
-\pgf@path@lastx=\dimen152
-\pgf@path@lasty=\dimen153
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen154
+\pgf@path@lasty=\dimen155
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
-\pgf@shorten@end@additional=\dimen154
-\pgf@shorten@start@additional=\dimen155
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen156
+\pgf@shorten@start@additional=\dimen157
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box36
 \pgf@hbox=\box37
 \pgf@layerbox@main=\box38
 \pgf@picture@serial@count=\count114
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
-\pgflinewidth=\dimen156
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen158
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
-\pgf@pt@x=\dimen157
-\pgf@pt@y=\dimen158
-\pgf@pt@temp=\dimen159
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen159
+\pgf@pt@y=\dimen160
+\pgf@pt@temp=\dimen161
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen162
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
-\pgf@max=\dimen160
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen163
 \pgf@sys@shading@range@num=\count115
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box39
 ))
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
-)))
-(/usr/share/texmf/tex/latex/pgf/utilities/xxcolor.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+))) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/xxcolor.sty
 Package: xxcolor 2003/10/24 ver 0.1
 \XC@nummixins=\count116
 \XC@countmixins=\count117
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -364,7 +394,7 @@ Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
@@ -374,7 +404,7 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen161
+\@linkdim=\dimen164
 \Hy@linkcounter=\count118
 \Hy@pagecounter=\count119
 
@@ -403,10 +433,10 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen162
+\XeTeXLinkMargin=\dimen165
 \Fld@menulength=\count122
-\Field@Width=\dimen163
-\Fld@charsize=\dimen164
+\Field@Width=\dimen166
+\Fld@charsize=\dimen167
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -435,249 +465,258 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaserequires.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaserequires.sty
 Package: beamerbaserequires 2010/05/01  (rcs-revision efa082c6111d)
 
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasecompatibility.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasecompatibility.sty
 Package: beamerbasecompatibility 2012/05/01  (rcs-revision 67c48b3b652d)
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasefont.sty
-Package: beamerbasefont 2012/09/19  (rcs-revision 733629cd0c6c)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasefont.sty
+Package: beamerbasefont 2015/01/05  (rcs-revision b4b4bee242e2)
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks23
+\@emptytoks=\toks26
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/sansmathaccent.sty
+Package: sansmathaccent 2013/03/28
+
+(/usr/share/texlive/texmf-dist/tex/latex/filehook/filehook.sty
+Package: filehook 2011/10/12 v0.5d Hooks for input files
 )))
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetranslator.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetranslator.sty
 Package: beamerbasetranslator 2010/06/11  (rcs-revision 85fd1cc7fc42)
 
-(/usr/share/texmf/tex/latex/beamer/base/translator/translator.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator.sty
 Package: translator 2010/06/12 ver 1.10
 
-(/usr/share/texmf/tex/latex/beamer/base/translator/translator-language-mappings
-.tex))) (/usr/share/texmf/tex/latex/beamer/base/beamerbasemisc.sty
-Package: beamerbasemisc 2012/02/24  (rcs-revision 2ff5461be705)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/translator-language-
+mappings.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasemisc.sty
+Package: beamerbasemisc 2013/09/03  (rcs-revision a55719c41d85)
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetwoscreens.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetwoscreens.sty
 Package: beamerbasetwoscreens 2010/05/01  (rcs-revision efa082c6111d)
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseoverlay.sty
-Package: beamerbaseoverlay 2012/11/11  (rcs-revision 6afbc49b1109)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
+Package: beamerbaseoverlay 2013/12/25  (rcs-revision f6bd5e3805da)
 \beamer@argscount=\count126
 \beamer@lastskipcover=\skip44
 \beamer@trivlistdepth=\count127
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetitle.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetitle.sty
 Package: beamerbasetitle 2010/09/21  (rcs-revision f0446ed0b6ae)
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasesection.sty
-Package: beamerbasesection 2012/11/11  (rcs-revision 0056eef6f17f)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasesection.sty
+Package: beamerbasesection 2013/06/07  (rcs-revision 60b9fe0f342f)
 \c@lecture=\count128
 \c@part=\count129
 \c@section=\count130
 \c@subsection=\count131
 \c@subsubsection=\count132
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframe.sty
-Package: beamerbaseframe 2012/09/13  (rcs-revision dcd846607320)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframe.sty
+Package: beamerbaseframe 2014/02/20  (rcs-revision 4b8ceeeff434)
 \beamer@framebox=\box40
 \beamer@frametitlebox=\box41
 \beamer@zoombox=\box42
 \beamer@zoomcount=\count133
 \beamer@zoomframecount=\count134
-\beamer@frametextheight=\dimen165
+\beamer@frametextheight=\dimen168
 \c@subsectionslide=\count135
 \beamer@frametopskip=\skip45
 \beamer@framebottomskip=\skip46
 \beamer@frametopskipautobreak=\skip47
 \beamer@framebottomskipautobreak=\skip48
-\beamer@envbody=\toks24
-\framewidth=\dimen166
+\beamer@envbody=\toks27
+\framewidth=\dimen169
 \c@framenumber=\count136
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseverbatim.sty
-Package: beamerbaseverbatim 2012/08/30  (rcs-revision dfdb135076b3)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseverbatim.sty
+Package: beamerbaseverbatim 2015/01/05  (rcs-revision 431510bb5890)
 \beamer@verbatimfileout=\write4
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframesize.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframesize.sty
 Package: beamerbaseframesize 2011/09/12  (rcs-revision 70f9d8411e54)
 \beamer@splitbox=\box43
 \beamer@autobreakcount=\count137
-\beamer@autobreaklastheight=\dimen167
-\beamer@frametitletoks=\toks25
-\beamer@framesubtitletoks=\toks26
+\beamer@autobreaklastheight=\dimen170
+\beamer@frametitletoks=\toks28
+\beamer@framesubtitletoks=\toks29
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseframecomponents.sty
-Package: beamerbaseframecomponents 2012/09/13  (rcs-revision dcd846607320)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
+Package: beamerbaseframecomponents 2013/10/18  (rcs-revision 5cf6c5555a45)
 \beamer@footins=\box44
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasecolor.sty
-Package: beamerbasecolor 2010/06/06  (rcs-revision d1a9b48be06d)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasecolor.sty
+Package: beamerbasecolor 2015/02/21  (rcs-revision d944b04ee2d5)
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasenotes.sty
-Package: beamerbasenotes 2010/05/01  (rcs-revision efa082c6111d)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenotes.sty
+Package: beamerbasenotes 2012/12/19  (rcs-revision 1686da3db3c9)
 \beamer@frameboxcopy=\box45
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetoc.sty
-Package: beamerbasetoc 2012/10/02  (rcs-revision 5ed0f4010e8a)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetoc.sty
+Package: beamerbasetoc 2015/03/08  (rcs-revision 7270298bbaae)
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetemplates.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetemplates.sty
 Package: beamerbasetemplates 2010/05/01  (rcs-revision efa082c6111d)
-\beamer@sbttoks=\toks27
+\beamer@sbttoks=\toks30
 
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseauxtemplates.sty
-Package: beamerbaseauxtemplates 2012/05/01  (rcs-revision 67c48b3b652d)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseauxtemplates.sty
+Package: beamerbaseauxtemplates 2014/06/30  (rcs-revision 580088513a67)
 
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaseboxes.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaseboxes.sty
 Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
 \bmb@box=\box46
 \bmb@colorbox=\box47
 \bmb@boxshadow=\box48
 \bmb@boxshadowball=\box49
 \bmb@boxshadowballlarge=\box50
-\bmb@temp=\dimen168
-\bmb@dima=\dimen169
-\bmb@dimb=\dimen170
-\bmb@prevheight=\dimen171
+\bmb@temp=\dimen171
+\bmb@dima=\dimen172
+\bmb@dimb=\dimen173
+\bmb@prevheight=\dimen174
 )
-\beamer@blockheadheight=\dimen172
+\beamer@blockheadheight=\dimen175
 ))
-(/usr/share/texmf/tex/latex/beamer/base/beamerbaselocalstructure.sty
-Package: beamerbaselocalstructure 2012/11/13  (rcs-revision ddfba79dac19)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbaselocalstructure.sty
+Package: beamerbaselocalstructure 2014/09/10  (rcs-revision 393f6dcff371)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
-\@enLab=\toks28
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks31
 )
 \c@figure=\count138
 \c@table=\count139
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasenavigation.sty
-Package: beamerbasenavigation 2012/04/03  (rcs-revision 42a0f21a412d)
-\beamer@section@min@dim=\dimen173
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasenavigation.sty
+Package: beamerbasenavigation 2015/02/27  (rcs-revision 923f4bf87efa)
+\beamer@section@min@dim=\dimen176
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasetheorems.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasetheorems.sty
 Package: beamerbasetheorems 2010/06/06  (rcs-revision 7e7cc5e53e9d)
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
+Package: amsmath 2016/03/03 v2.15a AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01
+Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks29
-\ex@=\dimen174
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks32
+\ex@=\dimen177
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen175
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen178
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count140
-LaTeX Info: Redefining \frac on input line 210.
+LaTeX Info: Redefining \frac on input line 199.
 \uproot@=\count141
 \leftroot@=\count142
-LaTeX Info: Redefining \overline on input line 306.
+LaTeX Info: Redefining \overline on input line 297.
 \classnum@=\count143
 \DOTSCASE@=\count144
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
 \Mathstrutbox@=\box51
 \strutbox@=\box52
-\big@size=\dimen176
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\big@size=\dimen179
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 \macc@depth=\count145
 \c@MaxMatrixCols=\count146
 \dotsspace@=\muskip11
 \c@parentequation=\count147
 \dspbrk@lvl=\count148
-\tag@help=\toks30
+\tag@help=\toks33
 \row@=\count149
 \column@=\count150
 \maxfields@=\count151
-\andhelp@=\toks31
-\eqnshift@=\dimen177
-\alignsep@=\dimen178
-\tagshift@=\dimen179
-\tagwidth@=\dimen180
-\totwidth@=\dimen181
-\lineht@=\dimen182
-\@envbody=\toks32
+\andhelp@=\toks34
+\eqnshift@=\dimen180
+\alignsep@=\dimen181
+\tagshift@=\dimen182
+\tagwidth@=\dimen183
+\totwidth@=\dimen184
+\lineht@=\dimen185
+\@envbody=\toks35
 \multlinegap=\skip52
 \multlinetaggap=\skip53
-\mathdisplay@stack=\toks33
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2004/08/06 v2.20
-\thm@style=\toks34
-\thm@bodyfont=\toks35
-\thm@headfont=\toks36
-\thm@notefont=\toks37
-\thm@headpunct=\toks38
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks37
+\thm@bodyfont=\toks38
+\thm@headfont=\toks39
+\thm@notefont=\toks40
+\thm@headpunct=\toks41
 \thm@preskip=\skip54
 \thm@postskip=\skip55
 \thm@headsep=\skip56
-\dth@everypar=\toks39
+\dth@everypar=\toks42
 )
 \c@theorem=\count152
 )
-(/usr/share/texmf/tex/latex/beamer/base/beamerbasethemes.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerbasethemes.sty
 Package: beamerbasethemes 2010/05/01  (rcs-revision efa082c6111d)
 ))
-(/usr/share/texmf/tex/latex/beamer/base/themes/theme/beamerthemedefault.sty
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/theme/beamerthemedefault
+.sty
 Package: beamerthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
 
-(/usr/share/texmf/tex/latex/beamer/base/themes/font/beamerfontthemedefault.sty
-Package: beamerfontthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/font/beamerfontthemedefa
+ult.sty
+Package: beamerfontthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 )
-(/usr/share/texmf/tex/latex/beamer/base/themes/color/beamercolorthemedefault.st
-y
-Package: beamercolorthemedefault 2010/06/17  (rcs-revision d02a7cf4d8ae)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/color/beamercolorthemede
+fault.sty
+Package: beamercolorthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 )
-(/usr/share/texmf/tex/latex/beamer/base/themes/inner/beamerinnerthemedefault.st
-y
-Package: beamerinnerthemedefault 2012/05/01  (rcs-revision 67c48b3b652d)
-\beamer@dima=\dimen183
-\beamer@dimb=\dimen184
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/inner/beamerinnerthemede
+fault.sty
+Package: beamerinnerthemedefault 2014/06/30  (rcs-revision 580088513a67)
+\beamer@dima=\dimen186
+\beamer@dimb=\dimen187
 )
-(/usr/share/texmf/tex/latex/beamer/base/themes/outer/beamerouterthemedefault.st
-y
-Package: beamerouterthemedefault 2012/10/02  (rcs-revision 5ed0f4010e8a)
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/themes/outer/beamerouterthemede
+fault.sty
+Package: beamerouterthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
-\captionmargin=\dimen185
-\captionmargin@=\dimen186
-\captionwidth=\dimen187
-\caption@tempdima=\dimen188
-\caption@indent=\dimen189
-\caption@parindent=\dimen190
-\caption@hangindent=\dimen191
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen188
+\captionmargin@=\dimen189
+\captionwidth=\dimen190
+\caption@tempdima=\dimen191
+\caption@indent=\dimen192
+\caption@parindent=\dimen193
+\caption@hangindent=\dimen194
 )
 \c@ContinuedFloat=\count153
 Package caption Info: beamer document class.
@@ -691,34 +730,34 @@ Package caption Info: Hyperref support is turned off
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count156
-\float@exts=\toks40
+\float@exts=\toks43
 \float@box=\box53
-\@float@everytoks=\toks41
+\@float@everytoks=\toks44
 \@floatcapt=\box54
 )
 (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen192
-\WF@size=\dimen193
+\wrapoverhang=\dimen195
+\WF@size=\dimen196
 \c@WF@wrappedlines=\count157
 \WF@box=\box55
-\WF@everypar=\toks42
+\WF@everypar=\toks45
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mwe/mwe.sty
 Package: mwe 2012/05/15 v0.3 Package to support minimal working examples (MWE)
 
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
-Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count158
 )
 (/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
-Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 \c@blindtext=\count159
 \c@Blindtext=\count160
@@ -739,68 +778,76 @@ Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count175
 \c@blind@pangrammax=\count176
 ))
-(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
-Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box56
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen197
+\pgf@nodesepend=\dimen198
 )
-(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen194
-\pgf@nodesepend=\dimen195
-)
-(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
-))
-(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
-(/usr/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
-(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
-\pgffor@iter=\dimen196
-\pgffor@skip=\dimen197
-\pgffor@stack=\toks43
-\pgffor@toks=\toks44
-))
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen199
+\pgffor@skip=\dimen256
+\pgffor@stack=\toks46
+\pgffor@toks=\toks47
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count177
-\pgfplotmarksize=\dimen198
+\pgfplotmarksize=\dimen257
 )
-\tikz@lastx=\dimen199
-\tikz@lasty=\dimen200
-\tikz@lastxsaved=\dimen201
-\tikz@lastysaved=\dimen202
-\tikzleveldistance=\dimen203
-\tikzsiblingdistance=\dimen204
+\tikz@lastx=\dimen258
+\tikz@lasty=\dimen259
+\tikz@lastxsaved=\dimen260
+\tikz@lastysaved=\dimen261
+\tikzleveldistance=\dimen262
+\tikzsiblingdistance=\dimen263
 \tikz@figbox=\box57
-\tikz@tempbox=\box58
+\tikz@figbox@bg=\box58
+\tikz@tempbox=\box59
+\tikz@tempbox@bg=\box60
 \tikztreelevel=\count178
 \tikznumberofchildren=\count179
 \tikznumberofcurrentchild=\count180
 \tikz@fig@count=\count181
 
-(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count182
 \pgfmatrixcurrentcolumn=\count183
 \pgf@matrix@numberofcolumns=\count184
 )
 \tikz@expandcount=\count185
 
-(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
-hs.code.tex
-File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
-))) (/usr/share/texlive/texmf-dist/tex/latex/overpic/overpic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/overpic/overpic.sty
 Package: overpic 2010/09/13 v0.53  Overwriting graphics
 
 Package: overpic v0.53 <2010/09/13> (RN)
@@ -808,50 +855,50 @@ Package: overpic v0.53 <2010/09/13> (RN)
 Enhancements to Picture Environment. Version 1.2 - Released June 1, 1986
 \@@multicnt=\count186
 \d@lta=\count187
-\@delta=\dimen205
-\@@delta=\dimen206
+\@delta=\dimen264
+\@@delta=\dimen265
 \@gridcnt=\count188
 \@joinkind=\count189
-\@dotgap=\dimen207
-\@ddotgap=\dimen208
+\@dotgap=\dimen266
+\@ddotgap=\dimen267
 \@x@diff=\count190
 \@y@diff=\count191
-\x@diff=\dimen209
-\y@diff=\dimen210
-\@dotbox=\box59
+\x@diff=\dimen268
+\y@diff=\dimen269
+\@dotbox=\box61
 \num@segments=\count192
 \num@segmentsi=\count193
 \@datafile=\read2
 )
 overpic: relative positioning in percent
 ) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen211
+\bigstrutjot=\dimen270
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen212
-\extrarowheight=\dimen213
-\NC@list=\toks45
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen271
+\extrarowheight=\dimen272
+\NC@list=\toks48
 \extratabsurround=\skip57
 \backup@length=\skip58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip59
 \LTright=\skip60
 \LTpre=\skip61
 \LTpost=\skip62
 \LTchunksize=\count194
-\LTcapwidth=\dimen214
-\LT@head=\box60
-\LT@firsthead=\box61
-\LT@foot=\box62
-\LT@lastfoot=\box63
+\LTcapwidth=\dimen273
+\LT@head=\box62
+\LT@firsthead=\box63
+\LT@foot=\box64
+\LT@lastfoot=\box65
 \LT@cols=\count195
 \LT@rows=\count196
 \c@LT@tables=\count197
 \c@LT@chunks=\count198
-\LT@p@ftn=\toks46
+\LT@p@ftn=\toks49
 ) (./pdfpcnotes.sty
 Package: pdfpcnotes 
 \pdfpcnotesfile=\write5
@@ -971,16 +1018,16 @@ File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count199
-\scratchdimen=\dimen215
-\scratchbox=\box64
-\nofMPsegments=\count200
-\nofMParguments=\count201
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count202
-\MPscratchDim=\dimen216
-\MPnumerator=\count203
-\makeMPintoPDFobject=\count204
-\everyMPtoPDFconversion=\toks48
+\scratchdimen=\dimen274
+\scratchbox=\box66
+\nofMPsegments=\count266
+\nofMParguments=\count267
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count268
+\MPscratchDim=\dimen275
+\MPnumerator=\count269
+\makeMPintoPDFobject=\count270
+\everyMPtoPDFconversion=\toks51
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -997,7 +1044,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box65
+\AtBeginShipoutBox=\box67
 Package hyperref Info: Link coloring OFF on input line 32.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1006,7 +1053,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count205
+\c@section@level=\count271
 )
 LaTeX Info: Redefining \ref on input line 32.
 LaTeX Info: Redefining \pageref on input line 32.
@@ -1020,10 +1067,14 @@ LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 32.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 32.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 32.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmr/m/n on input line 32.
+(Font)                  OT1/lmss/m/n --> OT1/lmr/m/n on input line 32.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/lmr/bx/n --> OT1/lmss/bx/n on input line 32.
@@ -1049,7 +1100,7 @@ LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/lmss/m/it --> OT1/lmss/bx/it on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmr/bx/n on input line 32.
+(Font)                  OT1/lmss/bx/n --> OT1/lmr/bx/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  OT1/lmss/bx/n --> OT1/lmss/bx/n on input line 32.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
@@ -1059,28 +1110,28 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/lmtt/m/n --> OT1/lmtt/bx/n on input line 32.
 
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-basic-dicti
-onary/translator-basic-dictionary-English.dict
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bas
+ic-dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-bibliograph
-y-dictionary/translator-bibliography-dictionary-English.dict
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-bib
+liography-dictionary/translator-bibliography-dictionary-English.dict
 Dictionary: translator-bibliography-dictionary, Language: English 
 )
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-environment
--dictionary/translator-environment-dictionary-English.dict
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-env
+ironment-dictionary/translator-environment-dictionary-English.dict
 Dictionary: translator-environment-dictionary, Language: English 
 )
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-months-dict
-ionary/translator-months-dictionary-English.dict
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-mon
+ths-dictionary/translator-months-dictionary-English.dict
 Dictionary: translator-months-dictionary, Language: English 
 )
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-numbers-dic
-tionary/translator-numbers-dictionary-English.dict
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-num
+bers-dictionary/translator-numbers-dictionary-English.dict
 Dictionary: translator-numbers-dictionary, Language: English 
 )
-(/usr/share/texmf/tex/latex/beamer/base/translator/dicts/translator-theorem-dic
-tionary/translator-theorem-dictionary-English.dict
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/translator/dicts/translator-the
+orem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
 LaTeX Info: Redefining \includegraphics on input line 32.
@@ -1089,7 +1140,7 @@ Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1168,7 +1219,7 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
 File: watermark-polito.png Graphic file (type png)
 
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 54.
+Package pdftex.def Info: watermark-polito.png used on input line 55.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1182,7 +1233,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 54.
+Package pdftex.def Info: watermark-polito.png used on input line 55.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
  [2
 
@@ -1190,40 +1241,34 @@ Package pdftex.def Info: watermark-polito.png used on input line 54.
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<pie.png, id=46, 508.90125pt x 269.005pt>
-File: pie.png Graphic file (type png)
- <use pie.png>
-Package pdftex.def Info: pie.png used on input line 11.
-(pdftex.def)             Requested size: 64.09775pt x 33.88002pt.
-
 <m.png, id=47, 454.69875pt x 641.39626pt>
 File: m.png Graphic file (type png)
  <use m.png>
-Package pdftex.def Info: m.png used on input line 19.
+Package pdftex.def Info: m.png used on input line 9.
 (pdftex.def)             Requested size: 45.47253pt x 64.14337pt.
 
 <l.png, id=48, 711.65875pt x 404.51125pt>
 File: l.png Graphic file (type png)
  <use l.png>
-Package pdftex.def Info: l.png used on input line 25.
+Package pdftex.def Info: l.png used on input line 15.
 (pdftex.def)             Requested size: 71.17004pt x 40.45349pt.
 
 <cyl.png, id=49, 432.11438pt x 339.51843pt>
 File: cyl.png Graphic file (type png)
  <use cyl.png>
-Package pdftex.def Info: cyl.png used on input line 32.
+Package pdftex.def Info: cyl.png used on input line 22.
 (pdftex.def)             Requested size: 43.21396pt x 33.95383pt.
 
 <fail.jpg, id=50, 301.125pt x 361.35pt>
 File: fail.jpg Graphic file (type jpg)
  <use fail.jpg>
-Package pdftex.def Info: fail.jpg used on input line 39.
+Package pdftex.def Info: fail.jpg used on input line 29.
 (pdftex.def)             Requested size: 30.11426pt x 36.13712pt.
 )
 File: watermark-polito.png Graphic file (type png)
 
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 107.
+Package pdftex.def Info: watermark-polito.png used on input line 98.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1237,25 +1282,56 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 107.
+Package pdftex.def Info: watermark-polito.png used on input line 98.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
  [3
 
- <./pie.png (PNG copy)> <./m.png> <./l.png> <./cyl.png (PNG copy)> <./fail.jpg>
-]
+ <./m.png> <./l.png> <./cyl.png (PNG copy)> <./fail.jpg>]
+\openout4 = `Main.vrb'.
+
+ (./Main.vrb <pie.png, id=62, 508.90125pt x 269.005pt>
+File: pie.png Graphic file (type png)
+ <use pie.png>
+Package pdftex.def Info: pie.png used on input line 10.
+(pdftex.def)             Requested size: 160.24684pt x 84.70418pt.
+)
+File: watermark-polito.png Graphic file (type png)
+
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 113.
+(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[]
+ []
+
+File: watermark-polito.png Graphic file (type png)
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 113.
+(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
+ [4
+
+ <./pie.png (PNG copy)>]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<enrich.png, id=67, 671.50874pt x 334.24875pt>
+<enrich.png, id=74, 671.50874pt x 334.24875pt>
 File: enrich.png Graphic file (type png)
  <use enrich.png>
 Package pdftex.def Info: enrich.png used on input line 16.
 (pdftex.def)             Requested size: 201.45418pt x 100.27539pt.
 )
-File: watermark-polito.png Graphic file (type png)
+Overfull \vbox (5.7276pt too high) detected at line 134
+ []
 
+File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 128.
+Package pdftex.def Info: watermark-polito.png used on input line 134.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1269,9 +1345,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 128.
+Package pdftex.def Info: watermark-polito.png used on input line 134.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [4
+ [5
 
  <./enrich.png>]
 \openout4 = `Main.vrb'.
@@ -1285,7 +1361,7 @@ LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <9> not available
 File: watermark-polito.png Graphic file (type png)
 
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 151.
+Package pdftex.def Info: watermark-polito.png used on input line 157.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1299,31 +1375,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 151.
-(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [5
-
-]
-\openout4 = `Main.vrb'.
-
- (./Main.vrb)
-File: watermark-polito.png Graphic file (type png)
- <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 171.
-(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-File: watermark-polito.png Graphic file (type png)
-<use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 171.
+Package pdftex.def Info: watermark-polito.png used on input line 157.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
  [6
 
@@ -1333,7 +1385,7 @@ Package pdftex.def Info: watermark-polito.png used on input line 171.
  (./Main.vrb)
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 197.
+Package pdftex.def Info: watermark-polito.png used on input line 166.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1347,7 +1399,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 197.
+Package pdftex.def Info: watermark-polito.png used on input line 166.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
  [7
 
@@ -1357,7 +1409,7 @@ Package pdftex.def Info: watermark-polito.png used on input line 197.
  (./Main.vrb)
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 218.
+Package pdftex.def Info: watermark-polito.png used on input line 196.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1371,7 +1423,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 218.
+Package pdftex.def Info: watermark-polito.png used on input line 196.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
  [8
 
@@ -1379,19 +1431,19 @@ Package pdftex.def Info: watermark-polito.png used on input line 218.
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-Overfull \hbox (4.13501pt too wide) in paragraph at lines 6--6
+Overfull \hbox (4.1344pt too wide) in paragraph at lines 6--6
 []  
  []
 
 
-Overfull \hbox (4.13501pt too wide) in paragraph at lines 9--9
+Overfull \hbox (4.1344pt too wide) in paragraph at lines 9--9
 []  
  []
 
 )
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 231.
+Package pdftex.def Info: watermark-polito.png used on input line 209.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1405,22 +1457,17 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 231.
+Package pdftex.def Info: watermark-polito.png used on input line 209.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
  [9
 
 ]
 \openout4 = `Main.vrb'.
 
- (./Main.vrb
-Overfull \hbox (0.22577pt too wide) in paragraph at lines 45--45
-[]  
- []
-
-)
+ (./Main.vrb)
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 281.
+Package pdftex.def Info: watermark-polito.png used on input line 249.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1434,7 +1481,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 281.
+Package pdftex.def Info: watermark-polito.png used on input line 249.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
  [10
 
@@ -1442,20 +1489,23 @@ Package pdftex.def Info: watermark-polito.png used on input line 281.
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<flow_chart.pdf, id=129, 597.23125pt x 845.1575pt>
-File: flow_chart.pdf Graphic file (type pdf)
- <use flow_chart.pdf>
-Package pdftex.def Info: flow_chart.pdf used on input line 5.
-(pdftex.def)             Requested size: 153.8356pt x 217.6982pt.
+<image2.jpg, id=126, 624.83438pt x 357.58594pt>
+File: image2.jpg Graphic file (type jpg)
+ <use image2.jpg>
+Package pdftex.def Info: image2.jpg used on input line 14.
+(pdftex.def)             Requested size: 124.96466pt x 71.51591pt.
 
-Overfull \hbox (25.64009pt too wide) in paragraph at lines 5--6
+Overfull \hbox (7.2096pt too wide) in paragraph at lines 49--50
  [][] 
  []
 
 )
+Overfull \vbox (0.5951pt too high) detected at line 302
+ []
+
 File: watermark-polito.png Graphic file (type png)
- <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 295.
+<use watermark-polito.png>
+Package pdftex.def Info: watermark-polito.png used on input line 302.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1469,120 +1519,15 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 295.
+Package pdftex.def Info: watermark-polito.png used on input line 302.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
  [11
-
- <./flow_chart.pdf>]
-\openout4 = `Main.vrb'.
-
- (./Main.vrb
-<image1.jpg, id=143, 550.30594pt x 330.48468pt>
-File: image1.jpg Graphic file (type jpg)
- <use image1.jpg>
-Package pdftex.def Info: image1.jpg used on input line 14.
-(pdftex.def)             Requested size: 137.57614pt x 82.62096pt.
-
-Overfull \hbox (11.55205pt too wide) in paragraph at lines 45--46
- [][][] 
- []
-
-)
-File: watermark-polito.png Graphic file (type png)
- <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 344.
-(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-File: watermark-polito.png Graphic file (type png)
-<use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 344.
-(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [12
-
- <./image1.jpg (PNG copy)>]
-\openout4 = `Main.vrb'.
-
- (./Main.vrb
-<image2.jpg, id=151, 624.83438pt x 357.58594pt>
-File: image2.jpg Graphic file (type jpg)
- <use image2.jpg>
-Package pdftex.def Info: image2.jpg used on input line 11.
-(pdftex.def)             Requested size: 124.96466pt x 71.51591pt.
-
-Overfull \hbox (7.2096pt too wide) in paragraph at lines 46--47
- [][][] 
- []
-
-)
-File: watermark-polito.png Graphic file (type png)
- <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 394.
-(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-File: watermark-polito.png Graphic file (type png)
-<use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 394.
-(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [13
 
  <./image2.jpg (PNG copy)>]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<solution.jpg, id=160, 421.575pt x 316.18124pt>
-File: solution.jpg Graphic file (type jpg)
- <use solution.jpg>
-Package pdftex.def Info: solution.jpg used on input line 13.
-(pdftex.def)             Requested size: 84.31349pt x 63.23512pt.
-
-Overfull \hbox (22.99117pt too wide) in paragraph at lines 42--43
- [][][] 
- []
-
-)
-File: watermark-polito.png Graphic file (type png)
- <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 440.
-(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-File: watermark-polito.png Graphic file (type png)
-<use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 440.
-(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [14
-
- <./solution.jpg (PNG copy)>]
-\openout4 = `Main.vrb'.
-
- (./Main.vrb
-<elements_7^2_1.jpg, id=168, 756.8275pt x 501.875pt>
+<elements_7^2_1.jpg, id=134, 756.8275pt x 501.875pt>
 File: elements_7^2_1.jpg Graphic file (type jpg)
  <use elements_7^2_1.jpg>
 Package pdftex.def Info: elements_7^2_1.jpg used on input line 6.
@@ -1591,7 +1536,7 @@ Package pdftex.def Info: elements_7^2_1.jpg used on input line 6.
 File: watermark-polito.png Graphic file (type png)
 
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 456.
+Package pdftex.def Info: watermark-polito.png used on input line 336.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1605,170 +1550,36 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 456.
+Package pdftex.def Info: watermark-polito.png used on input line 336.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [15
+ [12
 
  <./elements_7^2_1.jpg>]
 \openout4 = `Main.vrb'.
 
  (./Main.vrb
-<arrow.png, id=176, 642.4pt x 401.5pt>
-File: arrow.png Graphic file (type png)
- <use arrow.png>
-Package pdftex.def Info: arrow.png used on input line 9.
-(pdftex.def)             Requested size: 224.84337pt x 140.5271pt.
-
-<uy_7^2.jpg, id=177, 381.425pt x 346.29375pt>
-File: uy_7^2.jpg Graphic file (type jpg)
- <use uy_7^2.jpg>
-Package pdftex.def Info: uy_7^2.jpg used on input line 11.
-(pdftex.def)             Requested size: 114.42838pt x 103.88892pt.
-
-<uy_12^2.jpg, id=178, 382.42876pt x 344.28625pt>
-File: uy_12^2.jpg Graphic file (type jpg)
- <use uy_12^2.jpg>
-Package pdftex.def Info: uy_12^2.jpg used on input line 13.
-(pdftex.def)             Requested size: 114.7295pt x 103.28667pt.
-
-<uy_20^2.jpg, id=179, 380.42125pt x 345.29pt>
-File: uy_20^2.jpg Graphic file (type jpg)
- <use uy_20^2.jpg>
-Package pdftex.def Info: uy_20^2.jpg used on input line 15.
-(pdftex.def)             Requested size: 114.12724pt x 103.58778pt.
-
-Overfull \hbox (5.29259pt too wide) in paragraph at lines 32--33
- [][] 
- []
-
-)
-File: watermark-polito.png Graphic file (type png)
- <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 491.
-(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-File: watermark-polito.png Graphic file (type png)
-<use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 491.
-(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [16
-
- <./arrow.png> <./uy_7^2.jpg> <./uy_12^2.jpg> <./uy_20^2.jpg>]
-\openout4 = `Main.vrb'.
-
- (./Main.vrb <mai.png, id=188, 722.7pt x 536.0025pt>
-File: mai.png Graphic file (type png)
-
-<use mai.png>
-Package pdftex.def Info: mai.png used on input line 7.
-(pdftex.def)             Requested size: 108.40031pt x 80.3969pt.
-
-Overfull \hbox (12.25124pt too wide) in paragraph at lines 7--8
-[][][] 
- []
-
-<untitled1.png, id=189, 421.575pt x 316.18124pt>
-File: untitled1.png Graphic file (type png)
- <use untitled1.png>
-Package pdftex.def Info: untitled1.png used on input line 12.
-(pdftex.def)             Requested size: 92.74678pt x 69.56007pt.
-
-<untitled2.png, id=190, 421.575pt x 316.18124pt>
-File: untitled2.png Graphic file (type png)
- <use untitled2.png>
-Package pdftex.def Info: untitled2.png used on input line 16.
-(pdftex.def)             Requested size: 92.74678pt x 69.56007pt.
-)
-File: watermark-polito.png Graphic file (type png)
-
-<use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 520.
-(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-File: watermark-polito.png Graphic file (type png)
-<use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 520.
-(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [17
-
- <./mai.png (PNG copy)> <./untitled1.png (PNG copy)> <./untitled2.png (PNG copy
-)>]
-\openout4 = `Main.vrb'.
-
- (./Main.vrb
-<3.png, id=199, 216.81pt x 497.86pt>
+<3.png, id=142, 216.81pt x 497.86pt>
 File: 3.png Graphic file (type png)
  <use 3.png>
-Package pdftex.def Info: 3.png used on input line 7.
+Package pdftex.def Info: 3.png used on input line 5.
 (pdftex.def)             Requested size: 43.36122pt x 99.57024pt.
 
-<4.png, id=200, 212.795pt x 410.53375pt>
-File: 4.png Graphic file (type png)
- <use 4.png>
-Package pdftex.def Info: 4.png used on input line 11.
-(pdftex.def)             Requested size: 42.55824pt x 82.10529pt.
+<untitled1.png, id=143, 188.705pt x 322.20375pt>
+File: untitled1.png Graphic file (type png)
+ <use untitled1.png>
+Package pdftex.def Info: untitled1.png used on input line 11.
+(pdftex.def)             Requested size: 41.51521pt x 70.88504pt.
 
-<5.png, id=201, 215.80624pt x 492.84125pt>
-File: 5.png Graphic file (type png)
- <use 5.png>
-Package pdftex.def Info: 5.png used on input line 15.
-(pdftex.def)             Requested size: 43.16048pt x 98.5665pt.
-
-<onlystress.png, id=202, 501.875pt x 377.41pt>
+<onlystress.png, id=144, 625.33624pt x 469.755pt>
 File: onlystress.png Graphic file (type png)
  <use onlystress.png>
-Package pdftex.def Info: onlystress.png used on input line 23.
-(pdftex.def)             Requested size: 100.37321pt x 75.48065pt.
-
-Overfull \hbox (4.22414pt too wide) in paragraph at lines 23--24
-[][][] 
- []
-
-<onlytempqy.png, id=203, 401.5pt x 302.12875pt>
-File: onlytempqy.png Graphic file (type png)
- <use onlytempqy.png>
-Package pdftex.def Info: onlytempqy.png used on input line 30.
-(pdftex.def)             Requested size: 100.37474pt x 75.532pt.
-
-Overfull \hbox (4.22566pt too wide) in paragraph at lines 30--31
- [][][] 
- []
-
-<only_bothstress.png, id=204, 501.875pt x 377.41pt>
-File: only_bothstress.png Graphic file (type png)
- <use only_bothstress.png>
-Package pdftex.def Info: only_bothstress.png used on input line 36.
-(pdftex.def)             Requested size: 100.37321pt x 75.48065pt.
-
-Overfull \hbox (4.22414pt too wide) in paragraph at lines 36--37
-[][][] 
- []
-
+Package pdftex.def Info: onlystress.png used on input line 16.
+(pdftex.def)             Requested size: 156.33368pt x 117.43846pt.
 )
-Overfull \vbox (5.7268pt too high) detected at line 562
- []
-
 File: watermark-polito.png Graphic file (type png)
+
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 562.
+Package pdftex.def Info: watermark-polito.png used on input line 371.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1782,22 +1593,21 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 562.
+Package pdftex.def Info: watermark-polito.png used on input line 371.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [18
+ [13
 
- <./3.png> <./4.png> <./5.png> <./onlystress.png> <./onlytempqy.png (PNG copy)>
- <./only_bothstress.png>]
+ <./3.png> <./untitled1.png> <./onlystress.png>]
 \openout4 = `Main.vrb'.
 
- (./Main.vrb
-<crackclosure.png, id=221, 397.485pt x 260.975pt>
+
+(./Main.vrb <crackclosure.png, id=153, 397.485pt x 260.975pt>
 File: crackclosure.png Graphic file (type png)
- <use crackclosure.png>
+
+<use crackclosure.png>
 Package pdftex.def Info: crackclosure.png used on input line 7.
 (pdftex.def)             Requested size: 79.49559pt x 52.19408pt.
-
-<k.png, id=222, 752.8125pt x 307.1475pt>
+ <k.png, id=154, 752.8125pt x 307.1475pt>
 File: k.png Graphic file (type png)
  <use k.png>
 Package pdftex.def Info: k.png used on input line 13.
@@ -1806,7 +1616,7 @@ Package pdftex.def Info: k.png used on input line 13.
 File: watermark-polito.png Graphic file (type png)
 
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 604.
+Package pdftex.def Info: watermark-polito.png used on input line 418.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1820,9 +1630,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 604.
+Package pdftex.def Info: watermark-polito.png used on input line 418.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [19
+ [14
 
  <./crackclosure.png (PNG copy)> <./k.png (PNG copy)>]
 \openout4 = `Main.vrb'.
@@ -1830,7 +1640,7 @@ Package pdftex.def Info: watermark-polito.png used on input line 604.
  (./Main.vrb)
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 617.
+Package pdftex.def Info: watermark-polito.png used on input line 437.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1844,17 +1654,14 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 617.
+Package pdftex.def Info: watermark-polito.png used on input line 437.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [20
+ [15
 
 ]
-\openout4 = `Main.vrb'.
-
- (./Main.vrb)
 File: watermark-polito.png Graphic file (type png)
  <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 632.
+Package pdftex.def Info: watermark-polito.png used on input line 442.
 (pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
@@ -1868,33 +1675,9 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 
 File: watermark-polito.png Graphic file (type png)
 <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 632.
+Package pdftex.def Info: watermark-polito.png used on input line 442.
 (pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [21
-
- </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]
-\openout4 = `Main.vrb'.
-
- (./Main.vrb)
-File: watermark-polito.png Graphic file (type png)
- <use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 646.
-(pdftex.def)             Requested size: 100.37474pt x 100.37537pt.
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]
- []
-
-File: watermark-polito.png Graphic file (type png)
-<use watermark-polito.png>
-Package pdftex.def Info: watermark-polito.png used on input line 646.
-(pdftex.def)             Requested size: 100.37474pt x 13.65399pt.
- [22
+ [16
 
 ]
 \tf@nav=\write7
@@ -1906,44 +1689,41 @@ Package pdftex.def Info: watermark-polito.png used on input line 646.
 \tf@snm=\write9
 \openout9 = `Main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 647.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 647.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 443.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 443.
  (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 647.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 647.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 443.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 443.
 Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 647.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 443.
  ) 
 Here is how much of TeX's memory you used:
- 20263 strings out of 494985
- 377799 string characters out of 6180356
- 560230 words of memory out of 5000000
- 22818 multiletter control sequences out of 15000+600000
- 63007 words of font info for 69 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 49i,17n,73p,517b,795s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 21795 strings out of 493029
+ 424627 string characters out of 6136235
+ 610006 words of memory out of 5000000
+ 24714 multiletter control sequences out of 15000+600000
+ 66643 words of font info for 65 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 56i,17n,59p,517b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
-hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmss9.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/
-lmmi9.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/
-fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmss9.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmsso9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/pub
-lic/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb>
-Output written on Main.pdf (22 pages, 1966929 bytes).
+c/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/u
+sr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/publi
+c/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/l
+mmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi9.pfb></usr/share/texmf/fo
+nts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmss9.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso9.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/publ
+ic/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/t
+exmf/fonts/type1/public/lm/lmsy9.pfb>
+Output written on Main.pdf (16 pages, 1526155 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 247 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
- 315 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 244 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
