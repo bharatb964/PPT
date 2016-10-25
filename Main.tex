@@ -246,7 +246,7 @@ Where,
     \begin{itemize}
 \footnotesize
      \onslide<5->   \item A MATLAB program is developed to solve the 2-dimensional thermoelasticity problems based on above Finite Element model 
-     \onslide<6->   \item 4-noded quadrilateral (Q4) elements were used for meshing 
+     \onslide<6->   \item 4-noded quadrilateral (Q4) elements and 3-degrees of freedom per node 
       \onslide<7->  \item  $2\times 2$ Gauss quadrature rule is used for numerical integration
     \end{itemize}
 \end{itemize}
@@ -340,6 +340,52 @@ Nodes& \% \ Error in Temperature T&\% Error in displacement $u_y$\\
 
  
 \end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[t,fragile]{Mesh Refinements}
+    \onslide<2->
+      \vspace{-.3cm}
+    \begin{figure}
+    \begin{subfigure}{.3\textwidth}
+    \centering  
+\begin{tikzpicture}[      
+        every node/.style={scale=.6,anchor=south west,inner sep=0pt},
+        x=1mm, y=1mm,scale=.6
+      ] 
+      \vspace{.3cm}
+      \hspace{-2cm}
+       \node (fig2) at (-25,-35)
+      {\includegraphics[scale=0.35]{arrow}};  
+       \node (fig1) at (0,0)
+      {\includegraphics[scale=0.3]{uy_7^2}};
+      \node (fig2) at (10,-10)
+    {\includegraphics[scale=0.3]{uy_12^2}};
+       \node (fig2) at (20,-20)
+       {\includegraphics[scale=0.3]{uy_20^2}};  
+    \end{tikzpicture}
+\end{subfigure}
+\onslide<3->
+\begin{subfigure}{.5\textwidth}
+        \includegraphics[scale=.28]{w}
+    \end{subfigure}
+\end{figure}
+ \vspace{-1cm}\begin{figure}
+   \centering 
+  \caption{\scriptsize Errors obtained on node 30 after mesh refinements }
+  \vspace{-.2cm}
+ \scalebox{.8}{\begin{tabular}{|c|c|c|}
+        \hline
+       Number of Elements & \% Error in displacement $u_x$& \% Error in displacement $u_y$\\
+        \hline
+       $7\times 7$ & $0.00034894013$ & $0.00034894013$ \\
+        \hline
+         $12\times 12$ & $1.764697\times 10^{-7}$ & $1.764697\times 10^{-7}$ \\
+        \hline
+        $20\times 20$ & $1.265804\times 10^{-8}$ & $1.265804\times 10^{-8}$ \\
+        \hline
+    \end{tabular}}
+\end{figure}
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{frame}[t,fragile]{Plate with edge crack}
     \vspace{-20pt}\onslide<2->
@@ -354,9 +400,9 @@ Nodes& \% \ Error in Temperature T&\% Error in displacement $u_y$\\
               \includegraphics[scale=.22]{untitled1.png}
             \caption{\scriptsize Mesh configuration}
     \end{subfigure}
-    \hspace{1pt}
     \begin{subfigure}{.5\textwidth}
-        \includegraphics[scale=.25]{onlystress}
+    \vspace{10pt}
+     \onslide<3->   \includegraphics[scale=.25]{z}
         \vspace{-5pt}
          \caption{\scriptsize $\sigma_y$ ahead of the crack tip}
     \end{subfigure}
@@ -364,7 +410,7 @@ Nodes& \% \ Error in Temperature T&\% Error in displacement $u_y$\\
     \vspace{-10pt}
 \begin{itemize}
         \scriptsize
- \onslide<3->   \item An edge crack problem is solved applying stress $\sigma_y=100$ Mpa and taking E=200 Gpa and $\nu$=0.3.
+ \onslide<2->   \item An edge crack problem is solved applying stress $\sigma_y=100$ Mpa and taking E=200 Gpa and $\nu$=0.3.
   \onslide<4->  \item Stress intensity factor is calculated using the crack closure integral technique. 
    \onslide<5-> \item Same problem is solved in X-FEM program developed by Parnaik and compared by our solution 
 \end{itemize}
