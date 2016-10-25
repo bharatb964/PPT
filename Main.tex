@@ -46,25 +46,25 @@
         \item Introduction 
         \item Motivation
         \item Literature Survey 
-        \item Objectives and work done 
+        \item Objectives  
         \item Computer implementation 
         \item Validation of FEM program 
         \item Example problems
-        \item Conclusion
+        \item Conclusion and future work
     \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Introduction: Thermo-elastic Fracture Mechanics}
     \vspace{-.3cm}
     \begin{itemize}
-         \item Thermo-elastic Fracture mechanics is a field in which we Study the propagation of crack in presence of temperature field.
+         \item Thermo-elastic Fracture mechanics is a field in which we Study the propagation of the crack in presence of temperature field.
                 \item Some application areas are as follows:
 \begin{figure}[H]
       \begin{subfigure}{0.45\textwidth}
     \centering
     \includegraphics[scale=.1]{m}
  \vspace{-.2cm}
- \caption{\tiny Ultra fast laser}
+ \caption{\tiny Ultrafast laser}
  \end{subfigure}
 \begin{subfigure}{0.45\textwidth}
     \centering
@@ -98,57 +98,62 @@
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%o 
 \begin{frame}[t,fragile]{Motivation}
-    \begin{itemize}
-\item Atkinson's solution of Laplace's equation: $u(x,y)= r^{\frac{\pi}{\phi}}\sin\alpha\theta$\\
-     \item For $\phi=2\pi$ :  $u \propto r^{\frac{1}{2}}$ and $u'\propto  r^{-\frac{1}{2}}$  
-     \item So the temperature varies similar to the displacement field around the crack tip
-     \item This is our motivation to pursue the thermal effects on fracture
-     \end{itemize}
-        \begin{figure}
+    \vspace{-.3cm}
+    \footnotesize
+\begin{itemize}
+    \item Atkinson has solved a Dirichlet problem for Laplace's equation on a pie shaped region as:\vspace{-.2cm}
+        $$u(x,y)= r^{\frac{\pi}{\phi}}\sin\alpha\theta,\  r>0,\ 0<\theta<\phi$$
+        \vspace{-.6cm}
+        \begin{itemize}
+                \footnotesize
+    \item Case I: $0<\phi<\pi$:
+        $u'$ is continuous as we approach towards the origin 
+    \item Case II: $\pi<\phi<2\pi$:
+        $u'$ is not continuous as (x,y) approaches the origin 
+    \end{itemize}
+\item When $\phi=2\pi$, the problem becomes a crack problem:
+    \vspace{-.1cm}$$u \propto r^{\frac{1}{2}}\text{ and} \ u'\propto  r^{-\frac{1}{2}}$$ 
+    \item Substituting T in place of u: 
+       $T \propto r^{\frac{1}{2}}\text{ and} \ T'\propto  r^{-\frac{1}{2}}$ 
+   \item Thus, around the crack tip, thermal stresses also has square root singularity : our motivation for analyzing a thermo-elastic crack problem. 
+    
+\end{itemize}
+  \tiny
+  \vspace{10pt}
+  \hspace{10pt}
+   \textbf{source}: Atkinson, K. E. (1997).
+    \emph{The numerical solution of \\
+  \hspace{10pt}
+    integral equations of the second kind} (Vol. 4). \\
+  \hspace{10pt}
+    Cambridge university press.
+\begin{wrapfigure}{r}{0.4\textwidth}
     \centering
-    \includegraphics[width=.5\textwidth]{pie.png}
-\end{figure}
-
-
+    \vspace{-55pt}
+    \includegraphics[width=.3\textwidth]{pie.png}
+    \vspace{-8pt}
+    \caption{\footnotesize Pie-shaped region.}
+\end{wrapfigure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Introduction to Extended Finite Element Method }
-    \vspace{-.3cm}
-    \small
-    \begin{itemize}
-         \item In FEM we have to use very fine mesh to capture the behaviour of crack. 
-\item In X-FEM, we enrich the polynomial approximation to include the effects of singular discontinuous field.
-     \item Advantages over FEM:
-    \begin{itemize}
-         \item Accurate solutions without the very fine mesh at the discontinuity
-         \item No need of remeshing 
-    \end{itemize}
-\end{itemize} 
-\begin{figure}
-     \centering
-     \vspace{-10pt}
-     \includegraphics[scale=.3]{enrich.png}
-     \vspace{-.4cm}
-     \caption{\hspace{-2cm}\footnotesize X-FEM enrichment strategy}
-  \end{figure}
-\end{frame}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Enrichment functions in X-FEM}
-    \vspace{-.3cm}
-     \footnotesize
-    \begin{itemize}
-         \item The nodes which belongs to the elements totally cut by the crack, are enriched by and Heaviside function.
-    $$h(x,y)=\begin{cases}1,&       for ~ ~ y\ge 0\\ -1,&       for~ ~ y\le 0\end{cases}$$ 
-\item The nodes of elements which contains cracktip are enriched by $\gamma$:
-     \footnotesize
-    \begin{align*}
-     u^h&=\sum_i N_i(x)u_i+\sum_{j\in J} N_j(x) h(x)a_j+\sum_{k\in K} N_k(x)\left( \sum_{l=1}^{4}\gamma_l(x)b_{kl} \right) \\
-    v^h&=\sum_i N_i(x)v_i+\sum_{j\in J} N_j(x) h(x)c_j+\sum_{k\in K} N_k(x)\left( \sum_{l=1}^{4}\gamma_l(x)d_{kl} \right) \\ 
-     where,\ \ \ \gamma&=\left[ \sqrt{r}\cos \left( \frac{\theta}{2} \right), \sqrt{r}\sin\left( \frac{\theta}{2} \right),\sqrt{r}\sin\left( \frac{\theta}{2} \right)\sin(\theta),\sqrt{r}\cos\left( \frac{\theta}{2} \right)\sin(\theta)\right] 
-\end{align*}
-\end{itemize}
+    \begin{figure}
+    \vspace{-.5cm}
+    \includegraphics[scale=.2]{enrich.png}
+    \vspace{-.4cm}
+     \caption{\hspace{-1.5cm}\tiny X-FEM enrichment strategy}
+\end{figure}
+    \vspace{-.5cm}
+\footnotesize
+   $Heavyside \ enrichment\  functions:\ \ \ \ \ h(x,y)=\begin{cases}1,&       for ~ ~ y\ge 0\\ -1,&       for~ ~ y\le 0\end{cases}$\\ 
+    \vspace{.2cm}
+     $ u^h=\sum_i N_i(x)u_i+\sum_{j\in J} N_j(x) h(x)a_j+\sum_{k\in K} N_k(x)\left( \sum_{l=1}^{4}\gamma_l(x)b_{kl} \right)$\\
+    \vspace{.2cm}
+    $ v^h=\sum_i N_i(x)v_i+\sum_{j\in J} N_j(x) h(x)c_j+\sum_{k\in K} N_k(x)\left( \sum_{l=1}^{4}\gamma_l(x)d_{kl} \right) $\\
+    \vspace{.2cm}
+    where,$\gamma=\left[ \sqrt{r}\cos \left( \frac{\theta}{2} \right), \sqrt{r}\sin\left( \frac{\theta}{2} \right),\sqrt{r}\sin\left( \frac{\theta}{2} \right)\sin(\theta),\sqrt{r}\cos\left( \frac{\theta}{2} \right)\sin(\theta)\right] $\\
 \tiny
+    \vspace{.3cm}
 \hspace{10pt}
 \textbf{Source:}Belytschko, T., \& Black, T. (1999). Elastic crack growth in finite elements with minimal remeshing. \\
 \vspace{-7pt}
@@ -158,17 +163,17 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}[t,fragile]{Objectives: }
     \begin{itemize}
-        \item Finite element formulation of semi-coupled thermo-elasticity and implementation in MATLAB
+        \item Finite element formulation of semi-coupled thermoelasticity and implementation in MATLAB
         \item Validation of FEM programs by performing patch tests.
                   \item Development of Extended Finite Element Program for coupled thermoelastic fracture problems 
                   \item Utilization of the developed X-FEM Program in other fields which is governed by Laplace's equation
                 \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Finite Element Formulation of Thermo-elasticity}
+\begin{frame}[t,fragile]{Finite Element Formulation of Thermoelasticity}
     \vspace{-.4cm}
     \begin{itemize} 
-\item A semi-coupled thermo-elasticity problem is formulated. 
+\item A semi-coupled thermoelasticity problem is formulated. 
 \item In semi-coupled problems we neglected the effect of displacements on temperature field. 
 \item In presence of temperature field, the Hooke's law can be given by: 
     \footnotesize
@@ -184,7 +189,7 @@
     \end{Bmatrix}
 \end{align*}
 
-    \item The governing equations of the thermo-elasticity is derived as follows: 
+    \item The governing equations of the thermoelasticity is derived as follows: 
             \bgroup
             \begin{align*}
     \frac{\partial}{\partial x}\left[c_{11}\frac{\partial u}{\partial x}+c_{12}\frac{\partial v}{\partial y}\right]+&\frac{\partial}{\partial y}\left[c_{66}\left(\frac{\partial u}{\partial y}+\frac{\partial v}{\partial x}\right)\right]-(c_{11}+c_{12})\alpha\frac{\partial T}{\partial x}-f_x   =0 \\
@@ -195,7 +200,7 @@
        \end{itemize}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Weak Form Equations of Coupled Thermo-elasticity}
+\begin{frame}[t,fragile]{Weak Form Equations of Coupled Thermoelasticity}
     \vspace{-.4cm}
             \scriptsize
          \begin{align*}
@@ -252,7 +257,7 @@ Where,
     \vspace{-.4cm}
     \footnotesize
  \begin{itemize}
-       \item A square plate is taken and meshed with 5 elements as shown in figure below. 
+       \item A square plate is taken and meshed with 5 elements as shown in the figure below. 
            \item Minimum number of essential boundary conditions is fixed to eliminate the rigid body motions
            \item Loads are applied such that there is constant state of stress in the body
            \item Numerical integration is performed using $2\times 2$ Gauss quadrature rule.
@@ -301,7 +306,7 @@ Where,
   \end{figure}
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[t,fragile]{Patch Test 2: Validation of Thermo-elasticity code}
+\begin{frame}[t,fragile]{Patch Test 2: Validation of Thermoelasticity code}
     \vspace{-.5cm}
     \scriptsize  
 \begin{figure}[H]
@@ -310,8 +315,8 @@ Where,
 \end{figure}
    \vspace{-.5cm}
 \begin{itemize}
-      \item A temperature distribution of $T=x^2+y^2$ is applied on 4 boundaries of plate which satisfies the poisson's equation $\frac{\partial^2 T}{\partial x^2}+\frac{\partial^2 T}{\partial y^2}=4$. 
-      \item Heat source $q=4$ is applied throghout the body. 
+      \item A temperature distribution of $T=x^2+y^2$ is applied on 4 boundaries of plate which satisfies the Poisson's equation $\frac{\partial^2 T}{\partial x^2}+\frac{\partial^2 T}{\partial y^2}=4$. 
+      \item Heat source $q=4$ is applied throughout the body. 
       \item Results are compared with the analytical solutions in the following table:
 \end{itemize}
 \vspace{-10pt}
@@ -352,7 +357,7 @@ Nodes& \% \ Error in Temperature T&\% Error in displacement $u_y$\\
     \begin{subfigure}{.5\textwidth}
         \includegraphics[scale=.25]{onlystress}
         \vspace{-5pt}
-         \caption{\scriptsize $\sigma_y$ ahead of crack tip}
+         \caption{\scriptsize $\sigma_y$ ahead of the crack tip}
     \end{subfigure}
 \end{figure}
     \vspace{-10pt}
@@ -360,7 +365,7 @@ Nodes& \% \ Error in Temperature T&\% Error in displacement $u_y$\\
         \scriptsize
     \item An edge crack problem is solved applying stress $\sigma_y=100$ Mpa and taking E=200 Gpa and $\nu$=0.3.
     \item Stress intensity factor is calculated using the crack closure integral technique. 
-    \item Same problem is solved in X-FEM program developed by parnaik and compared by our solution 
+    \item Same problem is solved in X-FEM program developed by Parnaik and compared by our solution 
 \end{itemize}
 \tiny
    \hspace{15pt}
