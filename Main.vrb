@@ -1,17 +1,17 @@
 \frametitle{Conclusions and Future Work}
 \vspace{-.2cm}
 \begin{itemize}
-    \onslide<2->        \item Conclusions:
+             \item Conclusions:
 \begin{itemize}
-            \onslide<3->\item Finite Element Formulation of semi-coupled thermoelasticity is performed.
-      \onslide<4->  \item MATLAB program is developed based on the semi-coupled formulation.
-     \onslide<5->   \item Patch tests were performed to validate the FEM program.
-     \onslide<6->   \item Results of FEM and X-FEM programs were compared and it is shown that solution improves when X-FEM is used.
+             \item Finite Element Formulation of semi-coupled thermoelasticity is performed.
+         \item MATLAB program is developed based on the semi-coupled formulation.
+         \item Patch tests were performed to validate the FEM program.
+         \item Results of FEM and X-FEM programs were compared and it is shown that solution improves when X-FEM is used.
    \end{itemize}
-      \onslide<7->  \item Future work:
+         \item Future work:
 \begin{itemize}
- \onslide<8->\item Finite Element Formulation of Fully-coupled problems
-          \onslide<9->\item Application of the Extended Finite Element enrichments to both displacement and temperature fields
-         \onslide<10->   \item Utilization of the X-FEM program in other fields which is governed by the Laplace's equation.
+  \item Finite Element Formulation of Fully-coupled problems
+           \item Application of the Extended Finite Element enrichments to both displacement and temperature fields
+             \item Utilization of the X-FEM program in other fields which is governed by the Laplace's equation.
     \end{itemize}
    \end{itemize}
